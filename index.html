@@ -1,12 +1,429 @@
-<!DOCTYPE html>
 
-<html lang="en" > 
-   <head> 
-     <meta charset="utf-8"> 
-     <title > My First HTML Page </title> 
-   </head > 
-   <body> 
-     <h1>My First HTML Page</ h1 > 
-     <p>This is my first HTML page. </p> 
-   </body> 
- </html >
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title></title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://richb.rice.edu/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://richb.rice.edu/wp-content/themes/tiny-forge/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Feed" href="http://richb.rice.edu/feed/" />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Comments Feed" href="http://richb.rice.edu/comments/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/richb.blogs.rice.edu\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1.1"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='http://richb.rice.edu/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='http://richb.rice.edu/wp-includes/css/classic-themes.min.css?ver=1' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='tinyforge-fonts-css' href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='tinyforge-style-css' href='http://richb.rice.edu/wp-content/themes/tiny-forge/style.css?ver=6.1.1' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='tinyforge-ie-css' href='http://richb.rice.edu/wp-content/themes/tiny-forge/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='elusive-iconfont-style-css' href='http://richb.rice.edu/wp-content/themes/tiny-forge/css/elusive-webfont.css?ver=1.0' type='text/css' media='all' />
+<script type='text/javascript' id='jquery-core-js-extra'>
+/* <![CDATA[ */
+var ajaxurl = "https:\/\/richb.rice.edu\/wp-admin\/admin-ajax.php";
+var msreader_featured_posts = {"saving":"Saving...","post_featured":"This post is featured","feature":"Feature","unfeature":"Unfeature"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://richb.rice.edu/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='http://richb.rice.edu/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="http://richb.blogs.rice.edu/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://richb.rice.edu/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://richb.blogs.rice.edu/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="Rice University Blogs" />
+
+<link rel="shortcut icon" href="/?ver=1584641406" />
+        <script type="text/javascript">
+            var jQueryMigrateHelperHasSentDowngrade = false;
+
+			window.onerror = function( msg, url, line, col, error ) {
+				// Break out early, do not processing if a downgrade reqeust was already sent.
+				if ( jQueryMigrateHelperHasSentDowngrade ) {
+					return true;
+                }
+
+				var xhr = new XMLHttpRequest();
+				var nonce = '7238ba635d';
+				var jQueryFunctions = [
+					'andSelf',
+					'browser',
+					'live',
+					'boxModel',
+					'support.boxModel',
+					'size',
+					'swap',
+					'clean',
+					'sub',
+                ];
+				var match_pattern = /\)\.(.+?) is not a function/;
+                var erroredFunction = msg.match( match_pattern );
+
+                // If there was no matching functions, do not try to downgrade.
+                if ( typeof erroredFunction !== 'object' || typeof erroredFunction[1] === "undefined" || -1 === jQueryFunctions.indexOf( erroredFunction[1] ) ) {
+                    return true;
+                }
+
+                // Set that we've now attempted a downgrade request.
+                jQueryMigrateHelperHasSentDowngrade = true;
+
+				xhr.open( 'POST', 'https://richb.rice.edu/wp-admin/admin-ajax.php' );
+				xhr.setRequestHeader( 'Content-Type', 'application/x-www-form-urlencoded' );
+				xhr.onload = function () {
+					var response,
+                        reload = false;
+
+					if ( 200 === xhr.status ) {
+                        try {
+                        	response = JSON.parse( xhr.response );
+
+                        	reload = response.data.reload;
+                        } catch ( e ) {
+                        	reload = false;
+                        }
+                    }
+
+					// Automatically reload the page if a deprecation caused an automatic downgrade, ensure visitors get the best possible experience.
+					if ( reload ) {
+						location.reload();
+                    }
+				};
+
+				xhr.send( encodeURI( 'action=jquery-migrate-downgrade-version&_wpnonce=' + nonce ) );
+
+				// Suppress error alerts in older browsers
+				return true;
+			}
+        </script>
+
+							<!-- Google Analytics tracking code output by Beehive Analytics Pro -->
+						<script async src="https://www.googletagmanager.com/gtag/js?id=UA-63982340-1&l=beehiveDataLayer"></script>
+		<script>
+						window.beehiveDataLayer = window.beehiveDataLayer || [];
+			function gaplusu() {beehiveDataLayer.push(arguments);}
+			gaplusu('js', new Date())
+						gaplusu('config', 'UA-63982340-1', {
+				'anonymize_ip': false,
+				'allow_google_signals': false,
+			})
+					</script>
+		<style type="text/css">
+/* <![CDATA[ */
+img.latex { vertical-align: middle; border: none; }
+/* ]]> */
+</style>
+	<style type="text/css" id="tinyforge-header-css">
+			.site-title,
+		.site-description {
+			position: absolute;
+			clip: rect(1px 1px 1px 1px); /* IE7 */
+			clip: rect(1px, 1px, 1px, 1px);
+		}
+		</style>
+	<style type="text/css">#wp-admin-bar-abm-login{display:block!important}body .wp-video-shortcode video,body video.wp-video-shortcode{margin:0;padding:0;background:0 0;border:none;box-shadow:none;min-width:0;height:auto;min-height:0}.screen-reader-text:not(button){clip:rect(1px,1px,1px,1px);position:absolute!important;height:1px;width:1px;overflow:hidden}</style></head>
+
+<body class="home blog full-width custom-font-enabled single-author">
+
+<noscript>
+	<div id="no-javascript">
+		Advanced features of this website require that you enable JavaScript in your browser. Thank you!	</div>
+</noscript>
+
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+					<div class="site-branding" itemscope itemtype="http://schema.org/WPHeader">
+				<div id="site-logo"><a href="http://richb.rice.edu/" title="" rel="home"><img src="https://richb.blogs.rice.edu/files/2021/07/richbHeaderFont2.jpg" alt="" id="site-logo-image"></a></div>
+				<div id="site-title-wrapper">
+					<h1 class="site-title"><a href="http://richb.rice.edu/" title="" rel="home"></a></h1>
+					<h2 class="site-description"></h2>
+				</div><!-- #site-title-wrapper -->
+			</div>
+				
+		<nav id="site-navigation" class="main-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+			<h1 class="menu-toggle">Menu</h1>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="menu-menu-1-container"><ul id="menu-menu-1" class="nav-menu"><li id="menu-item-1616" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1616"><a href="http://richb.blogs.rice.edu/">Home</a></li>
+<li id="menu-item-1617" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1617"><a href="http://richb.rice.edu/biography/">Bio</a></li>
+<li id="menu-item-1618" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1618"><a href="http://richb.rice.edu/open-ed/">Open Ed</a>
+<ul class="sub-menu">
+	<li id="menu-item-1628" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1628"><a href="http://richb.rice.edu/open-ed/ted-talk/">TED Talk and Videos</a></li>
+	<li id="menu-item-1629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1629"><a href="http://richb.rice.edu/open-ed/writings/">Writing</a></li>
+	<li id="menu-item-1630" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1630"><a href="http://richb.rice.edu/open-ed/press/">Press</a></li>
+</ul>
+</li>
+<li id="menu-item-1740" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1740"><a href="http://richb.rice.edu/signal-processing/">Signal Processing | Machine Learning</a>
+<ul class="sub-menu">
+	<li id="menu-item-2058" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2058"><a href="http://dsp.rice.edu">Rice DSP Group</a></li>
+	<li id="menu-item-2052" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2052"><a href="http://machinelearning.rice.edu">Machine Learning @ Rice</a></li>
+	<li id="menu-item-1622" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1622"><a href="http://richb.rice.edu/signal-processing/papers/">Papers</a></li>
+	<li id="menu-item-1624" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1624"><a href="http://richb.rice.edu/signal-processing/research-resources/">Graduate Student Resources</a></li>
+	<li id="menu-item-1625" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1625"><a href="http://richb.rice.edu/signal-processing/compressive-sensing-resources/">Compressive Sensing Resources</a></li>
+	<li id="menu-item-1623" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1623"><a href="http://richb.rice.edu/signal-processing/press/">Press</a></li>
+</ul>
+</li>
+<li id="menu-item-1619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1619"><a href="http://richb.rice.edu/people/">People</a>
+<ul class="sub-menu">
+	<li id="menu-item-1631" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1631"><a href="http://richb.rice.edu/positions/">Open Positions</a></li>
+</ul>
+</li>
+<li id="menu-item-1626" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1626"><a href="http://richb.rice.edu/speaking/">Talks</a></li>
+<li id="menu-item-1627" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1627"><a href="http://richb.rice.edu/teaching/">Teaching</a></li>
+<li id="menu-item-2048" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2048"><a href="http://richb.rice.edu/contact/">Contact</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+
+				<!-- Custom Header - Start -->
+														<!-- Custom Header - End -->
+
+	</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+		
+										
+	<article id="post-2546" class="post-2546 post type-post status-publish format-standard hentry category-uncategorized" itemscope itemtype="http://schema.org/Article">
+				<header class="entry-header">
+						<h1 class="entry-title" itemprop="headline">
+				<a href="http://richb.rice.edu/2023/04/13/30-students-in-30-years/" rel="bookmark" itemprop="url">30 Students in 30 Years</a>
+							</h1>
+					</header><!-- .entry-header -->
+
+				<div class="entry-content" itemprop="articleBody">
+			<p><a href="https://eceweb.rice.edu/news/richard-baraniuk-guides-30-phd-and-postdoc-alumni-faculty-roles-over-30-years" target="_blank" rel="noopener"><img decoding="async" class="aligncenter size-large wp-image-2548" src="https://richb.blogs.rice.edu/files/2023/04/richb30-1024x888.jpg" alt="" width="625" height="542" srcset="http://richb.rice.edu/files/2023/04/richb30-1024x888.jpg 1024w, http://richb.rice.edu/files/2023/04/richb30-300x260.jpg 300w, http://richb.rice.edu/files/2023/04/richb30-768x666.jpg 768w, http://richb.rice.edu/files/2023/04/richb30-960x832.jpg 960w, http://richb.rice.edu/files/2023/04/richb30.jpg 1068w" sizes="(max-width: 625px) 100vw, 625px" /></a></p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+									Posted in <span itemprop="articleSection"><a href="http://richb.rice.edu/category/uncategorized/" rel="category tag">Uncategorized</a></span> on <a href="http://richb.rice.edu/2023/04/13/30-students-in-30-years/" title="3:39 pm" rel="bookmark"><time class="entry-date updated" datetime="2023-04-13T15:39:28-05:00" itemprop="datePublished">April 13, 2023</time></a><span class="by-author"> by <span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a class="url fn n" href="http://richb.rice.edu/author/jkh6/" title="View all posts by jkh6" rel="author" itemprop="url">jkh6</a></span></span></span>.									
+					</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+							
+	<article id="post-2534" class="post-2534 post type-post status-publish format-standard hentry category-uncategorized" itemscope itemtype="http://schema.org/Article">
+				<header class="entry-header">
+						<h1 class="entry-title" itemprop="headline">
+				<a href="http://richb.rice.edu/2023/01/21/two-notable-papers-at-iclr-2023/" rel="bookmark" itemprop="url">Two &#8220;Notable&#8221; Papers at ICLR 2023</a>
+							</h1>
+					</header><!-- .entry-header -->
+
+				<div class="entry-content" itemprop="articleBody">
+			<p><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-1503" style="box-shadow: 0 0 0 rgba(0,0,0,0);" src="https://digitalsignalprocessing.blogs.rice.edu/files/2023/01/iclr.png" alt="" width="394" height="128" /></p>
+<p>Two DSP group papers have been accepted as "Notable - Top 25%" papers for the <a href="https://iclr.cc/Conferences/2023" target="_blank" rel="noopener"><strong>International Conference on Learning Representations</strong> (ICLR)</a> 2023 in Kigali, Rwanda</p>
+<ul>
+<li>"<a href="https://tanmnguyen89.github.io/Primal_Dual_Transformers.pdf" target="_blank" rel="noopener"><strong>A Primal-Dual Framework for Transformers and Neural Networks</strong></a>," by <a href="https://tanmnguyen89.github.io/" target="_blank" rel="noopener">T. M. Nguyen</a>, T. Nguyen, N. Ho, A. L. Bertozzi, <a href="https://richb.rice.edu" target="_blank" rel="noopener">R. G. Baraniuk</a>, and S. Osher</li>
+<li>"<a href="https://arxiv.org/abs/2208.11126" target="_blank" rel="noopener"><strong>Retrieval-based Controllable Molecule Generation</strong></a>," by <a href="https://zw16.web.rice.edu/" target="_blank" rel="noopener">Jack Wang</a>, W. Nie, Z. Qiao, C. Xiao, <a href="https://richb.rice.edu" target="_blank" rel="noopener">R. G. Baraniuk</a>, and A. Anandkumar</li>
+</ul>
+<p>Abstracts below.</p>
+<p style="text-align: center;"><strong>Retrieval-based Controllable Molecule Generation</strong></p>
+<p><img decoding="async" loading="lazy" class="wp-image-1531 size-large aligncenter" src="https://digitalsignalprocessing.blogs.rice.edu/files/2023/01/model_illustration_v3-2-1-1024x375.jpg" alt="" width="625" height="229" /></p>
+<p style="text-align: left;">Generating new molecules with specified chemical and biological properties via generative models has emerged as a promising direction for drug discovery. However, existing methods require extensive training/fine-tuning with a large dataset, often unavailable in real-world generation tasks. In this work, we propose a new retrieval-based framework for controllable molecule generation. We use a small set of exemplar molecules, i.e., those that (partially) satisfy the design criteria, to steer the pre-trained generative model towards synthesizing molecules that satisfy the given design criteria. We design a retrieval mechanism that retrieves and fuses the exemplar molecules with the input molecule, which is trained by a new self-supervised objective that predicts the nearest neighbor of the input molecule. We also propose an iterative refinement process to dynamically update the generated molecules and retrieval database for better generalization. Our approach is agnostic to the choice of generative models and requires no task-specific fine-tuning. On various tasks ranging from simple design criteria to a challenging real-world scenario for designing lead compounds that bind to the SARS-CoV-2 main protease, we demonstrate our approach extrapolates well beyond the retrieval database, and achieves better performance and wider applicability than previous methods.</p>
+<p style="text-align: center;"><strong>A Primal-Dual Framework for Transformers and Neural Networks</strong></p>
+<p>Self-attention is key to the remarkable success of transformers in sequence modeling tasks, including many applications in natural language processing and computer vision. Like neural network layers, these attention mechanisms are often developed by heuristics and experience. To provide a principled framework for constructing attention layers in transformers, we show that the self-attention corresponds to the support vector expansion derived from a support vector regression problem, whose primal formulation has the form of a neural network layer. Using our framework, we derive popular attention layers used in practice and propose two new attentions: 1) the Batch Normalized Attention (Attention-BN) derived from the batch normalization layer and 2) the Attention with Scaled Head (Attention-SH) derived from using less training data to fit the SVR model. We empirically demonstrate the advantages of the Attention-BN and Attention-SH in reducing head redundancy, increasing the model’s accuracy, and improving the model’s efficiency in a variety of practical applications including image and time-series classification.</p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+									Posted in <span itemprop="articleSection"><a href="http://richb.rice.edu/category/uncategorized/" rel="category tag">Uncategorized</a></span> on <a href="http://richb.rice.edu/2023/01/21/two-notable-papers-at-iclr-2023/" title="7:26 pm" rel="bookmark"><time class="entry-date updated" datetime="2023-01-21T19:26:58-06:00" itemprop="datePublished">January 21, 2023</time></a><span class="by-author"> by <span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a class="url fn n" href="http://richb.rice.edu/author/jkh6/" title="View all posts by jkh6" rel="author" itemprop="url">jkh6</a></span></span></span>.									
+					</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+							
+	<article id="post-2530" class="post-2530 post type-post status-publish format-standard hentry category-uncategorized" itemscope itemtype="http://schema.org/Article">
+				<header class="entry-header">
+						<h1 class="entry-title" itemprop="headline">
+				<a href="http://richb.rice.edu/2023/01/21/machine-learning-privacy-work-to-appear-at-aistats/" rel="bookmark" itemprop="url">Machine Learning Privacy Work to Appear at AISTATS 2023</a>
+							</h1>
+					</header><!-- .entry-header -->
+
+				<div class="entry-content" itemprop="articleBody">
+			<p><img decoding="async" loading="lazy" class="aligncenter wp-image-1055" style="box-shadow: 0 0 0 rgba(0,0,0,0);" src="https://digitalsignalprocessing.blogs.rice.edu/files/2020/01/AISTATSlogo.jpg" alt="" width="246" height="133" />"<strong>A Blessing of Dimensionality in Membership Inference through Regularization</strong>" by DSP group members <a href="https://tanjasper.github.io/" target="_blank" rel="noopener">Jasper Tan</a>, <a href="https://dlej.net/" target="_blank" rel="noopener">Daniel LeJeune</a>, <a href="https://scholar.google.com/citations?user=gLO_20kAAAAJ&amp;hl=en" target="_blank" rel="noopener">Blake Mason</a>, <a href="https://scholar.google.com/citations?user=cCUHSdkAAAAJ&amp;hl=en" target="_blank" rel="noopener">Hamid Javadi</a>, and <a href="https://richb.rice.edu" target="_blank" rel="noopener">Richard Baraniuk</a> has been accepted for the <a href="http://aistats.org/aistats2023/" target="_blank" rel="noopener"><strong>International Conference on Artificial Intelligence and Statistics</strong></a> (AISTATS) in Valencia, Spain, April 2023.</p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+									Posted in <span itemprop="articleSection"><a href="http://richb.rice.edu/category/uncategorized/" rel="category tag">Uncategorized</a></span> on <a href="http://richb.rice.edu/2023/01/21/machine-learning-privacy-work-to-appear-at-aistats/" title="7:26 pm" rel="bookmark"><time class="entry-date updated" datetime="2023-01-21T19:26:22-06:00" itemprop="datePublished">January 21, 2023</time></a><span class="by-author"> by <span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a class="url fn n" href="http://richb.rice.edu/author/jkh6/" title="View all posts by jkh6" rel="author" itemprop="url">jkh6</a></span></span></span>.									
+					</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+							
+	<article id="post-2502" class="post-2502 post type-post status-publish format-standard hentry category-uncategorized" itemscope itemtype="http://schema.org/Article">
+				<header class="entry-header">
+						<h1 class="entry-title" itemprop="headline">
+				<a href="http://richb.rice.edu/2022/12/13/ieee-sps-norbert-wiener-society-award/" rel="bookmark" itemprop="url">IEEE SPS Norbert Wiener Society Award</a>
+							</h1>
+					</header><!-- .entry-header -->
+
+				<div class="entry-content" itemprop="articleBody">
+			<p><strong><img decoding="async" loading="lazy" class="alignleft wp-image-2510" style="box-shadow: 0 0 0 rgba(0,0,0,0);" src="https://richb.blogs.rice.edu/files/2022/12/SPS_Logo_Color_RGB-300x188.jpeg" alt="" width="250" height="157" srcset="http://richb.rice.edu/files/2022/12/SPS_Logo_Color_RGB-300x188.jpeg 300w, http://richb.rice.edu/files/2022/12/SPS_Logo_Color_RGB-1024x641.jpeg 1024w, http://richb.rice.edu/files/2022/12/SPS_Logo_Color_RGB-768x481.jpeg 768w, http://richb.rice.edu/files/2022/12/SPS_Logo_Color_RGB-960x601.jpeg 960w, http://richb.rice.edu/files/2022/12/SPS_Logo_Color_RGB.jpeg 1531w" sizes="(max-width: 250px) 100vw, 250px" />Richard Baraniuk</strong> has been selected for the <a href="https://signalprocessingsociety.org/community-involvement/awards-submit-award-nomination" target="_blank" rel="noopener"><strong>2022 IEEE SPS Norbert Wiener Society Award</strong></a> "for fundamental contributions to sparsity-based signal processing and pioneering broad dissemination of open educational resources".  The Society Award honors outstanding technical contributions in a field within the scope of the IEEE Signal Processing Society and outstanding leadership in that field (<a href="https://signalprocessingsociety.org/sites/default/files/uploads/community_involvement/awards/Society_Award.pdf" target="_blank" rel="noopener">list of previous recipients</a>).</p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+									Posted in <span itemprop="articleSection"><a href="http://richb.rice.edu/category/uncategorized/" rel="category tag">Uncategorized</a></span> on <a href="http://richb.rice.edu/2022/12/13/ieee-sps-norbert-wiener-society-award/" title="2:53 pm" rel="bookmark"><time class="entry-date updated" datetime="2022-12-13T14:53:59-06:00" itemprop="datePublished">December 13, 2022</time></a><span class="by-author"> by <span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a class="url fn n" href="http://richb.rice.edu/author/jkh6/" title="View all posts by jkh6" rel="author" itemprop="url">jkh6</a></span></span></span>.									
+					</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+							
+	<article id="post-2434" class="post-2434 post type-post status-publish format-standard hentry category-uncategorized" itemscope itemtype="http://schema.org/Article">
+				<header class="entry-header">
+						<h1 class="entry-title" itemprop="headline">
+				<a href="http://richb.rice.edu/2022/11/27/why-some-deep-networks-are-easier-to-optimize-than-others/" rel="bookmark" itemprop="url">Why Some Deep Networks are Easier to Optimize Than Others</a>
+							</h1>
+					</header><!-- .entry-header -->
+
+				<div class="entry-content" itemprop="articleBody">
+			<p><span dir="ltr" role="presentation">"<strong>Singular Value Perturbation and Deep Network Optimization</strong>", <a href="http://rudolf.riedi.home.hefr.ch/" target="_blank" rel="noopener">Rudolf H. Riedi</a>, <a href="https://scholar.google.com/citations?user=S1x_xqcAAAAJ&amp;hl=en" target="_blank" rel="noopener">Randall Balestriero</a>, and <a href="https://richb.rice.edu" target="_blank" rel="noopener">Richard G. Baraniuk</a>, <a href="https://link.springer.com/content/pdf/10.1007/s00365-022-09601-5.pdf" target="_blank" rel="noopener"><em>Constructive Approximation</em></a>, 27 November 2022 (also arXiv preprint <a href="https://arxiv.org/abs/2203.03099" target="_blank" rel="noopener">2203.03099</a>, 7 March 2022)</span></p>
+<p>Deep learning practitioners know that ResNets and DenseNets are much preferred over ConvNets, because empirically their gradient descent learning converges faster and more stably to a better solution.  In other words, it is not <em>what</em> a deep network can approximate that matters, but rather <em>how it learns</em> to approximate. Empirical studies have indicated that this is because the so-called <em><strong>loss landscape</strong></em> of the objective function navigated by gradient descent as it optimizes the deep network parameters is much smoother for ResNets and DenseNets as compared to ConvNets (see Figure 1 from <a href="https://arxiv.org/abs/1712.09913" target="_blank" rel="noopener">Tom Goldstein</a>'s group below). However, to date there has been no analytical work in this direction.</p>
+<p><img decoding="async" loading="lazy" class="aligncenter wp-image-2436" style="box-shadow: 0 0 0 rgba(0,0,0,0);" src="https://richb.blogs.rice.edu/files/2022/02/losslandscape.jpg" alt="" width="589" height="312" srcset="http://richb.rice.edu/files/2022/02/losslandscape.jpg 1768w, http://richb.rice.edu/files/2022/02/losslandscape-300x159.jpg 300w, http://richb.rice.edu/files/2022/02/losslandscape-1024x542.jpg 1024w, http://richb.rice.edu/files/2022/02/losslandscape-768x407.jpg 768w, http://richb.rice.edu/files/2022/02/losslandscape-1536x813.jpg 1536w, http://richb.rice.edu/files/2022/02/losslandscape-960x508.jpg 960w" sizes="(max-width: 589px) 100vw, 589px" /></p>
+<p>Building on our earlier work connecting deep networks with <a href="https://arxiv.org/abs/1805.06576" target="_blank" rel="noopener">continuous piecewise-affine splines</a>, we develop an exact local linear representation of a deep network layer for a family of modern deep networks that includes ConvNets at one end of a spectrum and networks with skip connections, such as ResNets and DenseNets, at the other. <em><strong>For tasks that optimize the squared-error loss, we prove that the optimization loss surface of a modern deep network is piecewise quadratic in the parameters, with local shape governed by the singular values of a matrix that is a function of the local linear representation</strong></em>. We develop new perturbation results for how the singular values of matrices of this sort behave as we add a fraction of the identity and multiply by certain diagonal matrices. <em><strong>A direct application of our perturbation results explains analytically why a network with skip connections (e.g., ResNet or DenseNet) is easier to optimize than a ConvNet: thanks to its more stable singular values and smaller condition number, the local loss surface of a network with skip connections is less erratic, less eccentric, and features local minima that are more accommodating to gradient-based optimization</strong></em>. Our results also shed new light on the impact of different nonlinear activation functions on a deep network's singular values, regardless of its architecture.</p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+									Posted in <span itemprop="articleSection"><a href="http://richb.rice.edu/category/uncategorized/" rel="category tag">Uncategorized</a></span> on <a href="http://richb.rice.edu/2022/11/27/why-some-deep-networks-are-easier-to-optimize-than-others/" title="10:55 am" rel="bookmark"><time class="entry-date updated" datetime="2022-11-27T10:55:49-06:00" itemprop="datePublished">November 27, 2022</time></a><span class="by-author"> by <span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a class="url fn n" href="http://richb.rice.edu/author/jkh6/" title="View all posts by jkh6" rel="author" itemprop="url">jkh6</a></span></span></span>.									
+					</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+							
+	<article id="post-2472" class="post-2472 post type-post status-publish format-standard hentry category-uncategorized" itemscope itemtype="http://schema.org/Article">
+				<header class="entry-header">
+						<h1 class="entry-title" itemprop="headline">
+				<a href="http://richb.rice.edu/2022/08/12/openstax-to-publish-best-selling-organic-chemistry-textbook/" rel="bookmark" itemprop="url">OpenStax to Publish Best Selling Organic Chemistry Textbook</a>
+							</h1>
+					</header><!-- .entry-header -->
+
+				<div class="entry-content" itemprop="articleBody">
+			<p><img decoding="async" loading="lazy" class="alignleft wp-image-2474" src="https://richb.blogs.rice.edu/files/2022/08/orgo.jpg" alt="" width="195" height="252" srcset="http://richb.rice.edu/files/2022/08/orgo.jpg 960w, http://richb.rice.edu/files/2022/08/orgo-232x300.jpg 232w, http://richb.rice.edu/files/2022/08/orgo-791x1024.jpg 791w, http://richb.rice.edu/files/2022/08/orgo-768x994.jpg 768w" sizes="(max-width: 195px) 100vw, 195px" /></p>
+<p>&nbsp;</p>
+<p><a href="https://www.forbes.com/sites/dereknewton/2022/08/11/this-textbook-deal-could-change-education-publishing" target="_blank" rel="noopener">This Textbook Deal Could Change Educational Publishing</a>, Forbes, 11 August 2022</p>
+<p><a href="https://www.insidehighered.com/news/2022/08/11/popular-chemistry-textbooks-new-edition-will-be-free" target="_blank" rel="noopener">A Best Selling Textbook is Now Free</a>, Inside Higher Ed 11 August 2022</p>
+<p>&nbsp;</p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+									Posted in <span itemprop="articleSection"><a href="http://richb.rice.edu/category/uncategorized/" rel="category tag">Uncategorized</a></span> on <a href="http://richb.rice.edu/2022/08/12/openstax-to-publish-best-selling-organic-chemistry-textbook/" title="10:41 am" rel="bookmark"><time class="entry-date updated" datetime="2022-08-12T10:41:09-05:00" itemprop="datePublished">August 12, 2022</time></a><span class="by-author"> by <span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a class="url fn n" href="http://richb.rice.edu/author/jkh6/" title="View all posts by jkh6" rel="author" itemprop="url">jkh6</a></span></span></span>.									
+					</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+							
+	<article id="post-2452" class="post-2452 post type-post status-publish format-standard hentry category-uncategorized" itemscope itemtype="http://schema.org/Article">
+				<header class="entry-header">
+						<h1 class="entry-title" itemprop="headline">
+				<a href="http://richb.rice.edu/2022/05/28/dsp-phd-alum-amirali-aghazadeh-accepts-faculty-position-at-georgia-tech/" rel="bookmark" itemprop="url">DSP PhD Alum AmirAli Aghazadeh Accepts Faculty Position at Georgia Tech</a>
+							</h1>
+					</header><!-- .entry-header -->
+
+				<div class="entry-content" itemprop="articleBody">
+			<p><img decoding="async" loading="lazy" class="wp-image-2453 alignleft" src="https://richb.blogs.rice.edu/files/2022/05/AAA.jpeg" alt="" width="248" height="174" srcset="http://richb.rice.edu/files/2022/05/AAA.jpeg 1055w, http://richb.rice.edu/files/2022/05/AAA-300x210.jpeg 300w, http://richb.rice.edu/files/2022/05/AAA-1024x717.jpeg 1024w, http://richb.rice.edu/files/2022/05/AAA-768x538.jpeg 768w, http://richb.rice.edu/files/2022/05/AAA-960x672.jpeg 960w" sizes="(max-width: 248px) 100vw, 248px" />Rice DSP PhD <strong><a href="https://amirmohan.github.io/" target="_blank" rel="noopener">AmirAli Aghazadeh</a></strong> (PhD, 2017) has accepted an assistant professor position at <a href="http://www.gatech.edu/" target="_blank" rel="noopener">Georgia Tech</a> in the <a href="https://www.bme.gatech.edu/" target="_blank" rel="noopener">Department of Electrical and Computer Engineering</a>.  He has spent the past few years as a postdoc at Stanford University and UC-Berkeley.  AmirAli joins Rice DSP PhD alums James McClellan, Douglas Williams, Justin Romberg, Christopher Rozell, Mark Davenport, and Eva Dyer and  Rice ECE PhD alum Robert Butera.</p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+									Posted in <span itemprop="articleSection"><a href="http://richb.rice.edu/category/uncategorized/" rel="category tag">Uncategorized</a></span> on <a href="http://richb.rice.edu/2022/05/28/dsp-phd-alum-amirali-aghazadeh-accepts-faculty-position-at-georgia-tech/" title="4:05 pm" rel="bookmark"><time class="entry-date updated" datetime="2022-05-28T16:05:10-05:00" itemprop="datePublished">May 28, 2022</time></a><span class="by-author"> by <span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a class="url fn n" href="http://richb.rice.edu/author/jkh6/" title="View all posts by jkh6" rel="author" itemprop="url">jkh6</a></span></span></span>.									
+					</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+							
+	<article id="post-2396" class="post-2396 post type-post status-publish format-standard hentry category-uncategorized" itemscope itemtype="http://schema.org/Article">
+				<header class="entry-header">
+						<h1 class="entry-title" itemprop="headline">
+				<a href="http://richb.rice.edu/2022/02/09/national-academy-of-engineering/" rel="bookmark" itemprop="url">National Academy of Engineering</a>
+							</h1>
+					</header><!-- .entry-header -->
+
+				<div class="entry-content" itemprop="articleBody">
+			<p><strong><img decoding="async" loading="lazy" class="aligncenter wp-image-2400" style="box-shadow: 0 0 0 rgba(0,0,0,0);" src="https://richb.blogs.rice.edu/files/2022/02/NAElogo.jpeg" alt="" width="360" height="80" srcset="http://richb.rice.edu/files/2022/02/NAElogo.jpeg 1008w, http://richb.rice.edu/files/2022/02/NAElogo-300x67.jpeg 300w, http://richb.rice.edu/files/2022/02/NAElogo-768x171.jpeg 768w, http://richb.rice.edu/files/2022/02/NAElogo-960x213.jpeg 960w" sizes="(max-width: 360px) 100vw, 360px" />Richard Baraniuk</strong> has been elected to the <a href="https://www.nae.edu/270224/National-Academy-of-Engineering-Elects-111-Members-and-22-International-Members" target="_blank" rel="noopener"><strong>National Academy of Engineering</strong></a> in recognition of his contributions to engineering "for the development and broad dissemination of open educational resources and for foundational contributions to compressive sensing." Election to the National Academy of Engineering is among the highest professional distinctions accorded to an engineer. More from <a href="https://news.rice.edu/news/2022/richard-baraniuk-named-national-academy-engineering" target="_blank" rel="noopener">Rice News</a>.</p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+									Posted in <span itemprop="articleSection"><a href="http://richb.rice.edu/category/uncategorized/" rel="category tag">Uncategorized</a></span> on <a href="http://richb.rice.edu/2022/02/09/national-academy-of-engineering/" title="12:16 pm" rel="bookmark"><time class="entry-date updated" datetime="2022-02-09T12:16:49-06:00" itemprop="datePublished">February 9, 2022</time></a><span class="by-author"> by <span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a class="url fn n" href="http://richb.rice.edu/author/jkh6/" title="View all posts by jkh6" rel="author" itemprop="url">jkh6</a></span></span></span>.									
+					</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+							
+	<article id="post-2389" class="post-2389 post type-post status-publish format-standard hentry category-uncategorized" itemscope itemtype="http://schema.org/Article">
+				<header class="entry-header">
+						<h1 class="entry-title" itemprop="headline">
+				<a href="http://richb.rice.edu/2022/01/27/ams-josiah-willard-gibbs-lecture/" rel="bookmark" itemprop="url">AMS Josiah Willard Gibbs Lecture</a>
+							</h1>
+					</header><!-- .entry-header -->
+
+				<div class="entry-content" itemprop="articleBody">
+			<p><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-2390" style="box-shadow: 0 0 0 rgba(0,0,0,0);" src="https://richb.blogs.rice.edu/files/2022/02/AMSlogo.png" alt="" width="350" height="92" srcset="http://richb.rice.edu/files/2022/02/AMSlogo.png 350w, http://richb.rice.edu/files/2022/02/AMSlogo-300x79.png 300w" sizes="(max-width: 350px) 100vw, 350px" /><strong>Richard Baraniuk</strong> will present the 2023 <strong><a href="http://www.ams.org/meetings/lectures/meet-gibbs-lect" target="_blank" rel="noopener">AMS Josiah Willard Gibbs Lecture</a></strong> at the Joint Mathematics Meeting in Boston, Massachusetts in January 2023.  The first AMS Josiah Willard Gibbs Lecture was given in 1923. This public lecture is one of the signature events in the Society’s calendar.  Previous speakers have included Albert Einstein, Vannevar Bush, John von Neumann, Norbert Wiener, Kurt Gödel, Hermann Weyl, Eugene Wigner, Donald Knuth, Herb Simon, David Mumford, Ingrid Daubechies, and Claude Shannon.</p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+									Posted in <span itemprop="articleSection"><a href="http://richb.rice.edu/category/uncategorized/" rel="category tag">Uncategorized</a></span> on <a href="http://richb.rice.edu/2022/01/27/ams-josiah-willard-gibbs-lecture/" title="9:05 am" rel="bookmark"><time class="entry-date updated" datetime="2022-01-27T09:05:31-06:00" itemprop="datePublished">January 27, 2022</time></a><span class="by-author"> by <span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a class="url fn n" href="http://richb.rice.edu/author/jkh6/" title="View all posts by jkh6" rel="author" itemprop="url">jkh6</a></span></span></span>.									
+					</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+							
+	<article id="post-2353" class="post-2353 post type-post status-publish format-standard hentry category-uncategorized" itemscope itemtype="http://schema.org/Article">
+				<header class="entry-header">
+						<h1 class="entry-title" itemprop="headline">
+				<a href="http://richb.rice.edu/2021/09/29/harold-w-mcgraw-jr-prize-in-education/" rel="bookmark" itemprop="url">Harold W. McGraw, Jr. Prize in Education</a>
+							</h1>
+					</header><!-- .entry-header -->
+
+				<div class="entry-content" itemprop="articleBody">
+			<p><img decoding="async" loading="lazy" class="aligncenter wp-image-2355" style="box-shadow: 0 0 0 rgba(0,0,0,0);" src="https://richb.blogs.rice.edu/files/2021/09/McGraw-Prize-Logo.png" alt="" width="544" height="94" srcset="http://richb.rice.edu/files/2021/09/McGraw-Prize-Logo.png 936w, http://richb.rice.edu/files/2021/09/McGraw-Prize-Logo-300x52.png 300w, http://richb.rice.edu/files/2021/09/McGraw-Prize-Logo-768x133.png 768w" sizes="(max-width: 544px) 100vw, 544px" /></p>
+<p><strong>Richard G. Baraniuk</strong>, the C. Sidney Burrus Professor of Electrical and Computer Engineering (ECE) and founding director of <a href="http://openstax.org" target="_blank" rel="noopener">OpenStax</a>, Rice’s educational technology initiative, has received the <strong><a href="https://www.gse.upenn.edu/news/press-releases/mcgraw-prize-education-2021-winners" target="_blank" rel="noopener">Harold W. McGraw, Jr. Prize in Education</a></strong>.  The award is given annually by the Harold W. McGraw, Jr. Family Foundation and the University of Pennsylvania Graduate School of Education and goes to “outstanding individuals whose accomplishments are making a difference in the lives of students.”  Baraniuk is one of the founders of the <a href="https://www.ted.com/talks/richard_baraniuk_the_birth_of_the_open_source_learning_revolution?language=en" target="_blank" rel="noopener">Open Education</a> movement that promotes the use of free and open-source-licensed Open Educational Resources. He is founder and director of OpenStax (formerly Connexions), a non-profit educational and scholarly publishing project he founded in 1999 to bring textbooks and other learning materials into the digital age.</p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+									Posted in <span itemprop="articleSection"><a href="http://richb.rice.edu/category/uncategorized/" rel="category tag">Uncategorized</a></span> on <a href="http://richb.rice.edu/2021/09/29/harold-w-mcgraw-jr-prize-in-education/" title="8:05 pm" rel="bookmark"><time class="entry-date updated" datetime="2021-09-29T20:05:22-05:00" itemprop="datePublished">September 29, 2021</time></a><span class="by-author"> by <span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a class="url fn n" href="http://richb.rice.edu/author/jkh6/" title="View all posts by jkh6" rel="author" itemprop="url">jkh6</a></span></span></span>.									
+					</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+			
+					<nav id="nav-below" class="navigation" role="navigation">
+			<h3 class="assistive-text">Post navigation</h3>
+			<div class="nav-previous"><a href="http://richb.rice.edu/page/2/" ><span class="meta-nav">&larr;</span> Older posts</a></div>
+			<div class="nav-next"></div>
+		</nav><!-- #nav-below .navigation -->
+	
+		
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+
+		</div><!-- #main .wrapper -->
+	<footer id="colophon" class="clear" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+	
+						<div id="footer-widgets" class="widget-area three" itemscope itemtype="http://schema.org/WPSideBar">
+					
+					
+									</div><!-- #footer-widgets -->
+			
+		<div id="site-info">
+									<!--<a href="http://your-site.com" title="Web design & programing by your credentials" rel="designer">Web development by your credentials</a> <span class="meta-separator">&bull;</span> -->
+						<span id="site-admin-link"> <a href="https://richb.blogs.rice.edu/wp-login.php?action=shibboleth">Log in</a></span>
+		</div><!-- #site-info -->
+		
+		<div id="site-generator">
+									<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform">Powered by WordPress<div class="icon-webfont icon-wordpress"></div></a>
+		</div><!-- #site-generator -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type='text/javascript' src='http://richb.rice.edu/wp-content/themes/tiny-forge/js/navigation.js?ver=1.0' id='tinyforge-navigation-js'></script>
+</body>
+</html>
