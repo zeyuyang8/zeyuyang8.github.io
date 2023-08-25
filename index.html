@@ -2,16 +2,74 @@
 
 <html lang="en">
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111713571-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-111713571-1');
+        </script>
+
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <!-- Custom styles for this template -->
+        <link href="jumbotron.css" rel="stylesheet">
+        <script src="js/main.js"></script>
+        <script src="js/scroll.js"></script>
     </head>
 
     <title>Zeyu Yang</title>
 
     <body>
+        <!-- Navigator -->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="Home">
             <a class="navbar-brand" href="#Home">Zeyu Yang</a>
+            <div class="collapse navbar-collapse" id="navbarToggle">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Publication">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+
+        <div class="container" style="padding-top: 60px; font-size: 17px; width: 1080px">
+            <div class="row">
+                <div class="col-md-3", style="padding-right: 40px; padding-top: 25px">
+                    <img class="img-responsive img-rounded" src="assets/photos/tom.png" alt="poor tom" style="max-width: 220px; color: solid black"><br>
+                </div>
+
+                <div class="col-md-4", style="padding-right: 40px; padding-top: 25px">
+                    <h2>Zeyu Yang</h2>
+                    <p>
+                        Master student <br>
+                        Rice CS <br>
+                        COMP-WELL Lab <br>
+                        Email: zeyuyang8@gmail.com
+                    </p>
+                </div>
+
+                <div class="col-md-4", style="padding-right: 40px; padding-top: 25px">
+                    <font color="black"><b>Research Topics:</b><br>
+                        <a>Generative Modeling</a> <br>
+                        <a>Foundation Models</a> <br>
+                        <a>Embodied AI</a> <br>
+                        <a>Language-Vision Understanding</a> <br>
+                        <a>Compositionality</a> <br>
+                    </font>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
