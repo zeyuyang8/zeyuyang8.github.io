@@ -1,429 +1,802 @@
 
 <!DOCTYPE html>
-<!--[if IE 7]>
-<html class="ie ie7" lang="en-US">
-<![endif]-->
-<!--[if IE 8]>
-<html class="ie ie8" lang="en-US">
-<![endif]-->
-<!--[if !(IE 7) | !(IE 8)  ]><!-->
-<html lang="en-US">
-<!--<![endif]-->
+<html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width" />
-<title></title>
-<link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="pingback" href="http://richb.rice.edu/xmlrpc.php" />
-<!--[if lt IE 9]>
-<script src="http://richb.rice.edu/wp-content/themes/tiny-forge/js/html5.js" type="text/javascript"></script>
-<![endif]-->
-<meta name='robots' content='max-image-preview:large' />
-<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel="alternate" type="application/rss+xml" title=" &raquo; Feed" href="http://richb.rice.edu/feed/" />
-<link rel="alternate" type="application/rss+xml" title=" &raquo; Comments Feed" href="http://richb.rice.edu/comments/feed/" />
-<script type="text/javascript">
-window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/richb.blogs.rice.edu\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1.1"}};
-/*! This file is auto-generated */
-!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
-</script>
-<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 0.07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-	<link rel='stylesheet' id='wp-block-library-css' href='http://richb.rice.edu/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1' type='text/css' media='all' />
-<link rel='stylesheet' id='classic-theme-styles-css' href='http://richb.rice.edu/wp-includes/css/classic-themes.min.css?ver=1' type='text/css' media='all' />
-<style id='global-styles-inline-css' type='text/css'>
-body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}
-.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='tinyforge-fonts-css' href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
-<link rel='stylesheet' id='tinyforge-style-css' href='http://richb.rice.edu/wp-content/themes/tiny-forge/style.css?ver=6.1.1' type='text/css' media='all' />
-<!--[if lt IE 9]>
-<link rel='stylesheet' id='tinyforge-ie-css' href='http://richb.rice.edu/wp-content/themes/tiny-forge/css/ie.css?ver=20121010' type='text/css' media='all' />
-<![endif]-->
-<link rel='stylesheet' id='elusive-iconfont-style-css' href='http://richb.rice.edu/wp-content/themes/tiny-forge/css/elusive-webfont.css?ver=1.0' type='text/css' media='all' />
-<script type='text/javascript' id='jquery-core-js-extra'>
-/* <![CDATA[ */
-var ajaxurl = "https:\/\/richb.rice.edu\/wp-admin\/admin-ajax.php";
-var msreader_featured_posts = {"saving":"Saving...","post_featured":"This post is featured","feature":"Feature","unfeature":"Unfeature"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='http://richb.rice.edu/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script>
-<script type='text/javascript' src='http://richb.rice.edu/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
-<link rel="https://api.w.org/" href="http://richb.blogs.rice.edu/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://richb.rice.edu/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://richb.blogs.rice.edu/wp-includes/wlwmanifest.xml" />
-<meta name="generator" content="Rice University Blogs" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111713571-1"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+  		gtag('config', 'UA-111713571-1');
+	</script>
 
-<link rel="shortcut icon" href="/?ver=1584641406" />
-        <script type="text/javascript">
-            var jQueryMigrateHelperHasSentDowngrade = false;
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-			window.onerror = function( msg, url, line, col, error ) {
-				// Break out early, do not processing if a downgrade reqeust was already sent.
-				if ( jQueryMigrateHelperHasSentDowngrade ) {
-					return true;
-                }
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- Custom styles for this template -->
+	<link href="jumbotron.css" rel="stylesheet">
+	<script src="js/main.js"></script>
+  <script src="js/scroll.js"></script>
+</head>
 
-				var xhr = new XMLHttpRequest();
-				var nonce = '7238ba635d';
-				var jQueryFunctions = [
-					'andSelf',
-					'browser',
-					'live',
-					'boxModel',
-					'support.boxModel',
-					'size',
-					'swap',
-					'clean',
-					'sub',
-                ];
-				var match_pattern = /\)\.(.+?) is not a function/;
-                var erroredFunction = msg.match( match_pattern );
+<title>Shuang Li</title>
 
-                // If there was no matching functions, do not try to downgrade.
-                if ( typeof erroredFunction !== 'object' || typeof erroredFunction[1] === "undefined" || -1 === jQueryFunctions.indexOf( erroredFunction[1] ) ) {
-                    return true;
-                }
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="Home">
+		<a class="navbar-brand" href="#Home">Shuang Li</a>
 
-                // Set that we've now attempted a downgrade request.
-                jQueryMigrateHelperHasSentDowngrade = true;
+		<div class="collapse navbar-collapse" id="navbarToggle">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#Home">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Publications">Publications</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Contact">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="http://accessibility.mit.edu" target="_blank">Accessibility</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
-				xhr.open( 'POST', 'https://richb.rice.edu/wp-admin/admin-ajax.php' );
-				xhr.setRequestHeader( 'Content-Type', 'application/x-www-form-urlencoded' );
-				xhr.onload = function () {
-					var response,
-                        reload = false;
-
-					if ( 200 === xhr.status ) {
-                        try {
-                        	response = JSON.parse( xhr.response );
-
-                        	reload = response.data.reload;
-                        } catch ( e ) {
-                        	reload = false;
-                        }
-                    }
-
-					// Automatically reload the page if a deprecation caused an automatic downgrade, ensure visitors get the best possible experience.
-					if ( reload ) {
-						location.reload();
-                    }
-				};
-
-				xhr.send( encodeURI( 'action=jquery-migrate-downgrade-version&_wpnonce=' + nonce ) );
-
-				// Suppress error alerts in older browsers
-				return true;
-			}
-        </script>
-
-							<!-- Google Analytics tracking code output by Beehive Analytics Pro -->
-						<script async src="https://www.googletagmanager.com/gtag/js?id=UA-63982340-1&l=beehiveDataLayer"></script>
-		<script>
-						window.beehiveDataLayer = window.beehiveDataLayer || [];
-			function gaplusu() {beehiveDataLayer.push(arguments);}
-			gaplusu('js', new Date())
-						gaplusu('config', 'UA-63982340-1', {
-				'anonymize_ip': false,
-				'allow_google_signals': false,
-			})
-					</script>
-		<style type="text/css">
-/* <![CDATA[ */
-img.latex { vertical-align: middle; border: none; }
-/* ]]> */
-</style>
-	<style type="text/css" id="tinyforge-header-css">
-			.site-title,
-		.site-description {
-			position: absolute;
-			clip: rect(1px 1px 1px 1px); /* IE7 */
-			clip: rect(1px, 1px, 1px, 1px);
-		}
-		</style>
-	<style type="text/css">#wp-admin-bar-abm-login{display:block!important}body .wp-video-shortcode video,body video.wp-video-shortcode{margin:0;padding:0;background:0 0;border:none;box-shadow:none;min-width:0;height:auto;min-height:0}.screen-reader-text:not(button){clip:rect(1px,1px,1px,1px);position:absolute!important;height:1px;width:1px;overflow:hidden}</style></head>
-
-<body class="home blog full-width custom-font-enabled single-author">
-
-<noscript>
-	<div id="no-javascript">
-		Advanced features of this website require that you enable JavaScript in your browser. Thank you!	</div>
-</noscript>
-
-<div id="page" class="hfeed site">
-	<header id="masthead" class="site-header" role="banner">
-					<div class="site-branding" itemscope itemtype="http://schema.org/WPHeader">
-				<div id="site-logo"><a href="http://richb.rice.edu/" title="" rel="home"><img src="https://richb.blogs.rice.edu/files/2021/07/richbHeaderFont2.jpg" alt="" id="site-logo-image"></a></div>
-				<div id="site-title-wrapper">
-					<h1 class="site-title"><a href="http://richb.rice.edu/" title="" rel="home"></a></h1>
-					<h2 class="site-description"></h2>
-				</div><!-- #site-title-wrapper -->
+	<!-- <img class="img-responsive img-rounded" src="files/experience/shuang4_circle.jpg" alt="" style="max-width: 240px; border:1px solid black"><br> -->
+	<div class="container" style="padding-top: 20px; font-size: 17px; width: 1080px">
+		<div class="row">
+			<div class="col-md-3", style="padding-right: 40px; padding-top: 25px">
+				<!-- <img class="img-responsive img-rounded" src="files/experience/shuang4_circle.jpg" alt="" style="max-width: 240px; solid black"><br> -->
+				<!-- <img class="img-responsive img-rounded" src="files/experience/shuang4.jpg" alt="" style="max-width: 220px; solid black"><br> -->
+				<img class="img-responsive img-rounded" src="files/experience/shuangli-photo.JPG" alt="" style="max-width: 220px; solid black"><br>
 			</div>
-				
-		<nav id="site-navigation" class="main-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-			<h1 class="menu-toggle">Menu</h1>
-			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
-			<div class="menu-menu-1-container"><ul id="menu-menu-1" class="nav-menu"><li id="menu-item-1616" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1616"><a href="http://richb.blogs.rice.edu/">Home</a></li>
-<li id="menu-item-1617" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1617"><a href="http://richb.rice.edu/biography/">Bio</a></li>
-<li id="menu-item-1618" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1618"><a href="http://richb.rice.edu/open-ed/">Open Ed</a>
-<ul class="sub-menu">
-	<li id="menu-item-1628" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1628"><a href="http://richb.rice.edu/open-ed/ted-talk/">TED Talk and Videos</a></li>
-	<li id="menu-item-1629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1629"><a href="http://richb.rice.edu/open-ed/writings/">Writing</a></li>
-	<li id="menu-item-1630" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1630"><a href="http://richb.rice.edu/open-ed/press/">Press</a></li>
-</ul>
-</li>
-<li id="menu-item-1740" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1740"><a href="http://richb.rice.edu/signal-processing/">Signal Processing | Machine Learning</a>
-<ul class="sub-menu">
-	<li id="menu-item-2058" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2058"><a href="http://dsp.rice.edu">Rice DSP Group</a></li>
-	<li id="menu-item-2052" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2052"><a href="http://machinelearning.rice.edu">Machine Learning @ Rice</a></li>
-	<li id="menu-item-1622" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1622"><a href="http://richb.rice.edu/signal-processing/papers/">Papers</a></li>
-	<li id="menu-item-1624" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1624"><a href="http://richb.rice.edu/signal-processing/research-resources/">Graduate Student Resources</a></li>
-	<li id="menu-item-1625" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1625"><a href="http://richb.rice.edu/signal-processing/compressive-sensing-resources/">Compressive Sensing Resources</a></li>
-	<li id="menu-item-1623" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1623"><a href="http://richb.rice.edu/signal-processing/press/">Press</a></li>
-</ul>
-</li>
-<li id="menu-item-1619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1619"><a href="http://richb.rice.edu/people/">People</a>
-<ul class="sub-menu">
-	<li id="menu-item-1631" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1631"><a href="http://richb.rice.edu/positions/">Open Positions</a></li>
-</ul>
-</li>
-<li id="menu-item-1626" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1626"><a href="http://richb.rice.edu/speaking/">Talks</a></li>
-<li id="menu-item-1627" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1627"><a href="http://richb.rice.edu/teaching/">Teaching</a></li>
-<li id="menu-item-2048" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2048"><a href="http://richb.rice.edu/contact/">Contact</a></li>
-</ul></div>		</nav><!-- #site-navigation -->
 
-				<!-- Custom Header - Start -->
-														<!-- Custom Header - End -->
 
-	</header><!-- #masthead -->
+			<div class="col-md-4", style="padding-right: 40px; padding-top: 25px">
+				<h2>Shuang Li</h2>
+				<p>
+					Fifth-year Ph.D. <br>
+					MIT EECS<br>
+					Computer Science & Artificial Intelligence Laboratory<br>
+					Email: lishuang [at] mit (dot) edu<br><br>
+					<a href="https://scholar.google.com/citations?user=auA1nNAAAAAJ" target="_blank">Google Scholar</a> /
+					<a href="https://github.com/ShuangLI59" target="_blank">GitHub</a> /
+					<a href="https://twitter.com/ShuangL13799063" target="_blank">Twitter</a>
+				</p>
+			</div>
 
-	<div id="main" class="wrapper">
-	<div id="primary" class="site-content">
-		<div id="content" role="main">
-		
-										
-	<article id="post-2546" class="post-2546 post type-post status-publish format-standard hentry category-uncategorized" itemscope itemtype="http://schema.org/Article">
-				<header class="entry-header">
-						<h1 class="entry-title" itemprop="headline">
-				<a href="http://richb.rice.edu/2023/04/13/30-students-in-30-years/" rel="bookmark" itemprop="url">30 Students in 30 Years</a>
-							</h1>
-					</header><!-- .entry-header -->
-
-				<div class="entry-content" itemprop="articleBody">
-			<p><a href="https://eceweb.rice.edu/news/richard-baraniuk-guides-30-phd-and-postdoc-alumni-faculty-roles-over-30-years" target="_blank" rel="noopener"><img decoding="async" class="aligncenter size-large wp-image-2548" src="https://richb.blogs.rice.edu/files/2023/04/richb30-1024x888.jpg" alt="" width="625" height="542" srcset="http://richb.rice.edu/files/2023/04/richb30-1024x888.jpg 1024w, http://richb.rice.edu/files/2023/04/richb30-300x260.jpg 300w, http://richb.rice.edu/files/2023/04/richb30-768x666.jpg 768w, http://richb.rice.edu/files/2023/04/richb30-960x832.jpg 960w, http://richb.rice.edu/files/2023/04/richb30.jpg 1068w" sizes="(max-width: 625px) 100vw, 625px" /></a></p>
-					</div><!-- .entry-content -->
-		
-		<footer class="entry-meta">
-									Posted in <span itemprop="articleSection"><a href="http://richb.rice.edu/category/uncategorized/" rel="category tag">Uncategorized</a></span> on <a href="http://richb.rice.edu/2023/04/13/30-students-in-30-years/" title="3:39 pm" rel="bookmark"><time class="entry-date updated" datetime="2023-04-13T15:39:28-05:00" itemprop="datePublished">April 13, 2023</time></a><span class="by-author"> by <span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a class="url fn n" href="http://richb.rice.edu/author/jkh6/" title="View all posts by jkh6" rel="author" itemprop="url">jkh6</a></span></span></span>.									
-					</footer><!-- .entry-meta -->
-	</article><!-- #post -->
-							
-	<article id="post-2534" class="post-2534 post type-post status-publish format-standard hentry category-uncategorized" itemscope itemtype="http://schema.org/Article">
-				<header class="entry-header">
-						<h1 class="entry-title" itemprop="headline">
-				<a href="http://richb.rice.edu/2023/01/21/two-notable-papers-at-iclr-2023/" rel="bookmark" itemprop="url">Two &#8220;Notable&#8221; Papers at ICLR 2023</a>
-							</h1>
-					</header><!-- .entry-header -->
-
-				<div class="entry-content" itemprop="articleBody">
-			<p><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-1503" style="box-shadow: 0 0 0 rgba(0,0,0,0);" src="https://digitalsignalprocessing.blogs.rice.edu/files/2023/01/iclr.png" alt="" width="394" height="128" /></p>
-<p>Two DSP group papers have been accepted as "Notable - Top 25%" papers for the <a href="https://iclr.cc/Conferences/2023" target="_blank" rel="noopener"><strong>International Conference on Learning Representations</strong> (ICLR)</a> 2023 in Kigali, Rwanda</p>
-<ul>
-<li>"<a href="https://tanmnguyen89.github.io/Primal_Dual_Transformers.pdf" target="_blank" rel="noopener"><strong>A Primal-Dual Framework for Transformers and Neural Networks</strong></a>," by <a href="https://tanmnguyen89.github.io/" target="_blank" rel="noopener">T. M. Nguyen</a>, T. Nguyen, N. Ho, A. L. Bertozzi, <a href="https://richb.rice.edu" target="_blank" rel="noopener">R. G. Baraniuk</a>, and S. Osher</li>
-<li>"<a href="https://arxiv.org/abs/2208.11126" target="_blank" rel="noopener"><strong>Retrieval-based Controllable Molecule Generation</strong></a>," by <a href="https://zw16.web.rice.edu/" target="_blank" rel="noopener">Jack Wang</a>, W. Nie, Z. Qiao, C. Xiao, <a href="https://richb.rice.edu" target="_blank" rel="noopener">R. G. Baraniuk</a>, and A. Anandkumar</li>
-</ul>
-<p>Abstracts below.</p>
-<p style="text-align: center;"><strong>Retrieval-based Controllable Molecule Generation</strong></p>
-<p><img decoding="async" loading="lazy" class="wp-image-1531 size-large aligncenter" src="https://digitalsignalprocessing.blogs.rice.edu/files/2023/01/model_illustration_v3-2-1-1024x375.jpg" alt="" width="625" height="229" /></p>
-<p style="text-align: left;">Generating new molecules with specified chemical and biological properties via generative models has emerged as a promising direction for drug discovery. However, existing methods require extensive training/fine-tuning with a large dataset, often unavailable in real-world generation tasks. In this work, we propose a new retrieval-based framework for controllable molecule generation. We use a small set of exemplar molecules, i.e., those that (partially) satisfy the design criteria, to steer the pre-trained generative model towards synthesizing molecules that satisfy the given design criteria. We design a retrieval mechanism that retrieves and fuses the exemplar molecules with the input molecule, which is trained by a new self-supervised objective that predicts the nearest neighbor of the input molecule. We also propose an iterative refinement process to dynamically update the generated molecules and retrieval database for better generalization. Our approach is agnostic to the choice of generative models and requires no task-specific fine-tuning. On various tasks ranging from simple design criteria to a challenging real-world scenario for designing lead compounds that bind to the SARS-CoV-2 main protease, we demonstrate our approach extrapolates well beyond the retrieval database, and achieves better performance and wider applicability than previous methods.</p>
-<p style="text-align: center;"><strong>A Primal-Dual Framework for Transformers and Neural Networks</strong></p>
-<p>Self-attention is key to the remarkable success of transformers in sequence modeling tasks, including many applications in natural language processing and computer vision. Like neural network layers, these attention mechanisms are often developed by heuristics and experience. To provide a principled framework for constructing attention layers in transformers, we show that the self-attention corresponds to the support vector expansion derived from a support vector regression problem, whose primal formulation has the form of a neural network layer. Using our framework, we derive popular attention layers used in practice and propose two new attentions: 1) the Batch Normalized Attention (Attention-BN) derived from the batch normalization layer and 2) the Attention with Scaled Head (Attention-SH) derived from using less training data to fit the SVR model. We empirically demonstrate the advantages of the Attention-BN and Attention-SH in reducing head redundancy, increasing the model’s accuracy, and improving the model’s efficiency in a variety of practical applications including image and time-series classification.</p>
-					</div><!-- .entry-content -->
-		
-		<footer class="entry-meta">
-									Posted in <span itemprop="articleSection"><a href="http://richb.rice.edu/category/uncategorized/" rel="category tag">Uncategorized</a></span> on <a href="http://richb.rice.edu/2023/01/21/two-notable-papers-at-iclr-2023/" title="7:26 pm" rel="bookmark"><time class="entry-date updated" datetime="2023-01-21T19:26:58-06:00" itemprop="datePublished">January 21, 2023</time></a><span class="by-author"> by <span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a class="url fn n" href="http://richb.rice.edu/author/jkh6/" title="View all posts by jkh6" rel="author" itemprop="url">jkh6</a></span></span></span>.									
-					</footer><!-- .entry-meta -->
-	</article><!-- #post -->
-							
-	<article id="post-2530" class="post-2530 post type-post status-publish format-standard hentry category-uncategorized" itemscope itemtype="http://schema.org/Article">
-				<header class="entry-header">
-						<h1 class="entry-title" itemprop="headline">
-				<a href="http://richb.rice.edu/2023/01/21/machine-learning-privacy-work-to-appear-at-aistats/" rel="bookmark" itemprop="url">Machine Learning Privacy Work to Appear at AISTATS 2023</a>
-							</h1>
-					</header><!-- .entry-header -->
-
-				<div class="entry-content" itemprop="articleBody">
-			<p><img decoding="async" loading="lazy" class="aligncenter wp-image-1055" style="box-shadow: 0 0 0 rgba(0,0,0,0);" src="https://digitalsignalprocessing.blogs.rice.edu/files/2020/01/AISTATSlogo.jpg" alt="" width="246" height="133" />"<strong>A Blessing of Dimensionality in Membership Inference through Regularization</strong>" by DSP group members <a href="https://tanjasper.github.io/" target="_blank" rel="noopener">Jasper Tan</a>, <a href="https://dlej.net/" target="_blank" rel="noopener">Daniel LeJeune</a>, <a href="https://scholar.google.com/citations?user=gLO_20kAAAAJ&amp;hl=en" target="_blank" rel="noopener">Blake Mason</a>, <a href="https://scholar.google.com/citations?user=cCUHSdkAAAAJ&amp;hl=en" target="_blank" rel="noopener">Hamid Javadi</a>, and <a href="https://richb.rice.edu" target="_blank" rel="noopener">Richard Baraniuk</a> has been accepted for the <a href="http://aistats.org/aistats2023/" target="_blank" rel="noopener"><strong>International Conference on Artificial Intelligence and Statistics</strong></a> (AISTATS) in Valencia, Spain, April 2023.</p>
-					</div><!-- .entry-content -->
-		
-		<footer class="entry-meta">
-									Posted in <span itemprop="articleSection"><a href="http://richb.rice.edu/category/uncategorized/" rel="category tag">Uncategorized</a></span> on <a href="http://richb.rice.edu/2023/01/21/machine-learning-privacy-work-to-appear-at-aistats/" title="7:26 pm" rel="bookmark"><time class="entry-date updated" datetime="2023-01-21T19:26:22-06:00" itemprop="datePublished">January 21, 2023</time></a><span class="by-author"> by <span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a class="url fn n" href="http://richb.rice.edu/author/jkh6/" title="View all posts by jkh6" rel="author" itemprop="url">jkh6</a></span></span></span>.									
-					</footer><!-- .entry-meta -->
-	</article><!-- #post -->
-							
-	<article id="post-2502" class="post-2502 post type-post status-publish format-standard hentry category-uncategorized" itemscope itemtype="http://schema.org/Article">
-				<header class="entry-header">
-						<h1 class="entry-title" itemprop="headline">
-				<a href="http://richb.rice.edu/2022/12/13/ieee-sps-norbert-wiener-society-award/" rel="bookmark" itemprop="url">IEEE SPS Norbert Wiener Society Award</a>
-							</h1>
-					</header><!-- .entry-header -->
-
-				<div class="entry-content" itemprop="articleBody">
-			<p><strong><img decoding="async" loading="lazy" class="alignleft wp-image-2510" style="box-shadow: 0 0 0 rgba(0,0,0,0);" src="https://richb.blogs.rice.edu/files/2022/12/SPS_Logo_Color_RGB-300x188.jpeg" alt="" width="250" height="157" srcset="http://richb.rice.edu/files/2022/12/SPS_Logo_Color_RGB-300x188.jpeg 300w, http://richb.rice.edu/files/2022/12/SPS_Logo_Color_RGB-1024x641.jpeg 1024w, http://richb.rice.edu/files/2022/12/SPS_Logo_Color_RGB-768x481.jpeg 768w, http://richb.rice.edu/files/2022/12/SPS_Logo_Color_RGB-960x601.jpeg 960w, http://richb.rice.edu/files/2022/12/SPS_Logo_Color_RGB.jpeg 1531w" sizes="(max-width: 250px) 100vw, 250px" />Richard Baraniuk</strong> has been selected for the <a href="https://signalprocessingsociety.org/community-involvement/awards-submit-award-nomination" target="_blank" rel="noopener"><strong>2022 IEEE SPS Norbert Wiener Society Award</strong></a> "for fundamental contributions to sparsity-based signal processing and pioneering broad dissemination of open educational resources".  The Society Award honors outstanding technical contributions in a field within the scope of the IEEE Signal Processing Society and outstanding leadership in that field (<a href="https://signalprocessingsociety.org/sites/default/files/uploads/community_involvement/awards/Society_Award.pdf" target="_blank" rel="noopener">list of previous recipients</a>).</p>
-					</div><!-- .entry-content -->
-		
-		<footer class="entry-meta">
-									Posted in <span itemprop="articleSection"><a href="http://richb.rice.edu/category/uncategorized/" rel="category tag">Uncategorized</a></span> on <a href="http://richb.rice.edu/2022/12/13/ieee-sps-norbert-wiener-society-award/" title="2:53 pm" rel="bookmark"><time class="entry-date updated" datetime="2022-12-13T14:53:59-06:00" itemprop="datePublished">December 13, 2022</time></a><span class="by-author"> by <span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a class="url fn n" href="http://richb.rice.edu/author/jkh6/" title="View all posts by jkh6" rel="author" itemprop="url">jkh6</a></span></span></span>.									
-					</footer><!-- .entry-meta -->
-	</article><!-- #post -->
-							
-	<article id="post-2434" class="post-2434 post type-post status-publish format-standard hentry category-uncategorized" itemscope itemtype="http://schema.org/Article">
-				<header class="entry-header">
-						<h1 class="entry-title" itemprop="headline">
-				<a href="http://richb.rice.edu/2022/11/27/why-some-deep-networks-are-easier-to-optimize-than-others/" rel="bookmark" itemprop="url">Why Some Deep Networks are Easier to Optimize Than Others</a>
-							</h1>
-					</header><!-- .entry-header -->
-
-				<div class="entry-content" itemprop="articleBody">
-			<p><span dir="ltr" role="presentation">"<strong>Singular Value Perturbation and Deep Network Optimization</strong>", <a href="http://rudolf.riedi.home.hefr.ch/" target="_blank" rel="noopener">Rudolf H. Riedi</a>, <a href="https://scholar.google.com/citations?user=S1x_xqcAAAAJ&amp;hl=en" target="_blank" rel="noopener">Randall Balestriero</a>, and <a href="https://richb.rice.edu" target="_blank" rel="noopener">Richard G. Baraniuk</a>, <a href="https://link.springer.com/content/pdf/10.1007/s00365-022-09601-5.pdf" target="_blank" rel="noopener"><em>Constructive Approximation</em></a>, 27 November 2022 (also arXiv preprint <a href="https://arxiv.org/abs/2203.03099" target="_blank" rel="noopener">2203.03099</a>, 7 March 2022)</span></p>
-<p>Deep learning practitioners know that ResNets and DenseNets are much preferred over ConvNets, because empirically their gradient descent learning converges faster and more stably to a better solution.  In other words, it is not <em>what</em> a deep network can approximate that matters, but rather <em>how it learns</em> to approximate. Empirical studies have indicated that this is because the so-called <em><strong>loss landscape</strong></em> of the objective function navigated by gradient descent as it optimizes the deep network parameters is much smoother for ResNets and DenseNets as compared to ConvNets (see Figure 1 from <a href="https://arxiv.org/abs/1712.09913" target="_blank" rel="noopener">Tom Goldstein</a>'s group below). However, to date there has been no analytical work in this direction.</p>
-<p><img decoding="async" loading="lazy" class="aligncenter wp-image-2436" style="box-shadow: 0 0 0 rgba(0,0,0,0);" src="https://richb.blogs.rice.edu/files/2022/02/losslandscape.jpg" alt="" width="589" height="312" srcset="http://richb.rice.edu/files/2022/02/losslandscape.jpg 1768w, http://richb.rice.edu/files/2022/02/losslandscape-300x159.jpg 300w, http://richb.rice.edu/files/2022/02/losslandscape-1024x542.jpg 1024w, http://richb.rice.edu/files/2022/02/losslandscape-768x407.jpg 768w, http://richb.rice.edu/files/2022/02/losslandscape-1536x813.jpg 1536w, http://richb.rice.edu/files/2022/02/losslandscape-960x508.jpg 960w" sizes="(max-width: 589px) 100vw, 589px" /></p>
-<p>Building on our earlier work connecting deep networks with <a href="https://arxiv.org/abs/1805.06576" target="_blank" rel="noopener">continuous piecewise-affine splines</a>, we develop an exact local linear representation of a deep network layer for a family of modern deep networks that includes ConvNets at one end of a spectrum and networks with skip connections, such as ResNets and DenseNets, at the other. <em><strong>For tasks that optimize the squared-error loss, we prove that the optimization loss surface of a modern deep network is piecewise quadratic in the parameters, with local shape governed by the singular values of a matrix that is a function of the local linear representation</strong></em>. We develop new perturbation results for how the singular values of matrices of this sort behave as we add a fraction of the identity and multiply by certain diagonal matrices. <em><strong>A direct application of our perturbation results explains analytically why a network with skip connections (e.g., ResNet or DenseNet) is easier to optimize than a ConvNet: thanks to its more stable singular values and smaller condition number, the local loss surface of a network with skip connections is less erratic, less eccentric, and features local minima that are more accommodating to gradient-based optimization</strong></em>. Our results also shed new light on the impact of different nonlinear activation functions on a deep network's singular values, regardless of its architecture.</p>
-					</div><!-- .entry-content -->
-		
-		<footer class="entry-meta">
-									Posted in <span itemprop="articleSection"><a href="http://richb.rice.edu/category/uncategorized/" rel="category tag">Uncategorized</a></span> on <a href="http://richb.rice.edu/2022/11/27/why-some-deep-networks-are-easier-to-optimize-than-others/" title="10:55 am" rel="bookmark"><time class="entry-date updated" datetime="2022-11-27T10:55:49-06:00" itemprop="datePublished">November 27, 2022</time></a><span class="by-author"> by <span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a class="url fn n" href="http://richb.rice.edu/author/jkh6/" title="View all posts by jkh6" rel="author" itemprop="url">jkh6</a></span></span></span>.									
-					</footer><!-- .entry-meta -->
-	</article><!-- #post -->
-							
-	<article id="post-2472" class="post-2472 post type-post status-publish format-standard hentry category-uncategorized" itemscope itemtype="http://schema.org/Article">
-				<header class="entry-header">
-						<h1 class="entry-title" itemprop="headline">
-				<a href="http://richb.rice.edu/2022/08/12/openstax-to-publish-best-selling-organic-chemistry-textbook/" rel="bookmark" itemprop="url">OpenStax to Publish Best Selling Organic Chemistry Textbook</a>
-							</h1>
-					</header><!-- .entry-header -->
-
-				<div class="entry-content" itemprop="articleBody">
-			<p><img decoding="async" loading="lazy" class="alignleft wp-image-2474" src="https://richb.blogs.rice.edu/files/2022/08/orgo.jpg" alt="" width="195" height="252" srcset="http://richb.rice.edu/files/2022/08/orgo.jpg 960w, http://richb.rice.edu/files/2022/08/orgo-232x300.jpg 232w, http://richb.rice.edu/files/2022/08/orgo-791x1024.jpg 791w, http://richb.rice.edu/files/2022/08/orgo-768x994.jpg 768w" sizes="(max-width: 195px) 100vw, 195px" /></p>
-<p>&nbsp;</p>
-<p><a href="https://www.forbes.com/sites/dereknewton/2022/08/11/this-textbook-deal-could-change-education-publishing" target="_blank" rel="noopener">This Textbook Deal Could Change Educational Publishing</a>, Forbes, 11 August 2022</p>
-<p><a href="https://www.insidehighered.com/news/2022/08/11/popular-chemistry-textbooks-new-edition-will-be-free" target="_blank" rel="noopener">A Best Selling Textbook is Now Free</a>, Inside Higher Ed 11 August 2022</p>
-<p>&nbsp;</p>
-					</div><!-- .entry-content -->
-		
-		<footer class="entry-meta">
-									Posted in <span itemprop="articleSection"><a href="http://richb.rice.edu/category/uncategorized/" rel="category tag">Uncategorized</a></span> on <a href="http://richb.rice.edu/2022/08/12/openstax-to-publish-best-selling-organic-chemistry-textbook/" title="10:41 am" rel="bookmark"><time class="entry-date updated" datetime="2022-08-12T10:41:09-05:00" itemprop="datePublished">August 12, 2022</time></a><span class="by-author"> by <span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a class="url fn n" href="http://richb.rice.edu/author/jkh6/" title="View all posts by jkh6" rel="author" itemprop="url">jkh6</a></span></span></span>.									
-					</footer><!-- .entry-meta -->
-	</article><!-- #post -->
-							
-	<article id="post-2452" class="post-2452 post type-post status-publish format-standard hentry category-uncategorized" itemscope itemtype="http://schema.org/Article">
-				<header class="entry-header">
-						<h1 class="entry-title" itemprop="headline">
-				<a href="http://richb.rice.edu/2022/05/28/dsp-phd-alum-amirali-aghazadeh-accepts-faculty-position-at-georgia-tech/" rel="bookmark" itemprop="url">DSP PhD Alum AmirAli Aghazadeh Accepts Faculty Position at Georgia Tech</a>
-							</h1>
-					</header><!-- .entry-header -->
-
-				<div class="entry-content" itemprop="articleBody">
-			<p><img decoding="async" loading="lazy" class="wp-image-2453 alignleft" src="https://richb.blogs.rice.edu/files/2022/05/AAA.jpeg" alt="" width="248" height="174" srcset="http://richb.rice.edu/files/2022/05/AAA.jpeg 1055w, http://richb.rice.edu/files/2022/05/AAA-300x210.jpeg 300w, http://richb.rice.edu/files/2022/05/AAA-1024x717.jpeg 1024w, http://richb.rice.edu/files/2022/05/AAA-768x538.jpeg 768w, http://richb.rice.edu/files/2022/05/AAA-960x672.jpeg 960w" sizes="(max-width: 248px) 100vw, 248px" />Rice DSP PhD <strong><a href="https://amirmohan.github.io/" target="_blank" rel="noopener">AmirAli Aghazadeh</a></strong> (PhD, 2017) has accepted an assistant professor position at <a href="http://www.gatech.edu/" target="_blank" rel="noopener">Georgia Tech</a> in the <a href="https://www.bme.gatech.edu/" target="_blank" rel="noopener">Department of Electrical and Computer Engineering</a>.  He has spent the past few years as a postdoc at Stanford University and UC-Berkeley.  AmirAli joins Rice DSP PhD alums James McClellan, Douglas Williams, Justin Romberg, Christopher Rozell, Mark Davenport, and Eva Dyer and  Rice ECE PhD alum Robert Butera.</p>
-					</div><!-- .entry-content -->
-		
-		<footer class="entry-meta">
-									Posted in <span itemprop="articleSection"><a href="http://richb.rice.edu/category/uncategorized/" rel="category tag">Uncategorized</a></span> on <a href="http://richb.rice.edu/2022/05/28/dsp-phd-alum-amirali-aghazadeh-accepts-faculty-position-at-georgia-tech/" title="4:05 pm" rel="bookmark"><time class="entry-date updated" datetime="2022-05-28T16:05:10-05:00" itemprop="datePublished">May 28, 2022</time></a><span class="by-author"> by <span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a class="url fn n" href="http://richb.rice.edu/author/jkh6/" title="View all posts by jkh6" rel="author" itemprop="url">jkh6</a></span></span></span>.									
-					</footer><!-- .entry-meta -->
-	</article><!-- #post -->
-							
-	<article id="post-2396" class="post-2396 post type-post status-publish format-standard hentry category-uncategorized" itemscope itemtype="http://schema.org/Article">
-				<header class="entry-header">
-						<h1 class="entry-title" itemprop="headline">
-				<a href="http://richb.rice.edu/2022/02/09/national-academy-of-engineering/" rel="bookmark" itemprop="url">National Academy of Engineering</a>
-							</h1>
-					</header><!-- .entry-header -->
-
-				<div class="entry-content" itemprop="articleBody">
-			<p><strong><img decoding="async" loading="lazy" class="aligncenter wp-image-2400" style="box-shadow: 0 0 0 rgba(0,0,0,0);" src="https://richb.blogs.rice.edu/files/2022/02/NAElogo.jpeg" alt="" width="360" height="80" srcset="http://richb.rice.edu/files/2022/02/NAElogo.jpeg 1008w, http://richb.rice.edu/files/2022/02/NAElogo-300x67.jpeg 300w, http://richb.rice.edu/files/2022/02/NAElogo-768x171.jpeg 768w, http://richb.rice.edu/files/2022/02/NAElogo-960x213.jpeg 960w" sizes="(max-width: 360px) 100vw, 360px" />Richard Baraniuk</strong> has been elected to the <a href="https://www.nae.edu/270224/National-Academy-of-Engineering-Elects-111-Members-and-22-International-Members" target="_blank" rel="noopener"><strong>National Academy of Engineering</strong></a> in recognition of his contributions to engineering "for the development and broad dissemination of open educational resources and for foundational contributions to compressive sensing." Election to the National Academy of Engineering is among the highest professional distinctions accorded to an engineer. More from <a href="https://news.rice.edu/news/2022/richard-baraniuk-named-national-academy-engineering" target="_blank" rel="noopener">Rice News</a>.</p>
-					</div><!-- .entry-content -->
-		
-		<footer class="entry-meta">
-									Posted in <span itemprop="articleSection"><a href="http://richb.rice.edu/category/uncategorized/" rel="category tag">Uncategorized</a></span> on <a href="http://richb.rice.edu/2022/02/09/national-academy-of-engineering/" title="12:16 pm" rel="bookmark"><time class="entry-date updated" datetime="2022-02-09T12:16:49-06:00" itemprop="datePublished">February 9, 2022</time></a><span class="by-author"> by <span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a class="url fn n" href="http://richb.rice.edu/author/jkh6/" title="View all posts by jkh6" rel="author" itemprop="url">jkh6</a></span></span></span>.									
-					</footer><!-- .entry-meta -->
-	</article><!-- #post -->
-							
-	<article id="post-2389" class="post-2389 post type-post status-publish format-standard hentry category-uncategorized" itemscope itemtype="http://schema.org/Article">
-				<header class="entry-header">
-						<h1 class="entry-title" itemprop="headline">
-				<a href="http://richb.rice.edu/2022/01/27/ams-josiah-willard-gibbs-lecture/" rel="bookmark" itemprop="url">AMS Josiah Willard Gibbs Lecture</a>
-							</h1>
-					</header><!-- .entry-header -->
-
-				<div class="entry-content" itemprop="articleBody">
-			<p><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-2390" style="box-shadow: 0 0 0 rgba(0,0,0,0);" src="https://richb.blogs.rice.edu/files/2022/02/AMSlogo.png" alt="" width="350" height="92" srcset="http://richb.rice.edu/files/2022/02/AMSlogo.png 350w, http://richb.rice.edu/files/2022/02/AMSlogo-300x79.png 300w" sizes="(max-width: 350px) 100vw, 350px" /><strong>Richard Baraniuk</strong> will present the 2023 <strong><a href="http://www.ams.org/meetings/lectures/meet-gibbs-lect" target="_blank" rel="noopener">AMS Josiah Willard Gibbs Lecture</a></strong> at the Joint Mathematics Meeting in Boston, Massachusetts in January 2023.  The first AMS Josiah Willard Gibbs Lecture was given in 1923. This public lecture is one of the signature events in the Society’s calendar.  Previous speakers have included Albert Einstein, Vannevar Bush, John von Neumann, Norbert Wiener, Kurt Gödel, Hermann Weyl, Eugene Wigner, Donald Knuth, Herb Simon, David Mumford, Ingrid Daubechies, and Claude Shannon.</p>
-					</div><!-- .entry-content -->
-		
-		<footer class="entry-meta">
-									Posted in <span itemprop="articleSection"><a href="http://richb.rice.edu/category/uncategorized/" rel="category tag">Uncategorized</a></span> on <a href="http://richb.rice.edu/2022/01/27/ams-josiah-willard-gibbs-lecture/" title="9:05 am" rel="bookmark"><time class="entry-date updated" datetime="2022-01-27T09:05:31-06:00" itemprop="datePublished">January 27, 2022</time></a><span class="by-author"> by <span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a class="url fn n" href="http://richb.rice.edu/author/jkh6/" title="View all posts by jkh6" rel="author" itemprop="url">jkh6</a></span></span></span>.									
-					</footer><!-- .entry-meta -->
-	</article><!-- #post -->
-							
-	<article id="post-2353" class="post-2353 post type-post status-publish format-standard hentry category-uncategorized" itemscope itemtype="http://schema.org/Article">
-				<header class="entry-header">
-						<h1 class="entry-title" itemprop="headline">
-				<a href="http://richb.rice.edu/2021/09/29/harold-w-mcgraw-jr-prize-in-education/" rel="bookmark" itemprop="url">Harold W. McGraw, Jr. Prize in Education</a>
-							</h1>
-					</header><!-- .entry-header -->
-
-				<div class="entry-content" itemprop="articleBody">
-			<p><img decoding="async" loading="lazy" class="aligncenter wp-image-2355" style="box-shadow: 0 0 0 rgba(0,0,0,0);" src="https://richb.blogs.rice.edu/files/2021/09/McGraw-Prize-Logo.png" alt="" width="544" height="94" srcset="http://richb.rice.edu/files/2021/09/McGraw-Prize-Logo.png 936w, http://richb.rice.edu/files/2021/09/McGraw-Prize-Logo-300x52.png 300w, http://richb.rice.edu/files/2021/09/McGraw-Prize-Logo-768x133.png 768w" sizes="(max-width: 544px) 100vw, 544px" /></p>
-<p><strong>Richard G. Baraniuk</strong>, the C. Sidney Burrus Professor of Electrical and Computer Engineering (ECE) and founding director of <a href="http://openstax.org" target="_blank" rel="noopener">OpenStax</a>, Rice’s educational technology initiative, has received the <strong><a href="https://www.gse.upenn.edu/news/press-releases/mcgraw-prize-education-2021-winners" target="_blank" rel="noopener">Harold W. McGraw, Jr. Prize in Education</a></strong>.  The award is given annually by the Harold W. McGraw, Jr. Family Foundation and the University of Pennsylvania Graduate School of Education and goes to “outstanding individuals whose accomplishments are making a difference in the lives of students.”  Baraniuk is one of the founders of the <a href="https://www.ted.com/talks/richard_baraniuk_the_birth_of_the_open_source_learning_revolution?language=en" target="_blank" rel="noopener">Open Education</a> movement that promotes the use of free and open-source-licensed Open Educational Resources. He is founder and director of OpenStax (formerly Connexions), a non-profit educational and scholarly publishing project he founded in 1999 to bring textbooks and other learning materials into the digital age.</p>
-					</div><!-- .entry-content -->
-		
-		<footer class="entry-meta">
-									Posted in <span itemprop="articleSection"><a href="http://richb.rice.edu/category/uncategorized/" rel="category tag">Uncategorized</a></span> on <a href="http://richb.rice.edu/2021/09/29/harold-w-mcgraw-jr-prize-in-education/" title="8:05 pm" rel="bookmark"><time class="entry-date updated" datetime="2021-09-29T20:05:22-05:00" itemprop="datePublished">September 29, 2021</time></a><span class="by-author"> by <span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a class="url fn n" href="http://richb.rice.edu/author/jkh6/" title="View all posts by jkh6" rel="author" itemprop="url">jkh6</a></span></span></span>.									
-					</footer><!-- .entry-meta -->
-	</article><!-- #post -->
+			<div class="col-md-4", style="padding-right: 40px; padding-top: 25px">
+                <font color="black"><b>Research Topics:</b><br>
+			  		<a>Generative Modeling</a> <br>
+                    <a>Foundation Models</a> <br>
+					<a>Embodied AI</a> <br>
+					<a>Language-Vision Understanding</a> <br>
+                    <a>Compositionality</a> <br>
+				</font>
+			</div>
 			
-					<nav id="nav-below" class="navigation" role="navigation">
-			<h3 class="assistive-text">Post navigation</h3>
-			<div class="nav-previous"><a href="http://richb.rice.edu/page/2/" ><span class="meta-nav">&larr;</span> Older posts</a></div>
-			<div class="nav-next"></div>
-		</nav><!-- #nav-below .navigation -->
-	
-		
-		</div><!-- #content -->
-	</div><!-- #primary -->
+		</div>
 
 
-		</div><!-- #main .wrapper -->
-	<footer id="colophon" class="clear" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
-	
-						<div id="footer-widgets" class="widget-area three" itemscope itemtype="http://schema.org/WPSideBar">
-					
-					
-									</div><!-- #footer-widgets -->
 			
-		<div id="site-info">
-									<!--<a href="http://your-site.com" title="Web design & programing by your credentials" rel="designer">Web development by your credentials</a> <span class="meta-separator">&bull;</span> -->
-						<span id="site-admin-link"> <a href="https://richb.blogs.rice.edu/wp-login.php?action=shibboleth">Log in</a></span>
-		</div><!-- #site-info -->
-		
-		<div id="site-generator">
-									<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform">Powered by WordPress<div class="icon-webfont icon-wordpress"></div></a>
-		</div><!-- #site-generator -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
 
-<script type='text/javascript' src='http://richb.rice.edu/wp-content/themes/tiny-forge/js/navigation.js?ver=1.0' id='tinyforge-navigation-js'></script>
+		<div class="row">
+			<div class="col-md-12">
+			<br>
+			<p>I am a fifth-year Ph.D. student at <a href="http://www.csail.mit.edu/" target="_blank">Computer Science and Artificial Intelligence Laboratory (CSAIL)</a> at  <a href="http://www.mit.edu/" target="_blank">MIT</a>, advised by Prof. <a href="http://web.mit.edu/torralba/www/" target="_blank">Antonio Torralba</a>. I also work closely with <a href="https://scholar.google.com/citations?user=Vzr1RukAAAAJ&hl=en" target="_blank">Igor Mordatch</a>.
+            My research interests lie in <b>Artificial Intelligence</b>,  <b>Computer Vision</b>, <b>Decision Making</b>, and <b>Machine Learning</b>.
+			In particular, I am interested in developing AI systems that exhibit generalization abilities to solve a wide range of tasks outside the training distribution.
+			<!-- My research spans multiple areas, including Generative Modeling and Embodied AI.  -->
+			<!-- I am interested in building intelligent agents that can continually learn and interact with the world around them. One aspect of my research is to teach AI systems to exhibit <a href="https://shuangli59.github.io/Learning-how-to-generalize/">Generalization</a> abilities. I hope my study on generalization will provide a possible solution for future AI systems to solve a wide range of real-world tasks. -->
+            </p>
+
+			</div>
+		</div>
+	</div><br>
+
+
+  <!-- News -->
+	<div class="container" style="padding-top: 20px; font-size: 17px; width: 1080px">
+		<h3 id="News" style="padding-top: 80px; margin-top: -80px;">News</h3>
+		<ul>
+			<li>
+				I am starting as an Assistant Professor at the <font color="firebrick"><b>University of Toronto</b></font> and <font color="firebrick"><b>Vector Institute</b></font> in Fall 2024!
+			</li>
+			<!-- <li>
+				We are looking for students who are interested in <font color="firebrick"><b>Generative Models</b></font> (<a href="https://energy-based-model.github.io/Compositional-Visual-Generation-with-Composable-Diffusion-Models/"><b>Composable-Diffusion</b></a>, <a href="https://composevisualrelations.github.io/"><b>Composable-EBM</b></a>), <font color="firebrick"><b>Composing Foundation Models</b></font>, and <font color="firebrick"><b>Foundation Models for Decision-Making</b></font>.
+			</li> -->
+			<!-- <li>
+				<font color="firebrick"><b>New</b></font> If you're an undergraduate or master student interested in research, please feel free to contact me. We are looking for outstanding students to engage in ongoing research projects.
+			</li> -->
+            <li>
+				A summary of our recent works on <a href="https://shuangli59.github.io/compositional-generalization/"><font color="darkblue"><b>Compositional Generalization</b>.</font></a>
+			</li>
+			<li>
+				A summary of our recent works on <a href="https://energy-based-model.github.io/Energy-based-Model-MIT/"><font color="darkblue"><b>Energy-based Models</b></font>.</a>
+			</li>
+			<li>
+                I've been selected as one of the <a href="https://risingstars.utexas.edu/" target="_blank"><font color="darkblue"><b> EECS Rising Stars 2022</b></font>.</a>
+            </li>
+            <li>
+                I've been selected as an <a href="https://icml.cc/Conferences/2022/Reviewers" target="_blank"><font color="darkblue"><b>Outstanding Reviewer for ICML 2022</b></font>.</a>
+            </li>
+			<li>
+				I've been awarded <a href="https://research.fb.com/blog/2021/04/announcing-the-recipients-of-the-2021-facebook-fellowship-awards/" target="_blank"><font color="darkblue"><b>2021 Facebook Research Fellowship</b></font></a>. Thanks, Facebook!
+			</li>
+            <li>
+				I've been awarded <a href="https://adoberesearch.ctlprojects.com/fellowship/previous-fellowship-award-winners/" target="_blank"><font color="darkblue"><b>2019 Adobe Research Fellowship</b></font></a>. Thanks, Adobe!
+			</li>
+		</ul>
+	</div><br>
+
+
+
+
+	<div class="container" style="padding-top: 20px; font-size: 17px; width: 1080px">
+		<h3 id="talks" style="padding-top: 80px; margin-top: -80px;">Research Topics:</h3>
+		We are looking for students who are interested in the following problems: <br><br>
+		<ul>
+			<li>
+				<font color="firebrick"><b>Generative Modeling</b></font>
+					<ul>
+						<b>Video Generation / Understanding</b> <br>
+						<ul>
+							References: 
+							<a href="https://runwayml.com/" target="_blank">Runway</a>,
+							<a href="https://makeavideo.studio/" target="_blank">Make-A-Video</a>
+						</ul>
+
+						<b>Image Generation / Editing </b> <br>
+						<ul>
+							References: 
+							<a href="https://github.com/Stability-AI/stablediffusion" target="_blank">Stable Diffusion</a>, Midjourney, 
+							<a href="https://energy-based-model.github.io/Compositional-Visual-Generation-with-Composable-Diffusion-Models/" target="_blank">Composable-Diffusion</a>,
+							<a href="https://composevisualrelations.github.io/" target="_blank">Composable-EBM</a>
+						</ul>
+					</ul>
+			</li>
+
+			<br>
+
+			<li>
+				<font color="firebrick"><b>Embodied AI</b></font>
+					<ul>
+						<b>Foundation Models for Decision-Making</b> <br>
+						<ul>
+							References: <br>
+							<a href="https://arxiv.org/pdf/2304.03442.pdf" target="_blank">Generative Agents: Interactive Simulacra of Human Behavior</a> <br>
+							<a href="https://fablestudio.github.io/showrunner-agents/" target="_blank">To Infinity and Beyond: SHOW-1 and Showrunner Agents in Multi-Agent Simulations</a> <br>
+							<a href="https://shuangli-project.github.io/Pre-Trained-Language-Models-for-Interactive-Decision-Making/" target="_blank">Pre-Trained Language Models (LLM) for Interactive Decision-Making</a> <br>
+						</ul>
+					</ul>
+
+					<ul>
+						<b>Virtual Environment</b>
+						<ul>
+							References:
+							<a href="http://virtual-home.org/" target="_blank">VirtualHome</a>,
+							<a href="" target="_blank">VirtualCity (Coming soon)</a>
+						</ul>
+					</ul>
+			</li>
+
+
+			<br>
+
+			<li>
+				<font color="firebrick"><b>Foundation Models</b></font>
+					<ul>
+						<b>Composing Foundation Models</b> <br>
+						<ul>
+							References: <br>
+							Through iterative refinement: <a href="https://energy-based-model.github.io/composing-pretrained-models-web/" target="_blank">Composing Ensembles of Pre-trained Models via Iterative Consensus</a> <br>
+							Through multi-agent debate: <a href="https://composable-models.github.io/llm_debate/" target="_blank">Improving Factuality and Reasoning in Language Models through Multiagent Debate</a> <br>
+							3D: <a href="https://concept-fusion.github.io/" target="_blank">ConceptFusion: Open-set Multimodal 3D Mapping</a> <br>
+						</ul>
+					</ul>
+			</li>
+
+		</ul>
+	</div><br>
+
+			<!-- <div class="col-md-4", style="padding-right: 40px; padding-top: 25px">
+                <font color="black"><b></b><br>
+			  		<a>Generative Modeling</a> <br>
+                    <a>Foundation Models</a> <br>
+					<a>Embodied AI</a> <br>
+					<a>Language-Vision Understanding</a> <br>
+                    <a>Compositional Generalization</a> <br>
+				</font>
+			</div> -->
+
+
+	
+	<div class="container" style="padding-top: 20px; font-size: 17px; width: 1080px">
+		<h3 id="talks" style="padding-top: 80px; margin-top: -80px;">Recent Talks</h3>
+		<ul>
+			<li>
+				[2023/8] Diffusion Models Course at SIGGRAPH
+			</li>
+			<li>
+				[2023/5] Invited Talk at UC Berkeley
+			</li>
+			<li>
+                [2023/4] Invited Talk at Nanyang Technological University
+            </li>
+            <li>
+                [2023/2] Invited Talk at Columbia
+            </li>
+            <li>
+				[2023/2] Invited Talk at UIUC
+			</li>
+			<li>
+				[2023/2] Invited Talk at UT Austin
+			</li>
+			<li>
+				[2022/12] Invited Talk at UC San Diego
+			</li>
+			<li>
+				[2022/11] Invited Talk at Cornell Tech
+			</li>
+			<li>
+				[2022/11] Invited Talk at UC Berkeley
+			</li>
+			<li>
+				[2022/11] Invited Talk at Stanford
+			</li>
+			<li>
+				[2022/11] Invited Talk at Northeastern
+			</li>
+		</ul>
+	</div><br>
+
+
+
+	<!-- Publications -->
+	<div class="container" style="padding-top: 20px; font-size: 17px; width: 1080px">
+		<h3 id="Datasets" style="padding-top: 80px; margin-top: -80px;">Datasets and Environments</h3>
+		<ul>
+			<li>
+				Please send email to lishuang [at] mit [dot] edu to request for the datasets.
+			</li>
+			<li>
+				<a href="http://virtual-home.org/">VirtualHome</a> multi-agent embodied environment for household activities
+			</li>
+			<li>
+				<a href="https://shuangli-project.github.io/VHICO-Dataset/">V-HICO</a> dataset for video-based human-object interaction detection
+			</li>
+			<li>
+				<a href="https://github.com/ShuangLI59/person_search">CUHK-SYSU</a> dataset for person re-identification
+			</li>
+			<li>
+				<a href="https://github.com/ShuangLI59/Person-Search-with-Natural-Language-Description">CUHK-PEDES</a> dataset for natural language based person re-identification
+			</li>
+		</ul>
+	</div><br>
+
+
+
+
+
+
+
+
+<!-- 	<div class="container" style="padding-top: 20px; font-size: 17px; width: 1080px">
+		<h3 id="Preprints" style="padding-top: 80px; margin-top: -80px;">Preprints</h3>
+
+		<hr>
+		<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/paper/23-fuse-models-3d/splash.gif" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">ConceptFusion: Open-set Multimodal 3D Mapping</font></b><br>
+				<a href="https://krrish94.github.io/" target="_blank">Krishna Murthy Jatavallabhula</a>,
+				Alihusein Kuwajerwala, Qiao Gu, Mohd Omama, Tao Chen, 
+				<a href="https://people.csail.mit.edu/lishuang/"><u><b>Shuang Li</b></u></a>,
+				Ganesh Iyer, Soroush Saryazdi, Nikhil Keetha, Ayush Tewari, Joshua B. Tenenbaum, Celso Miguel de Melo, Madhava Krishna, Liam Paull, Florian Shkurti, and Antonio Torralba
+				<br>
+				<b><a href="" target="_blank">arXiv 2023</a></b> <br>
+				<a href="https://concept-fusion.github.io/" target="_blank"> <small>[Project]</small></a>
+				<a href="https://arxiv.org/abs/2302.07241" target="_blank"> <small>[Paper]</small></a>
+				<a href="" target="_blank"> <small>[Github]</small></a>
+                </div>
+		</div><hr>
+	</div><br>
+
+ -->
+
+
+
+	<!-- Publications -->
+	<div class="container" style="padding-top: 20px; font-size: 17px; width: 1080px">
+		<h3 id="Publications" style="padding-top: 80px; margin-top: -80px;">
+			Recent Publications
+			<span style="float:right;"><a href="https://scholar.google.com/citations?user=auA1nNAAAAAJ">[Full List]</a></span>
+		</h3>
+
+
+		<div id="pubs"></div>
+
+
+		<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+
+
+		<script id="pubs_by_date" language="text">
+			<hr>
+		  	<font color="black">(* indicates equal contribution)</font>
+		  	<br><br>
+
+
+			
+
+
+
+			  <div class="row">
+				<div class="col-md-3">
+					<video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="border:1px solid black">
+                		<source src="files/paper/23-llm-debate/debate.mp4" type="video/mp4">
+            		</video>
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Improving Factuality and Reasoning in Language Models through Multiagent Debate</font></b><br>
+				<a href="https://yilundu.github.io/" target="_blank">Yilun Du</a>,
+				<a href="https://people.csail.mit.edu/lishuang/"><u><b>Shuang Li</b></u></a>,
+				<a href="https://groups.csail.mit.edu/vision/torralbalab/" target="_blank">Antonio Torralba</a>,
+				<a href="https://scholar.google.com/citations?user=rRJ9wTJMUB8C&hl=en" target="_blank">Joshua B. Tenenbaum</a>, and
+				<a href="https://scholar.google.com/citations?user=Vzr1RukAAAAJ&hl=en" target="_blank">Igor Mordatch</a>
+				<br>
+				<b><a href="https://roboticsconference.org/" target="_blank">arXiv 2023</a></b> <br>
+				<a href="https://composable-models.github.io/llm_debate/" target="_blank"> <small>[Project]</small></a>
+				<a href="https://arxiv.org/abs/2305.14325" target="_blank"> <small>[Paper]</small></a>
+				<a href="https://github.com/composable-models/llm_multiagent_debate" target="_blank"> <small>[Code]</small></a>
+                </div>
+			</div><hr>
+
+
+
+
+			<div class="row">
+				<div class="col-md-3">
+					<video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="border:1px solid black">
+                		<source src="files/paper/23-unsupervised-dm/unsup_discovery.m4v" type="video/mp4">
+            		</video>
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Unsupervised Compositional Concepts Discovery with Text-to-Image Generative Models</font></b><br>
+				<a href="https://nanliu.io/" target="_blank">Nan Liu*</a>, 
+				<a href="https://yilundu.github.io/" target="_blank">Yilun Du*</a>,
+				<a href="https://people.csail.mit.edu/lishuang/"><u><b>Shuang Li*</b></u></a>,
+				<a href="https://scholar.google.com/citations?user=rRJ9wTJMUB8C&hl=en" target="_blank">Joshua B. Tenenbaum</a>, and
+				<a href="https://groups.csail.mit.edu/vision/torralbalab/" target="_blank">Antonio Torralba</a>
+				<br>
+				<b><a href="https://iccv2023.thecvf.com/" target="_blank">ICCV 2023</a></b> <br>
+				<a href="https://energy-based-model.github.io/unsupervised-concept-discovery/" target="_blank"> <small>[Project]</small></a>
+				<a href="https://arxiv.org/abs/2306.05357.pdf" target="_blank"> <small>[Paper]</small></a>
+				<a href="https://github.com/nanlliu/Unsupervised-Compositional-Concepts-Discovery" target="_blank"> <small>[Code]</small></a>
+                </div>
+			</div><hr>
+
+
+
+
+
+			<div class="row">
+				<div class="col-md-3">
+					<video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="border:1px solid black">
+                		<source src="files/paper/23-iccv-segmentation/image1.mp4" type="video/mp4">
+            		</video>
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Open-vocabulary Panoptic Segmentation with Embedding Modulation</font></b><br>
+				<a href="https://xavierchen34.github.io/" target="_blank">Xi Chen</a>, 
+				<a href="https://people.csail.mit.edu/lishuang/"><u><b>Shuang Li</b></u></a>,
+				<a href="https://ai.meta.com/people/ser-nam-lim/" target="_blank">Ser-Nam Lim</a>,
+				<a href="https://groups.csail.mit.edu/vision/torralbalab/" target="_blank">Antonio Torralba</a>, and
+				<a href="https://hszhao.github.io/" target="_blank">Hengshuang Zhao</a>
+				<br>
+				<b><a href="https://iccv2023.thecvf.com/" target="_blank">ICCV 2023</a></b> <br>
+				<a href="https://opsnet-page.github.io/" target="_blank"> <small>[Project]</small></a>
+				<a href="https://arxiv.org/pdf/2303.11324.pdf" target="_blank"> <small>[Paper]</small></a>
+                </div>
+			</div><hr>
+
+			
+
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/paper/23-fuse-models-3d/splash.gif" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">ConceptFusion: Open-set Multimodal 3D Mapping</font></b><br>
+				<a href="https://krrish94.github.io/" target="_blank">Krishna Murthy Jatavallabhula</a>,
+				Alihusein Kuwajerwala, Qiao Gu, Mohd Omama, Tao Chen, 
+				<a href="https://people.csail.mit.edu/lishuang/"><u><b>Shuang Li</b></u></a>,
+				Ganesh Iyer, Soroush Saryazdi, Nikhil Keetha, Ayush Tewari, Joshua B. Tenenbaum, Celso Miguel de Melo, Madhava Krishna, Liam Paull, Florian Shkurti, and Antonio Torralba
+				<br>
+				<b><a href="https://roboticsconference.org/" target="_blank">RSS 2023</a></b> <br>
+				<b><a href="https://cvpr2023.thecvf.com/Conferences/2023/CallForDemos" target="_blank">CVPR 2023 Demos (and Art Gallery)</a></b> <br>
+				<b><a href="https://microsoft.github.io/robotics.pretraining.workshop.icra/" target="_blank">ICRA Pretraining for Robotics Workshop 2023</a></b> <br>
+				<a href="https://concept-fusion.github.io/" target="_blank"> <small>[Project]</small></a>
+				<a href="https://arxiv.org/abs/2302.07241" target="_blank"> <small>[Paper]</small></a>
+				<a href="https://www.youtube.com/watch?v=rkXgws8fiDs" target="_blank"> <small>[Video]</small></a>
+                </div>
+			</div><hr>
+
+
+
+
+			<div class="row">
+				<div class="col-md-3">
+					<video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="border:1px solid black">
+                		<source src="files/paper/22-compose-pretrained-models/demo-small-small.mp4" type="video/mp4">
+            		</video>
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Composing Ensembles of Pre-trained Models via Iterative Consensus</font></b><br>
+				<a href="https://people.csail.mit.edu/lishuang/"><u><b>Shuang Li</b></u></a>,
+				<a href="https://yilundu.github.io/" target="_blank">Yilun Du</a>,
+				<a href="https://scholar.google.com/citations?user=rRJ9wTJMUB8C&hl=en" target="_blank">Joshua B. Tenenbaum</a>,
+				<a href="https://groups.csail.mit.edu/vision/torralbalab/" target="_blank">Antonio Torralba</a>, and
+				<a href="https://scholar.google.com/citations?user=Vzr1RukAAAAJ&hl=en" target="_blank">Igor Mordatch</a>
+				<br>
+				<b><a href="https://iclr.cc/" target="_blank">ICLR 2023</a></b> <br>
+				<a href="https://energy-based-model.github.io/composing-pretrained-models-web/" target="_blank"> <small>[Project]</small></a>
+				<a href="https://arxiv.org/abs/2210.11522" target="_blank"> <small>[Paper]</small></a>
+				<a href="" target="_blank"> <small>[Github]</small></a>
+                </div>
+			</div><hr>
+
+
+
+
+			<div class="row">
+				<div class="col-md-3">
+					<video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="border:1px solid black">
+                		<source src="files/paper/21-virtualhome-language/vid1.mp4" type="video/mp4">
+            		</video>
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Pre-Trained Language Models for Interactive Decision-Making</font></b><br>
+				<a href="https://people.csail.mit.edu/lishuang/"><u><b>Shuang Li</b></u></a>,
+				<a href="https://people.csail.mit.edu/xavierpuig/" target="_blank">Xavier Puig</a>,
+				<a href="" target="_blank">Chris Paxton</a>,
+				<a href="https://yilundu.github.io/" target="_blank">Yilun Du</a>,
+				<a href="https://clintonjwang.github.io/" target="_blank">Clinton Wang</a>,
+				<a href="" target="_blank">Linxi Fan</a>,
+				<a href="https://taochenshh.github.io" target="_blank">Tao Chen</a>,
+				<a href="" target="_blank">De-An Huang</a>,
+				<a href="" target="_blank">Ekin Akyürek</a>, 
+				<a href="" target="_blank">Anima Anandkumar<sup>+</sup></a>,
+				<a href="" target="_blank">Jacob Andreas<sup>+</sup></a>,
+				<a href="https://scholar.google.com/citations?user=Vzr1RukAAAAJ&hl=en" target="_blank">Igor Mordatch<sup>+</sup></a>, 
+				<a href="https://groups.csail.mit.edu/vision/torralbalab/" target="_blank">Antonio Torralba<sup>+</sup></a>, and
+				<a href="" target="_blank">Yuke Zhu<sup>+</sup></a> <br>
+				Junior authors are ordered based on their contributions and senior authors<sup>+</sup> are ordered alphabetically
+				<br>
+				<b><a href="https://nips.cc/" target="_blank">NeurIPS 2022</a>, <font color="firebrick">Oral</font> </b> <br>
+				<a href="https://shuangli-project.github.io/Pre-Trained-Language-Models-for-Interactive-Decision-Making/" target="_blank"> <small>[Project]</small></a>
+				<a href="https://arxiv.org/abs/2202.01771" target="_blank"> <small>[Paper]</small></a>
+				<a href="https://github.com/ShuangLI59/Pre-Trained-Language-Models-for-Interactive-Decision-Making" target="_blank"> <small>[Code]</small></a>
+				</div>
+			</div><hr>
+
+
+
+
+
+			<div class="row">
+				<div class="col-md-3">
+					<video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="border:1px solid black">
+                		<source src="files/paper/22-compose-duffusion-model/webpage-teaser2.mp4" type="video/mp4">
+            		</video>
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Compositional Visual Generation with Composable Diffusion Models</font></b><br>
+				<a href="https://nanliu.io/" target="_blank">Nan Liu*</a>,
+				<a href="https://people.csail.mit.edu/lishuang/"><u><b>Shuang Li*</b></u></a>,
+				<a href="https://yilundu.github.io/" target="_blank">Yilun Du*</a>,
+				<a href="https://groups.csail.mit.edu/vision/torralbalab/" target="_blank">Antonio Torralba</a>, and
+				<a href="https://scholar.google.com/citations?user=rRJ9wTJMUB8C&hl=en" target="_blank">Joshua B. Tenenbaum</a>
+				(*equal contribution)
+				<br>
+				<b><a href="https://eccv2022.ecva.net/" target="_blank">ECCV 2022</a></b> <br>
+				<a href="https://energy-based-model.github.io/Compositional-Visual-Generation-with-Composable-Diffusion-Models/" target="_blank"> <small>[Project]</small></a>
+				<a href="https://arxiv.org/pdf/2206.01714.pdf" target="_blank"> <small>[Paper]</small></a>
+				<a href="https://github.com/energy-based-model/Compositional-Visual-Generation-with-Composable-Diffusion-Models-PyTorch" target="_blank"> <small>[Github]</small></a>
+				<a href="https://colab.research.google.com/github/energy-based-model/Compositional-Visual-Generation-with-Composable-Diffusion-Models-PyTorch/blob/main/notebooks/compose_glide.ipynb" target="_blank"> <small>[Colab]</small></a>
+				<a href="https://huggingface.co/spaces/Shuang59/Composable-Diffusion" target="_blank"> <small>[Demo]</small></a>
+                <br>
+                <a> Press coverage: <a href="https://news.mit.edu/2022/ai-system-makes-models-like-dall-e-2-more-creative-0908" target="_blank">MIT News</a>, <a href="https://www.csail.mit.edu/news/ai-system-makes-models-dall-e-2-more-creative" target="_blank">MIT CSAIL News</a> </a>
+                </div>
+			</div><hr>
+
+
+
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/paper/21-iclr-continual-learning/fig2.png" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Energy-Based Models for Continual Learning</font></b><br>
+				<a href="https://people.csail.mit.edu/lishuang/"><u><b>Shuang Li</b></u></a>,
+				<a href="https://yilundu.github.io/" target="_blank">Yilun Du</a>,
+				<a href="https://scholar.google.com/citations?user=3k0l15MAAAAJ&hl=en" target="_blank">Gido M. van de Ven</a>, and
+				<a href="https://scholar.google.com/citations?user=Vzr1RukAAAAJ&hl=en" target="_blank">Igor Mordatch</a>
+				<br>
+				<b><a href="https://lifelong-ml.cc/" target="_blank">CoLLAs 2022</a>, <font color="firebrick">Oral</font> </b> <br>
+				<b><a href="https://sites.google.com/view/ebm-workshop-iclr2021" target="_blank">ICLR EBM Workshop 2021</a>, <font color="firebrick">Oral</font> </b> <br>
+				<a href="https://energy-based-model.github.io/Energy-Based-Models-for-Continual-Learning/" target="_blank"> <small>[Project]</small></a>
+				<a href="https://arxiv.org/pdf/2011.12216.pdf" target="_blank"> <small>[Paper]</small></a>
+				<a href="https://github.com/ShuangLI59/ebm-continual-learning" target="_blank"> <small>[Code]</small></a>
+				</div>
+			</div><hr>
+
+
+
+
+
+		  	<div class="row">
+				<div class="col-md-3">
+					<video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="border:1px solid black">
+                		<source src="files/paper/21-neurips-compose-relation/clevr_teaser.mp4" type="video/mp4">
+            		</video>
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Learning to Compose Visual Relations</font></b><br>
+				<a href="https://nanliu.io/" target="_blank">Nan Liu*</a>,
+				<a href="https://people.csail.mit.edu/lishuang/"><u><b>Shuang Li*</b></u></a>,
+				<a href="https://yilundu.github.io/" target="_blank">Yilun Du*</a>,
+				<a href="https://scholar.google.com/citations?user=rRJ9wTJMUB8C&hl=en" target="_blank">Joshua B. Tenenbaum</a>, and
+				<a href="https://groups.csail.mit.edu/vision/torralbalab/" target="_blank">Antonio Torralba</a>
+				(*equal contribution)
+				<br>
+				<b><a href="https://neurips.cc/" target="_blank">NeurIPS 2021</a>, <font color="firebrick">Spotlight</font> </b> <br>
+				<b><a href="https://ctrlgenworkshop.github.io/accepted_papers.html" target="_blank">NeurIPS Controllable Generative Modeling Workshop 2021</a>, <font color="firebrick">Outstanding Paper Award</font> </b> <br>
+				<a href="https://composevisualrelations.github.io/" target="_blank"> <small>[Project]</small></a>
+				<a href="https://arxiv.org/abs/2111.09297" target="_blank"> <small>[Paper]</small></a>
+				<a href="https://github.com/nanlliu/compose-visual-relations" target="_blank"> <small>[Code]</small></a> <br>
+                <a> Press coverage: <a href="https://news.mit.edu/2021/ai-object-relationships-image-generation-1129" target="_blank">MIT News</a>, <a href="https://www.csail.mit.edu/news/artificial-intelligence-understands-object-relationships" target="_blank">MIT CSAIL News</a> </a>
+				</div>
+			</div><hr>
+
+
+
+			
+
+		  	<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/paper/21-nerf-dy/nerf-dy.gif" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">3D Neural Scene Representations for Visuomotor Control</font></b><br>
+				<a href="https://people.csail.mit.edu/liyunzhu/" target="_blank">Yunzhu Li*</a>,
+				<a href="https://people.csail.mit.edu/lishuang/"><u><b>Shuang Li*</b></u></a>,
+				<a href="https://vsitzmann.github.io/" target="_blank">Vincent Sitzmann</a>, 
+				<a href="https://people.csail.mit.edu/pulkitag/" target="_blank">Pulkit Agrawal</a>, and
+				<a href="https://groups.csail.mit.edu/vision/torralbalab/" target="_blank">Antonio Torralba</a>
+				(*equal contribution)
+                <br>
+				<b><a href="https://www.robot-learning.org/" target="_blank">CoRL 2021</a>, <font color="firebrick">Oral</font> </b> <br>
+				<b><a href="https://rssvlrr.github.io/" target="_blank">RSS Visual Learning and Reasoning for Robotics Workshop 2021</a></b> <br>
+				<a href="https://3d-representation-learning.github.io/nerf-dy/" target="_blank"> <small>[Project]</small></a>
+				<a href="https://arxiv.org/abs/2107.04004" target="_blank"> <small>[Paper]</small></a>
+				<a href="" target="_blank"> <small>[Code]</small></a>
+				</div>
+			</div><hr>
+
+
+
+             <div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/paper/21-iclr-watch-and-help/multiagent.gif" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Watch-And-Help: A Challenge for Social Perception and Human-AI Collaboration</font></b><br>
+				<a href="https://people.csail.mit.edu/xavierpuig/" target="_blank">Xavier Puig</a>,
+				<a href="https://www.tshu.io/" target="_blank">Tianmin Shu</a>,
+				<a href="https://people.csail.mit.edu/lishuang/"><u><b>Shuang Li</b></u></a>,
+				<a href="" target="_blank">Zilin Wang</a>,
+				<a href="https://scholar.google.com/citations?user=rRJ9wTJMUB8C&hl=en" target="_blank">Joshua B. Tenenbaum</a>, 
+				<a href="https://www.cs.utoronto.ca/~fidler/" target="_blank">Sanja Fidler</a>, and
+				<a href="https://groups.csail.mit.edu/vision/torralbalab/" target="_blank">Antonio Torralba</a>
+				<br>
+				<b><a href="https://iclr.cc" target="_blank">ICLR 2021</a>, <font color="firebrick">Spotlight</font> </b> <br>
+				<b><a href="https://www.cooperativeai.com/neurips-2020" target="_blank">NeurIPS Cooperative AI Workshop 2020</a>, <font color="firebrick">Best Paper Award</font> </b> <br>
+				<a href="http://virtual-home.org/watch_and_help/" target="_blank"> <small>[Project]</small></a>
+				<a href="https://arxiv.org/pdf/2010.09890.pdf" target="_blank"> <small>[Paper]</small></a>
+				<a href="https://github.com/xavierpuigf/watch_and_help" target="_blank"> <small>[Code]</small></a>
+				<a href="https://www.youtube.com/watch?v=lrB4K2i8xPI&feature=youtu.be" target="_blank"> <small>[Video]</small></a>
+				<a href="http://virtual-home.org/" target="_blank"> <small>[VirtualHome]</small></a>
+				</div>
+			</div><hr>
+
+
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/paper/20-neurips-ebm-compositional/comp-face.gif" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Compositional Visual Generation with Energy Based Models</font></b><br>
+				<a href="https://yilundu.github.io/" target="_blank">Yilun Du</a>,
+				<a href="https://people.csail.mit.edu/lishuang/"><u><b>Shuang Li</b></u></a>, and
+				<a href="https://scholar.google.com/citations?user=Vzr1RukAAAAJ&hl=en" target="_blank">Igor Mordatch</a>
+				<br>
+				<b><a href="https://neurips.cc/" target="_blank">NeurIPS 2020</a>, <font color="firebrick">Spotlight</font> </b> <br>
+				<a href="https://energy-based-model.github.io/compositional-generation-inference/" target="_blank"> <small>[Project]</small></a>
+				<a href="https://arxiv.org/pdf/2004.06030.pdf" target="_blank"> <small>[Paper]</small></a>
+				<a href="https://github.com/yilundu/ebm_compositionality" target="_blank"> <small>[Code]</small></a>
+				</div>
+			</div><hr>
+
+
+
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/paper/17-iccv-pose/17-iccv-pose-v1.png" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Learning Feature Pyramids for Human Pose Estimation</font></b><br>
+				<a href="https://scholar.google.com/citations?user=6QQX88UAAAAJ&hl=en" target="_blank">Wei Yang</a>,
+				<a href="https://people.csail.mit.edu/lishuang/"><u><b>Shuang Li</b></u></a>,
+				<a href="https://scholar.google.com/citations?user=pw_0Z_UAAAAJ&hl=en" target="_blank">Wanli Ouyang</a>,
+				<a href="https://scholar.google.com/citations?user=BN2Ze-QAAAAJ&hl=en" target="_blank">Hongsheng Li</a>, and
+				<a href="https://scholar.google.com/citations?user=-B5JgjsAAAAJ&hl=en" target="_blank">Xiaogang Wang</a>
+				<br>
+				<b><a href="https://iccv2017.thecvf.com/" target="_blank">ICCV 2017</a></b> <br>
+				<a href="https://arxiv.org/pdf/1708.01101.pdf" target="_blank"> <small>[Paper]</small></a>
+				<a href="https://github.com/bearpaw/PyraNet" target="_blank"> <small>[Code]</small></a>
+				</div>
+			</div><hr>
+
+
+
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/paper/17-cvpr-nlp/17-cvpr-nlp-4.png" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Person Search with Natural Language Description</font></b><br>
+				<a href="https://people.csail.mit.edu/lishuang/"><u><b>Shuang Li</b></u></a>,
+				<a href="https://scholar.google.com/citations?user=DGHphywAAAAJ&hl=en" target="_blank">Tong Xiao</a>,
+				<a href="https://scholar.google.com/citations?user=BN2Ze-QAAAAJ&hl=en" target="_blank">Hongsheng Li</a>,
+				<a href="http://bzhou.ie.cuhk.edu.hk/" target="_blank">Bolei Zhou</a>,
+				<a href="" target="_blank">Dayu Yue</a>, and
+				<a href="https://scholar.google.com/citations?user=-B5JgjsAAAAJ&hl=en" target="_blank">Xiaogang Wang</a>
+				<br>
+				<b><a href="https://cvpr2017.thecvf.com/" target="_blank">CVPR 2017</a></b> <br>
+				<a href="https://arxiv.org/pdf/1702.05729.pdf" target="_blank"> <small>[Paper]</small></a>
+				<a href="https://github.com/ShuangLI59/Person-Search-with-Natural-Language-Description" target="_blank"> <small>[Code]</small></a>
+				</div>
+			</div><hr>
+
+
+
+
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/paper/17-cvpr-person-search/17-cvpr-person-search-v1.png" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Joint Detection and Identification Feature Learning for Person Search</font></b><br>
+				<a href="https://scholar.google.com/citations?user=DGHphywAAAAJ&hl=en" target="_blank">Tong Xiao*</a>,
+				<a href="https://people.csail.mit.edu/lishuang/"><u><b>Shuang Li*</b></u></a>,
+				<a href="https://scholar.google.com/citations?user=hmGZN08AAAAJ&hl=en" target="_blank">Bochao Wang</a>,
+				<a href="https://scholar.google.com/citations?user=Nav8m8gAAAAJ&hl=en" target="_blank">Liang Lin</a>, and
+				<a href="https://scholar.google.com/citations?user=-B5JgjsAAAAJ&hl=en" target="_blank">Xiaogang Wang</a>
+				(*equal contribution)
+				<br>
+				<b><a href="https://cvpr2017.thecvf.com/" target="_blank">CVPR 2017</a>, <font color="firebrick">Spotlight</font> </b> <br>
+				<a href="https://arxiv.org/pdf/1604.01850.pdf" target="_blank"> <small>[Paper]</small></a>
+				<a href="https://github.com/ShuangLI59/person_search" target="_blank"> <small>[Code]</small></a>
+				</div>
+			</div><hr>
+
+
+		
+
+			
+		</script>
+
+
+	</div><br>
+
+
+
+
+
+
+
+	<div class="container" style="padding-top: 20px; font-size: 17px; width: 1080px">
+		<h3 id="Honors" style="padding-top: 80px; margin-top: -80px;">Selected Honors</h3>
+		<ul>
+            <li>EECS Rising Stars, 2022 <a href="https://risingstars.utexas.edu/" target="_blank"><small>[Link]</small></a></li>
+            <li>ICML Outstanding Reviewer, 2022 <a href="https://icml.cc/Conferences/2022/Reviewers" target="_blank"><small>[Link]</small></a></li>
+			<li>Facebook Research Fellowship, 2021 <a href="https://research.fb.com/blog/2021/04/announcing-the-recipients-of-the-2021-facebook-fellowship-awards/" target="_blank"><small>[Link]</small></a></li>
+			<li>Adobe Research Fellowship, 2019 <a href="https://adoberesearch.ctlprojects.com/fellowship/previous-fellowship-award-winners/" target="_blank"><small>[Link]</small></a></li>
+			<li>MIT Seneff-Zue CS Fellowship, 2018 </a></li>
+            <li>Outstanding Students Award, CUHK, 2018 </a></li>
+        </ul>
+	</div><br>
+
+	
+	<!-- Teaching -->
+	<div class="container" style="padding-top: 20px; font-size: 17px; width: 1080px">
+		<h3 id="teaching" style="padding-top: 80px; margin-top: -80px;">Teaching</h3>
+		<ul>
+			<li>6.819/6.869: Advances in Computer Vision, MIT</a></li>
+			<li>ENGG 2420B: Complex Analysis and Differential Equations for Engineers, CUHK</li>
+			<li>ELEG 1110: Problem Solving By Programming, CUHK</li>
+			<li>ELEG 2201: Digital Circuits and Systems, CUHK</li>
+        </ul>
+	</div><br>
+
+
+
+	<!-- Service -->
+	<div class="container" style="padding-top: 20px; font-size: 17px; width: 1080px">
+		<h3 id="Service" style="padding-top: 80px; margin-top: -80px;">Professional Service</h3>
+		<ul>
+			<li> Workshops / Tutorials: <br>
+				<a href="https://s2023.siggraph.org/presentation/?id=gensub_208&sess=sess164" target="_blank">Diffusion Models Course at SIGGRAPH 2023 <br>
+				<a href="https://social-intelligence-human-ai.github.io/" target="_blank">Social Intelligence in Humans and Robots</a> at ICRA 2021, RSS 2022, RSS 2023 <br>
+				<a href="http://wider-challenge.org/2019.html" target="_blank">Wider Face and Person Challenge</a> at ICCV 2019 <br>
+				<a href="http://vc-workshop.csail.mit.edu" target="_blank">MIT Visual Computing Workshop</a> 2021 <br>
+			</li>
+			<li> Conference Reviewer: <br>
+				IEEE Conference on Computer Vision and Pattern Recognition (CVPR) <br>
+				International Conference on Computer Vision (ICCV) <br>
+				European Conference on Computer Vision (ECCV) <br>
+				ACM International Conference on Multimedia (ACMMM) <br>
+				International Conference on Machine Learning (ICML) <br>
+				Conference on Neural Information Processing Systems (NeurIPS) <br>
+				International Conference on Learning Representations (ICLR) <br>
+			</li>
+			<li>Journal Reviewer: <br>
+				IEEE Transactions on Image Processing (TIP) <br>
+				IEEE Transactions on Circuits and Systems for Video Technology (TCSVT) <br>
+				IEEE Transactions on Cybernetics <br>
+				Computer Vision and Image Understanding (CVIU) <br>
+				Image and Vision Computing (IMAVIS) <br>
+			</li>
+		</ul>
+	</div><br>
+
+
+
+	
+
+	<!-- Contact -->
+	<div class="container" style="padding-top: 20px; font-size: 17px; width: 1080px">
+		<h3 id="Contact" style="padding-top: 80px; margin-top: -80px;">Contact</h3>
+		MIT Computer Science and Artificial Intelligence Lab <br>
+		32 Vassar Street, 32-D394 <br>
+		Cambridge, MA 02139 <br>
+	</div>
+
+	<div class="container">
+		<hr>
+		<center>
+			<footer>
+				<p>&copy; Massachusetts Institute of Technology 2020</p>
+			</footer>
+		</center>
+	</div>
+	<!-- /container -->
+
+	<!-- Bootstrap core JavaScript -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script>showPubs(0);</script>
+	<script>var scroll = new SmoothScroll('a[href*="#"]', {speed: 1000});</script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
+
 </html>
