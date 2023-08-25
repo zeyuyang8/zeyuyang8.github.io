@@ -17,6 +17,7 @@
 
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
         <!-- Custom styles for this template -->
         <link href="jumbotron.css" rel="stylesheet">
         <script src="js/main.js"></script>
@@ -27,7 +28,7 @@
 
     <body>
         <!-- Navigator -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="Home">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <a class="navbar-brand" href="#Home">Zeyu Yang</a>
             <div class="collapse navbar-collapse" id="navbarToggle">
                 <ul class="navbar-nav ml-auto">
@@ -44,9 +45,10 @@
             </div>
         </nav>
 
-        <div class="container" style="padding-top: 60px; font-size: 17px; width: 1080px">
+        <div class="container" style="padding-top: 50px; font-size: 17px; width: 1080px" id="Home">
+            <!-- About me -->
             <div class="row">
-                <div class="col-md-3", style="padding-right: 40px; padding-top: 25px">
+                <div class="col-md-4", style="padding-right: 40px; padding-top: 25px">
                     <img class="img-responsive img-rounded" src="assets/photos/tom.png" alt="poor tom" style="max-width: 220px; color: solid black"><br>
                 </div>
 
@@ -55,21 +57,95 @@
                     <p>
                         Master student <br>
                         Rice CS <br>
-                        COMP-WELL Lab <br>
-                        Email: zeyuyang8@gmail.com
+                        Computational Wellbeing Group <br>
+                        Email: zy45 [at] rice (dot) edu <br>
+                        <a href="https://scholar.google.com/citations?user=CaKsmnUAAAAJ&hl=en" target="_blank">Google Scholar</a> /
+                        <a href="https://github.com/zeyuyang8" target="_blank">GitHub</a> /
+                        <a href="https://twitter.com/YangZeyu9" target="_blank">Twitter</a>
                     </p>
                 </div>
 
                 <div class="col-md-4", style="padding-right: 40px; padding-top: 25px">
                     <font color="black"><b>Research Topics:</b><br>
                         <a>Generative Modeling</a> <br>
-                        <a>Foundation Models</a> <br>
-                        <a>Embodied AI</a> <br>
-                        <a>Language-Vision Understanding</a> <br>
-                        <a>Compositionality</a> <br>
+                        <a>Digital Health</a> <br>
+                        <a>Computer Vision</a> <br>
+                        <a>Smart Grid</a> <br>
+                        <a>Data Visualization</a> <br>
                     </font>
                 </div>
             </div>
+
+            <!-- Short bio -->
+            <div class="row">
+                <div class="col-md-12" style="padding-right: 40px; padding-top: 25px;">
+                    <p>
+                        I am a master of data science student at Rice University.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- News -->
+        <div class="container" style="padding-top: 20px; font-size: 17px; width: 1080px">
+            <h3 id="News" style="padding-top: 80px; margin-top: -80px;">News</h3>
+            <ul>
+                <li>Wokring on the manuscripts</li>
+                <li>Greetings</li>
+        </div>
+
+        <!-- Publications -->
+        <div class="container" style="padding-top: 20px; font-size: 17px; width: 1080px">
+            <h3 id="Publication" style="padding-top: 80px; margin-top: -80px;">
+                Publications
+                <span style="float:right;"><a href="https://scholar.google.com/citations?user=CaKsmnUAAAAJ&hl=en">[Full List]</a></span>
+            </h3>
+
+            <script id="pubs_by_date" language="text"></script>
+            <div class="row">
+                <div class="col-md-3">
+                    <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="border:1px solid black">
+                        <source src="files/paper/23-llm-debate/debate.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="col-md-9">
+                    <b><font color="black">Improving Factuality and Reasoning in Language Models through Multiagent Debate</font></b><br>
+                    <a href="https://yilundu.github.io/" target="_blank">Yilun Du</a>,
+                    <a href="https://people.csail.mit.edu/lishuang/"><u><b>Shuang Li</b></u></a>,
+                    <a href="https://groups.csail.mit.edu/vision/torralbalab/" target="_blank">Antonio Torralba</a>,
+                    <a href="https://scholar.google.com/citations?user=rRJ9wTJMUB8C&hl=en" target="_blank">Joshua B. Tenenbaum</a>, and
+                    <a href="https://scholar.google.com/citations?user=Vzr1RukAAAAJ&hl=en" target="_blank">Igor Mordatch</a><br>
+                    <b><a href="https://roboticsconference.org/" target="_blank">arXiv 2023</a></b> <br>
+                    <a href="https://composable-models.github.io/llm_debate/" target="_blank"> <small>[Project]</small></a>
+                    <a href="https://arxiv.org/abs/2305.14325" target="_blank"> <small>[Paper]</small></a>
+                    <a href="https://github.com/composable-models/llm_multiagent_debate" target="_blank"> <small>[Code]</small></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Honors -->
+        <div class="container" style="padding-top: 20px; font-size: 17px; width: 1080px">
+            <h3 id="Honors" style="padding-top: 80px; margin-top: -80px;">Selected Honors</h3>
+            <ul>
+                <li>Wokring on the manuscripts</li>
+                <li>Greetings</li>
+            </ul>
+        </div>
+
+        <!-- Teaching -->
+        <div class="container" style="padding-top: 20px; font-size: 17px; width: 1080px">
+            <h3 id="Teaching" style="padding-top: 80px; margin-top: -80px;">Teaching</h3>
+            <ul>
+                <li>Wokring on the manuscripts</li>
+                <li>Greetings</li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="container" style="padding-top: 20px; font-size: 17px; width: 1080px">
+            <h3 id="Contact" style="padding-top: 80px; margin-top: -80px;">Contact</h3>
+            Computational Wellbeing Group @ Rice University <br>
+            6100 Main St, Houston, TX, 77005
         </div>
     </body>
 </html>
