@@ -1,0 +1,17 @@
+html {
+    scroll-behavior: smooth;
+}
+/* footer {
+    text-align: center;
+    padding: 0px;
+    background-color: darkslateblue;
+    color: white;
+  } */
+
+footer {
+    text-align: center;
+    background-color: darkslateblue;
+    color: white;
+    padding: 10px;
+    bottom: 0;
+}
