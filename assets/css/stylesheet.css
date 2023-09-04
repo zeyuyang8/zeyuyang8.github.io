@@ -1,17 +1,18 @@
+/* Smooth scrolling */
 html {
     scroll-behavior: smooth;
 }
-/* footer {
-    text-align: center;
-    padding: 0px;
-    background-color: darkslateblue;
-    color: white;
-  } */
 
+/* Footer settings */
 footer {
     text-align: center;
     background-color: darkslateblue;
     color: white;
     padding: 10px;
     bottom: 0;
+}
+
+/* Show dropdown menu options on hover */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
 }
