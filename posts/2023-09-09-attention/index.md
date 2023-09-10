@@ -28,7 +28,7 @@ Intermediate dependent variables derived from $\mathbf{X}$:
 - $\mathbf{W}_v \in \mathbb{R}^{v \times v}$ - value weights.
 - $q$ - number of features in the queries and keys.
 
-## Mathematical formulation of attention
+## Mathematical formulation
 
 The attention mechanism can be formulated as follows:
 
@@ -81,7 +81,15 @@ $$
 
 where the softmax function is applied row-wise.
 
-## Judgmental section - why and why not attention
+## Attention in neural networks
+
+### Self-attention
+
+### Multi-head attention
+
+### Cross-attention
+
+## Judgmental section
 
 TBA
 
