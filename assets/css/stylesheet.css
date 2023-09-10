@@ -16,3 +16,10 @@ footer {
 .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
     display: block;
 }
+
+/* Show dropdown menu options on hover */
+.work-info {
+    display: flex;
+    justify-content: space-between;
+    /* Optional: Add other styles like padding, margin, etc. as needed */
+}
