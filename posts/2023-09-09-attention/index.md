@@ -8,18 +8,14 @@ Attention in machine learning refers to a mechanism that allows models to focus 
 
 Related to overall objective of attention:
 
-- $\mathbf{X} \in \mathbb{R}^{m \times v}$ -  data.
-- $\mathbf{Z} \in \mathbb{R}^{m \times v^{\prime}}$ - transformed data.
+- $\mathbf{X} \in \mathbb{R}^{m \times v}$ -  features.
+- $\mathbf{Z} \in \mathbb{R}^{m \times v^{\prime}}$ - transformed features.
 - $\mathbf{W} \in \mathbb{R}^{v \times v^{\prime}}$ - attention weights.
+- $\mathbf{Y} \in \mathbb{R}^{m \times l}$ - labels.
 - $m$ - number of data points.
 - $v$ - number of features in the data points.
 - $v^{\prime}$ - number of features after attention transformation on the data points.
-- $q$ - number of features in the queries and keys.
-- $\varphi$ - non-linear activation function.
-- $h$ - number of attention heads.
-- $d$ - number of features in the output of multi-head attention.
-- $\sigma$ - softmax function.
-- $a$ - similarity function.
+- $l$ - number of features in the labels.
 
 Intermediate dependent variables derived from $\mathbf{X}$:
 
@@ -30,6 +26,15 @@ Intermediate dependent variables derived from $\mathbf{X}$:
 - $\mathbf{W}_k \in \mathbb{R}^{v \times q}$ - key weights.
 - $\mathbf{W}_v \in \mathbb{R}^{v \times v}$ - value weights.
 - $\mathbf{W}_h \in \mathbb{R}^{hv^{\prime} \times d}$ - multi-head attention weights.
+- $q$ - number of features in the queries and keys.
+- $h$ - number of attention heads.
+- $d$ - number of features in the output of multi-head attention.
+
+Functions:
+
+- $\varphi$ - non-linear activation function.
+- $\sigma$ - softmax function.
+- $a$ - similarity function.
 
 ## Mathematical formulation
 
@@ -121,6 +126,17 @@ $$
 where $h$ is the number of attention heads, and $d$ is the number of features in the output of multi-head attention.
 
 ### Cross-attention
+
+When mixing two different input sequences, we can use cross-attention, which uses one sequence to compute queries, and uses the other sequence to compute keys and values. Assume we want to mix features $\mathbf{X} = [\boldsymbol{x}_1, \ldots, \boldsymbol{x}_m]$ and labels $\mathbf{Y} = [\boldsymbol{y}_1, \ldots, \boldsymbol{y}_m]$, and we use the self-attention style to compute queries, keys, values from features and labels. Then, we can compute the cross-attention output $\mathbf{Z} = [\boldsymbol{z}_1, \ldots, \boldsymbol{z}_m]$, where $\boldsymbol{z}$ is as follows:
+
+$$
+\boldsymbol{z}(
+  \boldsymbol{q}, (\boldsymbol{k}_1, \boldsymbol{v}_1),
+  \ldots, (\boldsymbol{k}_m, \boldsymbol{v}_m)
+) = \boldsymbol{z}(\boldsymbol{x}, (\boldsymbol{y}_1, \boldsymbol{y}_1),
+  \ldots, (\boldsymbol{y}_m, \boldsymbol{y}_m)
+) = \sum_{i=1}^m \alpha_i(\boldsymbol{x}, \mathbf{Y}) \boldsymbol{y}_i
+$$
 
 ## Judgmental section
 
