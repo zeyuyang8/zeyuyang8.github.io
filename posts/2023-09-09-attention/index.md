@@ -14,7 +14,10 @@ Related to overall objective of attention:
 - $m$ - number of data points.
 - $v$ - number of features in the data points.
 - $v^{\prime}$ - number of features after attention transformation on the data points.
+- $q$ - number of features in the queries and keys.
 - $\varphi$ - non-linear activation function.
+- $h$ - number of attention heads.
+- $d$ - number of features in the output of multi-head attention.
 - $\sigma$ - softmax function.
 - $a$ - similarity function.
 
@@ -26,7 +29,7 @@ Intermediate dependent variables derived from $\mathbf{X}$:
 - $\mathbf{W}_q \in \mathbb{R}^{v \times q}$ - query weights.
 - $\mathbf{W}_k \in \mathbb{R}^{v \times q}$ - key weights.
 - $\mathbf{W}_v \in \mathbb{R}^{v \times v}$ - value weights.
-- $q$ - number of features in the queries and keys.
+- $\mathbf{W}_h \in \mathbb{R}^{hv^{\prime} \times d}$ - multi-head attention weights.
 
 ## Mathematical formulation
 
@@ -85,7 +88,37 @@ where the softmax function is applied row-wise.
 
 ### Self-attention
 
+Given a list of input sequences $\mathbf{X} = [\boldsymbol{x}_1, \ldots, \boldsymbol{x}_m]$, we can compute the self-attention output $\mathbf{Z} = [\boldsymbol{z}_1, \ldots, \boldsymbol{z}_m]$, where $\boldsymbol{z}$ is as follows:
+
+$$
+\boldsymbol{z}(\boldsymbol{x}, (\boldsymbol{x}_1, \boldsymbol{x}_1),
+  \ldots, (\boldsymbol{x}_m, \boldsymbol{x}_m)
+) = \sum_{i=1}^m \alpha_i(\boldsymbol{x}, \mathbf{X}) \boldsymbol{x}_i
+$$
+
+In other words, self-attention uses the input sequences as queries, keys, and values. The matrix multiplication with batches of data points can be written as:
+
+$$
+\mathbf{Z}(\mathbf{X}) = \mathbf{Z}(\mathbf{Q}, \mathbf{K}, \mathbf{V}) = \mathbf{Z}(\mathbf{X}, \mathbf{X}, \mathbf{X}) = \sigma(\frac{\mathbf{X} \mathbf{X}^T}{\sqrt{q}})\mathbf{X}
+$$
+
+where the softmax function is applied row-wise.
+
 ### Multi-head attention
+
+To increase the flexibility of attention, we can use multiple attention heads. Each attention head has its own query, key, and value matrices. Let us denote the $i$-th attention head as $\mathbf{Z}^{(i)} \in \mathbb{R}^{m \times v^{\prime}}$:
+
+$$
+\mathbf{Z}^{(i)}(\mathbf{X}) = \mathbf{Z}^{(i)}(\mathbf{Q}, \mathbf{K}, \mathbf{V}) = \sigma(\frac{\mathbf{Q}^{(i)} \mathbf{K}^{(i)T}}{\sqrt{q}})\mathbf{V}^{(i)}
+$$
+
+where $\mathbf{Q}^{(i)}$, $\mathbf{K}^{(i)}$, and $\mathbf{V}^{(i)}$ are queries, keys, and values for the $i$-th attention head with weights $\mathbf{W}_q^{(i)}$, $\mathbf{W}_k^{(i)}$, and $\mathbf{W}_v^{(i)}$, respectively. The multi-head attention output is the concatenation of all attention heads multiplied by a weight matrix $\mathbf{W}_h \in \mathbb{R}^{hv^{\prime} \times d}$:
+
+$$
+\mathbf{Z}(\mathbf{X}) = \mathbf{Z}(\mathbf{Q}, \mathbf{K}, \mathbf{V}) = \left[ \mathbf{Z}^{(1)}(\mathbf{Q}, \mathbf{K}, \mathbf{V}), \ldots, \mathbf{Z}^{(h)}(\mathbf{Q}, \mathbf{K}, \mathbf{V}) \right]\mathbf{W}_h
+$$
+
+where $h$ is the number of attention heads, and $d$ is the number of features in the output of multi-head attention.
 
 ### Cross-attention
 
