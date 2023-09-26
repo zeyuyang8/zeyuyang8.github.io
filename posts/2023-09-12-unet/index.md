@@ -2,6 +2,8 @@
 
 ## Introduction
 
+Unet is commonly used for image segmentation.
+
 ## Notations
 
 ## Mathematical formulation
