@@ -138,10 +138,6 @@ $$
 ) = \sum_{i=1}^m \alpha_i(\boldsymbol{x}, \mathbf{Y}) \boldsymbol{y}_i
 $$
 
-## Judgmental section
-
-TBA
-
 ## References
 
 1. K. P. Murphy, Probabilistic Machine Learning: An Introduction. MIT press, 2022.
