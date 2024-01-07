@@ -101,7 +101,7 @@ $$
 ) = \sum_{i=1}^m \alpha_i(\boldsymbol{x}, \mathbf{X}) \boldsymbol{x}_i
 $$
 
-In other words, self-attention uses the input sequences as queries, keys, and values. The matrix multiplication with batches of data points can be written as:
+In other words, self-attention uses the input sequences as queries, keys, and values. The matrix multiplication with batches of data points can be written as,
 
 $$
 \mathbf{Z}(\mathbf{X}) = \mathbf{Z}(\mathbf{Q}, \mathbf{K}, \mathbf{V}) = \mathbf{Z}(\mathbf{X}, \mathbf{X}, \mathbf{X}) = \sigma(\frac{\mathbf{X} \mathbf{X}^T}{\sqrt{q}})\mathbf{X}
