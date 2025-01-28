@@ -1,0 +1,230 @@
+% document settings
+\documentclass[11pt]{article}
+% suppress warnings related to package everypage
+\usepackage{silence}
+\WarningsOff[everypage]
+% package imports
+\usepackage{
+    setspace, longtable, graphicx, hyphenat, hyperref, fancyhdr, ifthen, 
+    everypage, enumitem, amsmath, setspace, fontawesome, fullwidth, 
+    titlecaps, array, lipsum, titlesec, mfirstuc
+}
+% set page margins
+\usepackage[left=0.5in, right=0.5in, bottom=0.5in, top=0.5in]{geometry}
+% set line spacing
+\renewcommand{\baselinestretch}{1}
+% page format settings
+% set indent
+\setlength\parindent{0pt}
+% set link colors
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{colorlinks=true, linkcolor=NavyBlue, urlcolor=NavyBlue}
+\urlstyle{same}
+% set font to Libertine, including math support
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+% remove page numbering
+\pagenumbering{gobble}
+% title spacing
+\titlespacing*{\section}{0pt}{6pt}{6pt}
+% title format
+\titleformat{\section}{\Large\color{OliveGreen}\scshape}{\thesection}{1em}{}[\color{black} \hrule height 0.75pt]
+% list format
+\setlist[itemize]{label=$\bullet$, leftmargin=*, labelsep=2.2mm, itemsep=0ex, topsep=0.0ex}
+\setlist[enumerate]{leftmargin=*, labelsep=2.2mm, itemsep=0ex, topsep=0.0ex} 
+% subsection spacing
+\setlength{\lineskip}{5.5pt}
+
+
+% document starts here
+\begin{document}
+
+% name and date of last update to this document
+\noindent {\huge Zeyu Yang} \hfill Updated on {\normalsize \today}
+
+% contact information and other items
+\begin{center}
+    \begin{tabular}{lll}
+        % Email, Phone number, GitHub, LinkedIn
+        \faicon{envelope} zeyuyang8@gmail.com &
+        \hspace{0.25in} \faicon{phone}  (713) 855-5359 & 
+        \hspace{0.25in} \faicon{github} \url{zeyuyang8.github.io}
+    \end{tabular}
+\end{center}
+	
+% research interests
+\section*{Research Interests}
+
+Large Scale Machine Learning; Generative Modeling
+
+% education
+\section*{Education}
+
+\textbf{Rice University} \hfill August 2024 -- Present
+
+Ph.D. in Electrical and Computer Engineering
+
+\vspace{\lineskip}
+
+\textbf{Rice University} \hfill August 2021 -- May 2023
+
+M.S. in Data Science, GPA: 3.79/4.00
+
+\vspace{\lineskip}
+
+\textbf{University of Electronic Science and Technology of China} \hfill August 2017 -- May 2021
+
+B.E. in Electronic Information Engineering, GPA: 3.66/4.00
+
+% skills & certificates
+\section*{Skills \& Certificates}
+\textbf{Programming:}
+
+\begin{itemize}
+    \item {\textit{Data Science:}} C++, CUDA, Python (PyTorch, Matplotlib), MATLAB, Tableau
+    \item {\textit{Web Development:}} Python (Django, Dash), HTML, CSS, JavaScript (React), PostgreSQL
+    \item {\textit{IT Skills:}} Git, AWS, Docker, Linux, Markdown, LaTeX
+\end{itemize}
+
+\vspace{\lineskip}
+
+\textbf{Coursera Certificates:}
+
+\begin{itemize}
+    \item Back-End Developer Professional Certificate offered by Meta
+    \item Front-End Developer Professional Certificate offered by Meta
+    \item Database Engineer Professional Certificate offered by Meta
+\end{itemize}
+
+% research experience
+\section*{Research Experience}
+
+\textbf{Rice Rush Lab} \hfill December 2024 -- Present
+
+\textit{Graduate Research Assistant}, with Professor Anshumali Shrivastava
+
+\begin{itemize}
+    \item Developed a 4-bit rotation-based outlier-free quantization framework for text-to-image diffusion transformers.
+\end{itemize}
+
+\vspace{\lineskip}
+
+\textbf{Rice Computational Wellbeing Group} \hfill January 2024 -- July 2024
+
+\textit{Graduate Student Researcher}, with Professor Akane Sano
+
+\begin{itemize}
+    \item Developed a fair diffusion model to generate balanced mixed-type tabular data conditioned on multiple labels [\ref{akane-ddpm}].
+    \item Created a self-supervised multimodal learning method for stress detection using time series and tabular data [\ref{akane-clsp}].
+\end{itemize}
+
+\vspace{\lineskip}
+
+\textbf{Rice Computer Graphics/Geometric Design Group} \hfill May 2022 -- August 2022
+
+\textit{Graduate Student Researcher}, with Professor Joe Warren
+
+\begin{itemize}
+    \item Designed lecture notes and Python programming assignments that cover the principles of neural networks.
+    \item Developed a Python toolbox for animating the training progress of multi-layer perceptrons [\ref{joe-plotnet}].
+\end{itemize}
+
+\vspace{\lineskip}
+
+\textbf{Monash Data Futures Institute} \hfill December 2020 -- March 2021
+
+\textit{Undergraduate Student Researcher}, with Professor Hao Wang
+
+\begin{itemize}
+    \item Developed an asynchronous distributed alternating direction method of multipliers (ADMM) algorithm to optimize energy trading problems under asynchronous communication, allowing communication delay and indicating a potential for better outcomes in real-world applications [\ref{hao-admm}].
+\end{itemize}
+
+% publications
+\section*{Publications}
+    
+\textit{Preprints:}
+
+\begin{enumerate}	
+    \item \label{akane-ddpm} \textbf{Zeyu Yang}, Han Yu, Peikun Guo, Khadija Zanna, Xiaoxue Yang, Akane Sano,
+    ``Balanced Mixed-Type Tabular Data Synthesis with Diffusion Models'', arXiv:2404.08254, 2024.
+    \item \label{hao-admm} \textbf{Zeyu Yang}, Hao Wang, 
+    ``Network-Aware Asynchronous Distributed ADMM Algorithm for Peer-to-Peer Energy Trading'', arXiv:2312.06976, 2023.
+\end{enumerate}
+
+\vspace{\lineskip}
+
+\textit{Conference Publications:}
+
+\begin{enumerate}[resume]
+    \item Yizhuo Yang, Huan Wang, Zhiliang Liu, \textbf{Zeyu Yang}, 
+    ``Few-Shot Learning for Rolling Bearing Fault Diagnosis via Siamese Two-Dimensional Convolutional Neural Network'', 
+    in \textit{Asia-Pacific International Symposium on Advanced Reliability and Maintenance Modeling}, 2020.
+\end{enumerate}
+
+\textit{Working Papers:}
+
+\begin{enumerate}[resume]
+    \item \label{akane-clsp} \textbf{Zeyu Yang}, Han Yu, Akane Sano, ``Contrastive Pretraining for Stress Detection with Multimodal Wearable Sensor Data and Surveys'', in submission to BHI, 2024.
+\end{enumerate}
+
+\vspace{\lineskip}
+
+\textit{Published Software:}
+
+\begin{enumerate}[resume]
+    \item \label{joe-plotnet} \textit{PlotNet}. (2022). [Online]. Available: \url{https://github.com/zeyuyang8/plotnet}
+\end{enumerate}
+
+% awards & honors
+\section*{Awards \& Honors}
+
+Outstanding Undergraduate Student Award \hfill 2021
+
+Meritorious Winner of Interdisciplinary Contest in Modeling \hfill 2020
+
+% teaching experience
+\section*{Teaching Experience}
+
+\textbf{Data Visualization (COMP 665)}, Rice University \hfill February 2022 -- May 2023
+
+\textit{Graduate Teaching Assistant}, with Professor Joe Warren 
+
+\begin{itemize}
+    \item Answered questions about Python coding issues in weekly projects for a class of over 40 graduate students.
+    \item Developed a geographical data visualization project in Tableau with detailed supporting material for future classes.
+\end{itemize} 
+
+\vspace{\lineskip}
+
+\textbf{Statistics for Data Science (COMP 680)}, Rice University \hfill September 2022 -- May 2023
+
+\textit{Academic Tutor}, for Rice Athletics
+
+\begin{itemize}
+    \item Explained statistical techniques, such as hypothesis testing, Markov chain, and linear regression to students.
+    
+    \item Engaged one-on-one with students with problems in statistics and Python programming.
+\end{itemize} 
+
+% coursework
+\section*{Coursework}
+
+\textbf{Graduate Coursework:}
+
+\begin{itemize}
+    \item {\textit{Computer Science:}} Programming for Data Science, Big Data Management for Data Science, Data Visualization, Graduate Design and Analysis of Algorithms
+    \item {\textit{Machine Learning:}} Statistical Machine Learning, Deep Learning for Vision and Language, Applied Machine Learning and Data Science Projects, AI for Health, Advanced Machine Learning, Learning from Sensor Data
+    \item {\textit{Statistics \& Optimization:}} Statistics for Data Science, Convex Optimization, Information Theory
+\end{itemize}
+
+\vspace{\lineskip}
+
+\textbf{Undergraduate Coursework:}
+
+\begin{itemize}
+    \item {\textit{Computer Science:}} Introductory C Programming, Introductory Python Programming
+    \item {\textit{Electrical Engineering:}} Application and Design of Digital Logic, Signals and Systems, Digital Communication, Microelectronic Systems, Circuit Analysis and Design, Fundamentals of Analog Circuits
+    \item {\textit{Math \& Physics:}} Linear Algebra and Space Analytic Geometry, Probability Theory and Mathematical Statistics, Calculus I, Calculus II, Physics I, Physics II
+\end{itemize}
+	
+\end{document}
