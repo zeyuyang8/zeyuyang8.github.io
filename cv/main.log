@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.3)  28 JAN 2025 01:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.3)  26 FEB 2025 02:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/zeyuyang/Library/CloudStorage/Dropbox/career/cv/main.tex
-(/Users/zeyuyang/Library/CloudStorage/Dropbox/career/cv/main.tex
+**/Users/zeyuyang/Documents/GitHub/zeyuyang8.github.io/cv/main.tex
+(/Users/zeyuyang/Documents/GitHub/zeyuyang8.github.io/cv/main.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> (/usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
@@ -528,7 +528,7 @@ File: OT1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for OT1/L
 )
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 10.95pt on input line 40.
- (/Users/zeyuyang/Library/CloudStorage/Dropbox/career/cv/main.aux)
+ (/Users/zeyuyang/Documents/GitHub/zeyuyang8.github.io/cv/main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 40.
@@ -607,7 +607,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 40.
 LaTeX Info: Redefining \pageref on input line 40.
 LaTeX Info: Redefining \nameref on input line 40.
- (/Users/zeyuyang/Library/CloudStorage/Dropbox/career/cv/main.out) (/Users/zeyuyang/Library/CloudStorage/Dropbox/career/cv/main.out)
+ (/Users/zeyuyang/Documents/GitHub/zeyuyang8.github.io/cv/main.out) (/Users/zeyuyang/Documents/GitHub/zeyuyang8.github.io/cv/main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
@@ -683,21 +683,21 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.230 \end{document}
-                     [2] (/Users/zeyuyang/Library/CloudStorage/Dropbox/career/cv/main.aux)
+l.232 \end{document}
+                     [2] (/Users/zeyuyang/Documents/GitHub/zeyuyang8.github.io/cv/main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  16710 strings out of 478994
- 241834 string characters out of 5858185
+ 241847 string characters out of 5858185
  655841 words of memory out of 5000000
  33905 multiletter control sequences out of 15000+600000
  426147 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,7n,75p,574b,492s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,7n,75p,575b,492s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_kijugd.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_lyu3x3.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_n3gv2c.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on /Users/zeyuyang/Library/CloudStorage/Dropbox/career/cv/main.pdf (2 pages, 271836 bytes).
+Output written on /Users/zeyuyang/Documents/GitHub/zeyuyang8.github.io/cv/main.pdf (2 pages, 274197 bytes).
 PDF statistics:
  62 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream
