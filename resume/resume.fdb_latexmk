@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1747944647 "/Users/zeyuyang/Documents/GitHub/zeyuyang8.github.io/cv/main.tex" "/Users/zeyuyang/Documents/GitHub/zeyuyang8.github.io/cv/main.pdf" "main" 1747944806
-  "/Users/zeyuyang/Documents/GitHub/zeyuyang8.github.io/cv/main.aux" 1747944648 955 008072aff25933cd4e72d758b44b6ada ""
-  "/Users/zeyuyang/Documents/GitHub/zeyuyang8.github.io/cv/main.tex" 1747944806 9080 43c86b40032544b6683ae1ae2a6d1d34 ""
+["pdflatex"] 1746073905 "/Users/zeyuyang/Documents/GitHub/zeyuyang8.github.io/resume/resume.tex" "/Users/zeyuyang/Documents/GitHub/zeyuyang8.github.io/resume/resume.pdf" "resume" 1746074136
+  "/Users/zeyuyang/Documents/GitHub/zeyuyang8.github.io/resume/resume.aux" 1746073906 886 887c7623d13768be6896778f00a52007 ""
+  "/Users/zeyuyang/Documents/GitHub/zeyuyang8.github.io/resume/resume.tex" 1746074136 4882 6a4a6bbdc987f99abe0eda1460536886 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1463430686 2679 32dd8ae231bf4a0752b98f62dc097183 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_kijugd.enc" 1490131464 2822 11e839d2bbb939844844619b2cff7df6 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_lyu3x3.enc" 1490131464 2835 bfce207f80837ef8737b6a788d8bc760 ""
@@ -148,13 +148,13 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1616695603 5169178 a2ce6e2d73f603b690db6777d06dbccb ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1641264000 2724741 a1c0629cabaf20019c49a7f2e9c59074 ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "main.aux" 1747944648 955 008072aff25933cd4e72d758b44b6ada "pdflatex"
-  "main.out" 1747944648 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1747944806 9080 43c86b40032544b6683ae1ae2a6d1d34 ""
+  "resume.aux" 1746073906 886 887c7623d13768be6896778f00a52007 "pdflatex"
+  "resume.out" 1746073906 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "resume.tex" 1746074136 4882 6a4a6bbdc987f99abe0eda1460536886 ""
   (generated)
-  "main.out"
-  "main.log"
-  "main.aux"
-  "/Users/zeyuyang/Documents/GitHub/zeyuyang8.github.io/cv/main.log"
-  "/Users/zeyuyang/Documents/GitHub/zeyuyang8.github.io/cv/main.pdf"
-  "main.pdf"
+  "resume.log"
+  "resume.pdf"
+  "/Users/zeyuyang/Documents/GitHub/zeyuyang8.github.io/resume/resume.log"
+  "resume.out"
+  "resume.aux"
+  "/Users/zeyuyang/Documents/GitHub/zeyuyang8.github.io/resume/resume.pdf"

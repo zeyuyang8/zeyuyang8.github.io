@@ -1,5 +1,7 @@
 % document settings
 \documentclass[11pt]{article}
+% customize itemize
+\usepackage{enumitem}
 % suppress warnings related to package everypage
 \usepackage{silence}
 \WarningsOff[everypage]
@@ -62,19 +64,133 @@ Large Scale Machine Learning; Generative Modeling
 
 \textbf{Rice University} \hfill August 2024 -- Present
 
-Ph.D. in Electrical and Computer Engineering
+Ph.D. in Electrical and Computer Engineering, Advisor: Prof. Anshumali Shrivastava
 
 \vspace{\lineskip}
 
 \textbf{Rice University} \hfill August 2021 -- May 2023
 
-M.S. in Data Science, GPA: 3.79/4.00
+M.S. in Data Science, Advisor: Prof. Joe Warren and Prof. Akane Sano
 
 \vspace{\lineskip}
 
 \textbf{University of Electronic Science and Technology of China} \hfill August 2017 -- May 2021
 
 B.E. in Electronic Information Engineering, GPA: 3.66/4.00
+
+% research experience
+\section*{Research Experience}
+
+\textbf{Rice Rush Lab} \hfill December 2024 -- Present
+
+\textit{Graduate Research Assistant}, with Prof. Anshumali Shrivastava
+
+\begin{itemize}
+    \item Developed a novel parameter-efficient fine-tuning method for quantized foudation models based on sparse dictionary learning, achieving both memory efficiency during fine-tuning and computational efficiency during inference, with significantly fewer trainable parameters compared to baseline methods such as low-rank adaptation [\ref{anshu-lluf}].
+\end{itemize}
+
+\vspace{\lineskip}
+
+\textbf{Rice Computational Wellbeing Group} \hfill January 2024 -- July 2024
+
+\textit{Graduate Student Researcher}, with Prof. Akane Sano
+
+\begin{itemize}
+    \item Developed a fair diffusion model to generate balanced mixed-type tabular data conditioned on multiple labels [\ref{akane-ddpm}].
+    \item Created a self-supervised multimodal learning method for stress detection using time series and tabular data [\ref{akane-clsp}].
+\end{itemize}
+
+\vspace{\lineskip}
+
+\textbf{Rice Computer Graphics/Geometric Design Group} \hfill May 2022 -- August 2022
+
+\textit{Graduate Student Researcher}, with Prof. Joe Warren
+
+\begin{itemize}
+    \item Designed lecture notes and Python programming assignments that cover the principles of neural networks.
+    \item Developed a Python toolbox for animating the training progress of multi-layer perceptrons [\ref{joe-plotnet}].
+\end{itemize}
+
+\vspace{\lineskip}
+
+\textbf{Monash Data Futures Institute} \hfill December 2020 -- March 2021
+
+\textit{Undergraduate Student Researcher}, with Prof. Hao Wang
+
+\begin{itemize}
+    \item Developed an asynchronous distributed alternating direction method of multipliers (ADMM) algorithm to optimize energy trading problems under asynchronous communication, allowing communication delay and indicating a potential for better outcomes in real-world applications [\ref{hao-admm}].
+\end{itemize}
+
+% publications
+\section*{Publications}
+
+\textit{In Submission:}
+
+\begin{enumerate}[label={[\arabic*]}]
+    \item \label{anshu-lluf} \textbf{Zeyu Yang}, Tianyi Zhang, Junda Su, Yang Sui, Anshumali Shrivastava, ``Extreme Parameter-Efficient Fine-Tuning with Sparse Dictionary Learning'', in submission to \textit{Neural Information Processing Systems (NeurIPS)}, 2025.
+\end{enumerate}
+
+\vspace{\lineskip}
+
+\textit{Journal Publications:}
+
+\begin{enumerate}[resume, label={[\arabic*]}]
+    \item \label{akane-ddpm} \textbf{Zeyu Yang}, Han Yu, Peikun Guo, Khadija Zanna, Xiaoxue Yang, Akane Sano,
+    ``Balanced Mixed-Type Tabular Data Synthesis with Diffusion Models'', \textit{Transactions on Machine Learning Research (TMLR)}, 2025.
+\end{enumerate}
+
+\vspace{\lineskip}
+    
+\textit{Conference Publications:}
+
+\begin{enumerate}[resume, label={[\arabic*]}]
+    \item \label{akane-clsp} \textbf{Zeyu Yang}, Han Yu, Akane Sano, ``Contrastive Pretraining for Stress Detection with Multimodal Wearable Sensor Data and Surveys'', in \textit{Conference on Health, Inference, and Learning (CHIL)}, 2025.
+    \item Yuanhao Gong, Tan Tang, \textbf{Zeyu Yang}, Lantao Yu, ``A Filter for Minimizing Gaussian Curvature on 3D Triangular Meshes'', in \textit{International Symposium on Biomedical Imaging (ISBI)}, 2025.
+    \item Yizhuo Yang, Huan Wang, Zhiliang Liu, \textbf{Zeyu Yang}, 
+    ``Few-Shot Learning for Rolling Bearing Fault Diagnosis via Siamese Two-Dimensional Convolutional Neural Network'', 
+    in \textit{Asia-Pacific International Symposium on Advanced Reliability and Maintenance Modeling}, 2020.
+\end{enumerate}
+
+\textit{Preprints:}
+
+\begin{enumerate}[resume, label={[\arabic*]}]
+    \item \label{hao-admm} \textbf{Zeyu Yang}, Hao Wang, 
+    ``Network-Aware Asynchronous Distributed ADMM Algorithm for Peer-to-Peer Energy Trading'', \textit{arXiv:2312.06976}, 2023.
+\end{enumerate}
+
+\vspace{\lineskip}
+
+\textit{Published Software:}
+
+\begin{enumerate}[resume, label={[\arabic*]}]
+    \item \label{joe-plotnet} \textit{PlotNet}. (2022). [Online]. Available: \url{https://github.com/zeyuyang8/plotnet}
+\end{enumerate}
+
+% awards & honors
+\section*{Awards \& Honors}
+
+Outstanding Undergraduate Student Award \hfill 2021
+
+Meritorious Winner of Interdisciplinary Contest in Modeling \hfill 2020
+
+% teaching experience
+\section*{Teaching Experience}
+
+\textbf{Data Visualization (COMP 665)} at Rice University, \hfill Spring 2022 -- Spring 2023
+
+\textit{Teaching Assistant}, with Prof. Joe Warren
+
+\vspace{\lineskip}
+
+\textbf{Statistics for Data Science (COMP 680)} at Rice University, \hfill Spring 2023
+
+\textit{Academic Tutor}, with Prof. Chen Su
+
+\vspace{\lineskip}
+
+\textbf{Introduction to Data Science (DSCI 101)} at Rice University, \hfill Fall 2024
+
+\textit{Teaching Assistant}, with Prof. Lorenzo Luzi
 
 % skills & certificates
 \section*{Skills \& Certificates}
@@ -95,118 +211,6 @@ B.E. in Electronic Information Engineering, GPA: 3.66/4.00
     \item Front-End Developer Professional Certificate offered by Meta
     \item Database Engineer Professional Certificate offered by Meta
 \end{itemize}
-
-% research experience
-\section*{Research Experience}
-
-\textbf{Rice Rush Lab} \hfill December 2024 -- Present
-
-\textit{Graduate Research Assistant}, with Professor Anshumali Shrivastava
-
-\begin{itemize}
-    \item Developed a 4-bit tunable quantization framework for text-to-image diffusion transformers.
-\end{itemize}
-
-\vspace{\lineskip}
-
-\textbf{Rice Computational Wellbeing Group} \hfill January 2024 -- July 2024
-
-\textit{Graduate Student Researcher}, with Professor Akane Sano
-
-\begin{itemize}
-    \item Developed a fair diffusion model to generate balanced mixed-type tabular data conditioned on multiple labels [\ref{akane-ddpm}].
-    \item Created a self-supervised multimodal learning method for stress detection using time series and tabular data [\ref{akane-clsp}].
-\end{itemize}
-
-\vspace{\lineskip}
-
-\textbf{Rice Computer Graphics/Geometric Design Group} \hfill May 2022 -- August 2022
-
-\textit{Graduate Student Researcher}, with Professor Joe Warren
-
-\begin{itemize}
-    \item Designed lecture notes and Python programming assignments that cover the principles of neural networks.
-    \item Developed a Python toolbox for animating the training progress of multi-layer perceptrons [\ref{joe-plotnet}].
-\end{itemize}
-
-\vspace{\lineskip}
-
-\textbf{Monash Data Futures Institute} \hfill December 2020 -- March 2021
-
-\textit{Undergraduate Student Researcher}, with Professor Hao Wang
-
-\begin{itemize}
-    \item Developed an asynchronous distributed alternating direction method of multipliers (ADMM) algorithm to optimize energy trading problems under asynchronous communication, allowing communication delay and indicating a potential for better outcomes in real-world applications [\ref{hao-admm}].
-\end{itemize}
-
-% publications
-\section*{Publications}
-
-\textit{Journal Publications:}
-
-\begin{enumerate}
-    \item \label{akane-ddpm} \textbf{Zeyu Yang}, Han Yu, Peikun Guo, Khadija Zanna, Xiaoxue Yang, Akane Sano,
-    ``Balanced Mixed-Type Tabular Data Synthesis with Diffusion Models'', \textit{Transactions on Machine Learning Research (TMLR)}, 2025.
-\end{enumerate}
-
-\vspace{\lineskip}
-    
-\textit{Conference Publications:}
-
-\begin{enumerate}[resume]
-    \item Yizhuo Yang, Huan Wang, Zhiliang Liu, \textbf{Zeyu Yang}, 
-    ``Few-Shot Learning for Rolling Bearing Fault Diagnosis via Siamese Two-Dimensional Convolutional Neural Network'', 
-    in \textit{Asia-Pacific International Symposium on Advanced Reliability and Maintenance Modeling}, 2020.
-\end{enumerate}
-
-\textit{Preprints:}
-
-\begin{enumerate}[resume]
-    \item \label{hao-admm} \textbf{Zeyu Yang}, Hao Wang, 
-    ``Network-Aware Asynchronous Distributed ADMM Algorithm for Peer-to-Peer Energy Trading'', \textit{arXiv:2312.06976}, 2023.
-\end{enumerate}
-
-\vspace{\lineskip}
-
-\textit{Working Papers:}
-
-\begin{enumerate}[resume]
-    \item \label{akane-clsp} \textbf{Zeyu Yang}, Han Yu, Akane Sano, ``Contrastive Pretraining for Stress Detection with Multimodal Wearable Sensor Data and Surveys'', submitted to \textit{Conference on Health, Inference, and Learning (CHIL)}, 2025.
-\end{enumerate}
-
-\vspace{\lineskip}
-
-\textit{Published Software:}
-
-\begin{enumerate}[resume]
-    \item \label{joe-plotnet} \textit{PlotNet}. (2022). [Online]. Available: \url{https://github.com/zeyuyang8/plotnet}
-\end{enumerate}
-
-% awards & honors
-\section*{Awards \& Honors}
-
-Outstanding Undergraduate Student Award \hfill 2021
-
-Meritorious Winner of Interdisciplinary Contest in Modeling \hfill 2020
-
-% teaching experience
-\section*{Teaching Experience}
-
-\textbf{Data Visualization (COMP 665)} at Rice University, \hfill Spring 2022 -- Spring 2023
-
-\textit{Teaching Assistant}, with Professor Joe Warren
-
-\vspace{\lineskip}
-
-\textbf{Statistics for Data Science (COMP 680)} at Rice University, \hfill Spring 2023
-
-\textit{Academic Tutor}, with Professor Chen Su
-
-\vspace{\lineskip}
-
-\textbf{Introduction to Data Science (DSCI 101)} at Rice University, \hfill Fall 2024
-
-\textit{Teaching Assistant}, with Professor Lorenzo Luzi
 
 % coursework
 \section*{Coursework}
