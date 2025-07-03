@@ -86,7 +86,8 @@ B.E. in Electronic Information Engineering, GPA: 3.66/4.00
 \textit{Graduate Research Assistant}, with Prof. Anshumali Shrivastava
 
 \begin{itemize}
-    \item Developed a novel parameter-efficient fine-tuning method for quantized foudation models based on sparse dictionary learning, achieving both memory efficiency during fine-tuning and computational efficiency during inference, with significantly fewer trainable parameters compared to baseline methods such as low-rank adaptation \ref{anshu-lluf}.
+    \item Designed a novel parameter-efficient fine-tuning method for quantized foundation models based on sparse dictionary learning, achieving both memory efficiency during fine-tuning and computational efficiency during inference, with significantly fewer (around 100x) trainable parameters compared to baseline methods such as low-rank adaptation \ref{anshu-lluf}.
+    \item Developed an entropy-based lossless compression algorithm for float8 neural network parameters, achieving an 18\% compression ratio while maintaining bit-exact reconstruction of the original model \ref{anshu-fp8-compression}.
 \end{itemize}
 
 \vspace{\lineskip}
@@ -128,6 +129,7 @@ B.E. in Electronic Information Engineering, GPA: 3.66/4.00
 
 \begin{enumerate}[label={[\arabic*]}]
     \item \label{anshu-lluf} \textbf{Zeyu Yang}, Tianyi Zhang, Junda Su, Yang Sui, Anshumali Shrivastava, ``Extreme Parameter-Efficient Fine-Tuning with Sparse Dictionary Learning'', in submission to \textit{Neural Information Processing Systems (NeurIPS)}, 2025.
+    \item \label{anshu-fp8-compression} \textbf{Zeyu Yang}, Tianyi Zhang, Zhaozhuo Xu, Anshumali Shrivastava, ``To Compress or Not? Exploring Low-Entropy Exponents in Model Weights'', in submission to \textit{International Conference on Learning Representations (ICLR)}, 2025.
 \end{enumerate}
 
 \vspace{\lineskip}
@@ -173,44 +175,24 @@ Outstanding Undergraduate Student Award \hfill 2021
 
 Meritorious Winner of Interdisciplinary Contest in Modeling \hfill 2020
 
-% teaching experience
-\section*{Teaching Experience}
-
-\textbf{Data Visualization (COMP 665)} at Rice University, \hfill Spring 2022 -- Spring 2023
-
-\textit{Teaching Assistant}, with Prof. Joe Warren
-
-\vspace{\lineskip}
-
-\textbf{Statistics for Data Science (COMP 680)} at Rice University, \hfill Spring 2023
-
-\textit{Academic Tutor}, with Prof. Chen Su
-
-\vspace{\lineskip}
-
-\textbf{Introduction to Data Science (DSCI 101)} at Rice University, \hfill Fall 2024
-
-\textit{Teaching Assistant}, with Prof. Lorenzo Luzi
-
-% skills & certificates
-\section*{Skills \& Certificates}
+\section*{Skills}
 \textbf{Programming:}
 
 \begin{itemize}
-    \item {\textit{Data Science:}} C++, CUDA, Python (PyTorch, Hugging Face, Matplotlib), MATLAB, Tableau
+    \item {\textit{Data Science:}} C++, CUDA, Python (PyTorch, Hugging Face, Weights \& Biases, Matplotlib), MATLAB, Tableau
     \item {\textit{Web Development:}} Python (Django, Dash), HTML, CSS, JavaScript (React), PostgreSQL
-    \item {\textit{IT Skills:}} Git, AWS, Docker, Linux, Markdown, LaTeX
+    \item {\textit{IT Skills:}} Git, AWS, Docker, Linux, Markdown, LaTeX, Shell Scripting
 \end{itemize}
 
 \vspace{\lineskip}
 
-\textbf{Coursera Certificates:}
+\textbf{Machine Learning:}
 
 \begin{itemize}
-    \item Back-End Developer Professional Certificate offered by Meta
-    \item Front-End Developer Professional Certificate offered by Meta
-    \item Database Engineer Professional Certificate offered by Meta
+    \item {\textit{Deep Learning:}} Large-Language Models, Diffusion Models, Transformers, Contrastive Learning
+    \item {\textit{Machine Learning:}} Sparse Dictionary Learning, Entropy Coding, Matrix Factorization, Feature Selection, Bias Mitigation
 \end{itemize}
+
 
 % coursework
 \section*{Coursework}
@@ -232,5 +214,18 @@ Meritorious Winner of Interdisciplinary Contest in Modeling \hfill 2020
     \item {\textit{Electrical Engineering:}} Application and Design of Digital Logic, Signals and Systems, Digital Communication, Microelectronic Systems, Circuit Analysis and Design, Fundamentals of Analog Circuits
     \item {\textit{Math \& Physics:}} Linear Algebra and Space Analytic Geometry, Probability Theory and Mathematical Statistics, Calculus I, Calculus II, Physics I, Physics II
 \end{itemize}
+
+% teaching experience
+\section*{Teaching Experience}
+
+\textbf{Data Visualization (COMP 665)} at Rice University, \hfill Spring 2022 -- Spring 2023
+
+\textit{Teaching Assistant}, with Prof. Joe Warren
+
+\vspace{\lineskip}
+
+\textbf{Statistics for Data Science (COMP 680)} at Rice University, \hfill Spring 2023
+
+\textit{Academic Tutor}, with Prof. Chen Su
 	
 \end{document}
