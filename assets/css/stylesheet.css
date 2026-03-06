@@ -60,6 +60,27 @@ a:hover {
     color: #c4652a;
 }
 
+/* Mochi Lab link */
+.mochi-link {
+    display: inline-block;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    background-color: #1a8a7a;
+    padding: 4px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s;
+}
+
+.mochi-link:hover {
+    background-color: #147063;
+    color: #fff;
+    text-decoration: none;
+}
+
 hr {
     border-top: 1px solid #d0ccc6;
 }
