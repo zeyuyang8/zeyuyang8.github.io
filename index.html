@@ -9,14 +9,14 @@
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto+Slab:wght@700&display=swap">
   <link rel="stylesheet" href="assets/css/stylesheet.css">
+  <title>Zeyu Yang</title>
 </head>
-
-<title>Zeyu Yang</title>
 
 <body>
   <!-- Navigator -->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-charcoal">
     <a class="navbar-brand" href="">Zeyu Yang</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
       aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,22 +34,22 @@
           <a class="nav-link" href="#software">Software</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#teaching">Teaching</a>
+          <a class="nav-link" href="#honors">Honors</a>
         </li>
       </ul>
     </div>
   </nav>
 
   <!-- Home -->
-  <div id="home" class="container" style="padding-top: 60px; font-size: 17px; width: 100%">
+  <div id="home" class="container section" style="padding-top: 60px">
     <div class="row">
       <!-- Photo -->
-      <div class="col-md-3" , style="padding-top: 25px">
+      <div class="col-md-3" style="padding-top: 25px">
         <img class="img-responsive img-rounded" src="assets/photos/me.png" alt="poor tom" style="max-width: 100%"><br>
       </div>
 
       <!-- Intro -->
-      <div class="col-md-7" , style="padding-top: 25px">
+      <div class="col-md-7" style="padding-top: 25px">
         <h2>Zeyu Yang</h2>
         <p>
           PhD Student <br>
@@ -64,6 +64,8 @@
           <a href="https://www.linkedin.com/in/zeyu-dennis-yang/" target="_blank">LinkedIn</a> /
           <!-- CV -->
           <a href="cv/main.pdf" target="_blank">CV</a>
+          <br>
+          <span class="text-muted-custom" style="font-size: 16px;">Last updated: <span id="last-updated"></span></span>
         </p>
       </div>
     </div>
@@ -72,109 +74,62 @@
     <div class="row">
       <div class="col-md-12" style="padding-top: 25px;">
         <p>
-          Zeyu Yang is a second year PhD student in Electrical and Computer Engineering at Rice University, where he is fortunate to work under the supervision of Dr. <a href="https://www.cs.rice.edu/~as143/" target="_blank">Anshumali Shrivastava</a>. His main area of research
-          interest is building efficient AI systems, including techniques such as quantization, parameter-efficient fine-tuning, and lossless compression via entropy coding. 
+          Zeyu Yang is a second-year PhD student in Electrical and Computer Engineering at Rice University, where he is fortunate to work under the supervision of Dr. <a href="https://www.cs.rice.edu/~as143/" target="_blank">Anshumali Shrivastava</a>.
+          His research focuses on efficient AI systems, including quantization, parameter-efficient fine-tuning, and lossless compression. He is also interested in AI agents, including self-evolving, long-horizon planning, and multi-agent collaboration.
         </p>
       </div>
     </div>
   </div>
 
   <!-- Publications -->
-  <div class="container" style="padding-top: 25px; font-size: 17px; width: 100%">
-    <h3 id="publication" style="padding-top: 80px; margin-top: -50px;">
-      Publications
-    </h3><hr>
-
-    <!-- Item -->
-    <div class="row">
-      <div class="col-md-4">
-        <img src="materials/pictures/ddpm.jpg" alt="ddpm" style="width: 100%; height: auto; object-fit: contain;">
-      </div>
-      <div class="col-md-8">
-        <a href="https://arxiv.org/abs/2404.08254" target="_blank">
-          Balanced Mixed-Type Tabular Data Synthesis with Diffusion Models
-        </a><br>
-        <!-- font color gray -->
-        <b>Zeyu Yang</b>, <font color="gray">Han Yu, Peikun Guo, Khadija Zanna, Xiaoxue Yang, Akane Sano</font><br>
-        Transactions on Machine Learning Research (TMLR), 2025 <br>
-        <a href="https://openreview.net/forum?id=dvRysCqmYQ" target="_blank"> <small>[OpenReview]</small></a>
-      </div>
+  <div class="container section">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; padding-top: 80px; margin-top: -50px;">
+      <h3 id="publication" style="margin: 0;">Publications</h3>
+      <a href="https://scholar.google.com/citations?user=CaKsmnUAAAAJ&hl=en" target="_blank" style="font-family: 'Roboto Slab', serif; font-size: 1.75rem; font-weight: 700;">[FULL LIST]</a>
     </div><hr>
+    <div id="publications-list"></div>
   </div>
 
   <!-- Software -->
-  <div class="container" style="padding-top: 25px; font-size: 17px; width: 100%">
-    <h3 id="software" style="padding-top: 80px; margin-top: -50px;">Software</h3><hr>
+  <div class="container section">
+    <h3 id="software" class="section-heading">Software</h3><hr>
+    <div id="software-list"></div>
+  </div>
 
-    <!-- Item -->
-    <div class="row">
-      <div class="col-md-4">
-        <img src="materials/pictures/plotnet.png" style="width: 100%; height: auto; object-fit: contain;">
-      </div>
-      <div class="col-md-8">
-        <a href="https://github.com/zeyuyang8/plotnet" target="_blank">
-          PlotNet: A Python Toolbox for Interactive Visualization of Neural Networks
-        </a><br>
-        <b>Zeyu Yang</b> <font color="gray">and Joe Warren</font><br>
-        <a href="https://github.com/zeyuyang8/plotnet" target="_blank"> <small>[GitHub]</small></a>
-      </div>
-    </div><hr>
-
+  <!-- Industry Experience -->
+  <div class="container section">
+    <h3 id="experience" class="section-heading">Industry Experience</h3><hr>
+    <div id="experience-list"></div>
   </div>
 
   <!-- Teaching -->
-  <div class="container" style="padding-top: 25px; font-size: 17px; width: 100%">
-    <h3 id="teaching" style="padding-top: 80px; margin-top: -50px;">Teaching</h3>
-
-    <!-- Item -->
-    <div class="row">
-      <div class="col-md-12">
-        <b>Rice University</b><br>
-        Graduate Teaching Assistant:<br>
-        <ol>
-          <li>
-            <i>Course:</i> Data Visualization (COMP 665, Graduate Level) <br>
-            <i>Semester:</i> Spring 2023, Fall 2022, Summer 2022, Spring 2022 <br>
-            <i>Instructor:</i> Dr. <a href="https://profiles.rice.edu/faculty/joe-d-warren" target="_blank">Joe Warren</a>
-          </li>
-          <li>
-            <i>Course:</i> Introduction to Data Science (DSCI 101, Undergraduate Level) <br>
-            <i>Semester:</i> Fall 2025 <br>
-            <i>Instructor:</i> Dr. <a href="https://profiles.rice.edu/faculty/lorenzo-luzi" target="_blank">Lorenzo Luzi</a>
-          </li>
-        </ol>
-      </div>
-    </div>
+  <div class="container section">
+    <h3 id="teaching" class="section-heading">Teaching Experience</h3><hr>
+    <div id="teaching-list"></div>
   </div>
 
   <!-- Selected Honors -->
-  <div class="container" style="padding-top: 25px; font-size: 17px; width: 100%">
-    <h3 id="honors" style="padding-top: 80px; margin-top: -50px;">Selected Honors</h3>
-    <ul>
-      <li>Outstanding Undergraduate Student Award, 2021</li>
-      <li>Meritorious Winner of Interdisciplinary Contest in Modeling, 2020</li>
-    </ul>
+  <div class="container section">
+    <h3 id="honors" class="section-heading">Selected Honors</h3><hr>
+    <div id="honors-list"></div>
   </div>
 
   <!-- Misc. -->
-  <div class="container" style="padding-top: 25px; font-size: 17px; width: 100%">
-    <h3 id="misc" style="padding-top: 80px; margin-top: -50px;">Misc.</h3>
+  <div class="container section">
+    <h3 id="misc" class="section-heading">Misc.</h3><hr>
 
     <p>
       I have a love for basketball, both playing it and watching games.
       I also find great pleasure in playing Chinese chess, and it's worth mentioning that I won the championship of the
-      national junior Chinese chess tournament in 2009. My favorite author is Plato, renowned for crafting influential works such as 
+      national junior Chinese chess tournament in 2009. My favorite author is Plato, renowned for crafting influential works such as
       <i>Republic</i>, <i>Apology</i>, and <i>Symposium</i>.
     </p>
   </div>
 
-  <!-- Footer -->
-  <footer>
-    Last updated: <span id="last-updated"></span>
-  </footer>
 
   <!-- Javascript -->
-  <!-- Date -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/render.js"></script>
   <script src="assets/js/date.js"></script>
   <!-- Navigator bar -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

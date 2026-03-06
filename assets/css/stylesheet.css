@@ -3,13 +3,82 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #f9f8f6;
+    font-family: 'Inter', sans-serif;
+    color: #2a2a28;
+}
+
+/* Navbar */
+.navbar-dark.bg-charcoal {
+    background-color: #1c1c1c;
+}
+
+/* Section containers */
+.section {
+    padding-top: 25px;
+    font-size: 17px;
+    width: 100%;
+}
+
+/* Section heading anchors (offset for fixed navbar) */
+.section-heading {
+    padding-top: 80px;
+    margin-top: -50px;
+}
+
+/* Muted text */
+.text-muted-custom {
+    color: #8a8884;
+}
+
+/* Co-author text */
+.text-coauthor {
+    color: #807e7a;
+}
+
+h2, h3 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: #1c1c1c;
+}
+
+a {
+    color: #2a7ab5;
+}
+
+a.paper-title {
+    color: #1a3a5a;
+    font-weight: 600;
+}
+
+a.paper-title:hover {
+    color: #c4652a;
+}
+
+a:hover {
+    color: #c4652a;
+}
+
+hr {
+    border-top: 1px solid #d0ccc6;
+}
+
+.card {
+    background-color: #fdf8f0;
+    border: 1px solid #e0d4c4;
+}
+
+.table th {
+    color: #1c1c1c;
+}
+
 /* Footer settings */
 footer {
     text-align: center;
-    background-color: darkslateblue;
-    color: white;
-    padding: 10px;
-    bottom: 0;
+    color: #8a8884;
+    padding: 30px 0;
+    font-size: 14px;
 }
 
 /* Show dropdown menu options on hover */
@@ -17,14 +86,128 @@ footer {
     display: block;
 }
 
-/* Show dropdown menu options on hover */
-.work-info {
+/* Publication filter/sort controls */
+.pub-controls {
     display: flex;
     justify-content: space-between;
-    /* Optional: Add other styles like padding, margin, etc. as needed */
+    align-items: center;
+    margin-bottom: 12px;
+    gap: 8px;
 }
 
-body {
-    background-color: #f9f9f9;
-    font-family: 'Roboto', sans-serif;
+.pub-control-group {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+.pub-control-label {
+    font-family: 'Roboto Slab', serif;
+    color: #807e7a;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-right: 2px;
+}
+
+.pub-pill {
+    padding: 5px 12px;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #2a7ab5;
+    transition: background-color 0.2s, color 0.2s;
+    outline: none;
+}
+
+.pub-pill:hover {
+    color: #1a5a8a;
+}
+
+.pub-pill.active {
+    background-color: #c4652a;
+    color: #fff;
+}
+
+.pub-pill.active:hover {
+    background-color: #b05824;
+}
+
+/* Custom year dropdown */
+.pub-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.pub-dropdown-trigger {
+    padding: 5px 28px 5px 12px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    border: 1px solid #c8c4be;
+    border-radius: 20px;
+    color: #2a2a28;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23807e7a'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.pub-dropdown-trigger:hover {
+    border-color: #2a7ab5;
+}
+
+.pub-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    border: 1px solid #d0ccc6;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    overflow: hidden;
+    min-width: 80px;
+}
+
+.pub-dropdown-menu.open {
+    display: block;
+}
+
+.pub-dropdown-item {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: #2a2a28;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.15s;
+}
+
+.pub-dropdown-item:hover {
+    background-color: #edf3fa;
+}
+
+.pub-dropdown-item.active {
+    color: #2a7ab5;
+    font-weight: 600;
+}
+
+.pub-year-dash {
+    font-size: 20px;
+    color: #2a7ab5;
+    margin: 0 2px;
+    line-height: 1;
+    font-weight: 300;
 }

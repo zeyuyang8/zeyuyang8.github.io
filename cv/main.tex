@@ -7,8 +7,8 @@
 \WarningsOff[everypage]
 % package imports
 \usepackage{
-    setspace, longtable, graphicx, hyphenat, hyperref, fancyhdr, ifthen, 
-    everypage, enumitem, amsmath, setspace, fontawesome, fullwidth, 
+    setspace, longtable, graphicx, hyphenat, hyperref, fancyhdr, ifthen,
+    everypage, enumitem, amsmath, setspace, fontawesome, fullwidth,
     titlecaps, array, lipsum, titlesec, mfirstuc
 }
 % set page margins
@@ -25,6 +25,9 @@
 % set font to Libertine, including math support
 \usepackage{libertine}
 \usepackage[libertine]{newtxmath}
+% venue label commands
+\newcommand{\venue}[1]{[\textsc{#1}]}
+\newcommand{\topvenuetag}[1]{{\color{BrickRed}\textbf{[\textsc{#1}]}}}
 % remove page numbering
 \pagenumbering{gobble}
 % title spacing
@@ -33,7 +36,7 @@
 \titleformat{\section}{\Large\color{OliveGreen}\scshape}{\thesection}{1em}{}[\color{black} \hrule height 0.75pt]
 % list format
 \setlist[itemize]{label=$\bullet$, leftmargin=*, labelsep=2.2mm, itemsep=0ex, topsep=0.0ex}
-\setlist[enumerate]{leftmargin=*, labelsep=2.2mm, itemsep=0ex, topsep=0.0ex} 
+\setlist[enumerate]{leftmargin=*, labelsep=2.2mm, itemsep=0ex, topsep=0.0ex}
 % subsection spacing
 \setlength{\lineskip}{5.5pt}
 
@@ -48,16 +51,16 @@
 \begin{center}
     \begin{tabular}{llll}
         \faicon{envelope} zeyu.yang@rice.edu &
-        \faicon{phone}  (713) 855-5359 & 
+        \faicon{phone}  (713) 855-5359 &
         \faicon{globe} \url{zeyuyang8.github.io} &
         \faicon{linkedin} \url{www.linkedin.com/in/zeyu-bob-yang}
     \end{tabular}
 \end{center}
-	
+
 % research interests
 \section*{Research Interests}
 
-Large Scale Machine Learning; Generative Modeling
+AI Efficiency (Quantization, Parameter-Efficient Fine-Tuning, Lossless Compression); AI Agents (Self-Evolving, Long-Horizon Planning, Multi-Agent Collaboration); AI Safety (Fairness, Privacy)
 
 % education
 \section*{Education}
@@ -78,6 +81,15 @@ M.S. in Data Science, Advisor: Prof. Joe Warren and Prof. Akane Sano
 
 B.E. in Electronic Information Engineering, GPA: 3.66/4.00
 
+% industry experience
+\section*{Industry Experience}
+
+\textbf{Meta Superintelligence Lab} \hfill August 2025 -- Present
+
+\textit{Visiting Researcher}, with Anshumali Shrivastava and Jason Chen
+
+\vspace{\lineskip}
+
 % research experience
 \section*{Research Experience}
 
@@ -86,8 +98,8 @@ B.E. in Electronic Information Engineering, GPA: 3.66/4.00
 \textit{Graduate Research Assistant}, with Prof. Anshumali Shrivastava
 
 \begin{itemize}
-    \item Designed a novel parameter-efficient fine-tuning method for quantized foundation models based on sparse dictionary learning, achieving both memory efficiency during fine-tuning and computational efficiency during inference, with significantly fewer (around 100x) trainable parameters compared to baseline methods such as low-rank adaptation \ref{anshu-lluf}.
-    \item Developed an entropy-based lossless compression algorithm for float8 neural network parameters, achieving an 18\% compression ratio while maintaining bit-exact reconstruction of the original model \ref{anshu-fp8-compression}.
+    \item \topvenuetag{ICLR'26} Developed an entropy-based lossless compression algorithm for float8 neural network parameters, achieving an 18\% compression ratio while maintaining bit-exact reconstruction of the original model \ref{anshu-fp8-compression}.
+    \item Proposed a compressed adaptation framework for diffusion transformers that performs global clustering of weights and represents each weight via a global cluster ID and an index into that cluster's lookup table, matching or exceeding full-precision LoRA while substantially outperforming QLoRA in quality, training time, and memory across 6 diffusion transformers (2B--20B) \ref{anshu-lluf}.
 \end{itemize}
 
 \vspace{\lineskip}
@@ -97,8 +109,8 @@ B.E. in Electronic Information Engineering, GPA: 3.66/4.00
 \textit{Graduate Student Researcher}, with Prof. Akane Sano
 
 \begin{itemize}
-    \item Developed a fair diffusion model to generate balanced mixed-type tabular data conditioned on multiple labels \ref{akane-ddpm}.
-    \item Created a self-supervised multimodal learning method for stress detection using time series and tabular data \ref{akane-clsp}.
+    \item \topvenuetag{TMLR'25} Developed a tabular diffusion model with sensitive guidance that generates fair synthetic data with balanced joint distributions of target labels and sensitive attributes, outperforming existing methods on fairness metrics such as demographic parity ratio and equalized odds ratio by over 10\% \ref{akane-ddpm}.
+    \item \venue{CHIL'25} Designed a self-supervised contrastive pretraining method that jointly learns from multimodal wearable sensor time series and survey data, improving stress detection accuracy while reducing reliance on labeled data \ref{akane-clsp}.
 \end{itemize}
 
 \vspace{\lineskip}
@@ -108,8 +120,7 @@ B.E. in Electronic Information Engineering, GPA: 3.66/4.00
 \textit{Graduate Student Researcher}, with Prof. Joe Warren
 
 \begin{itemize}
-    \item Designed lecture notes and Python programming assignments that cover the principles of neural networks.
-    \item Developed a Python toolbox for animating the training progress of multi-layer perceptrons \ref{joe-plotnet}.
+    \item \venue{GitHub'22} Developed a Python toolbox for animating the training progress of multi-layer perceptrons \ref{joe-plotnet}.
 \end{itemize}
 
 \vspace{\lineskip}
@@ -119,7 +130,7 @@ B.E. in Electronic Information Engineering, GPA: 3.66/4.00
 \textit{Undergraduate Student Researcher}, with Prof. Hao Wang
 
 \begin{itemize}
-    \item Developed an asynchronous distributed alternating direction method of multipliers (ADMM) algorithm to optimize energy trading problems under asynchronous communication, allowing communication delay and indicating a potential for better outcomes in real-world applications \ref{hao-admm}.
+    \item \venue{arXiv'23} Developed an asynchronous distributed alternating direction method of multipliers (ADMM) algorithm to optimize energy trading problems under asynchronous communication, allowing communication delay and indicating a potential for better outcomes in real-world applications \ref{hao-admm}.
 \end{itemize}
 
 % publications
@@ -128,8 +139,20 @@ B.E. in Electronic Information Engineering, GPA: 3.66/4.00
 \textit{In Submission:}
 
 \begin{enumerate}[label={[\arabic*]}]
-    \item \label{anshu-lluf} \textbf{Zeyu Yang}, Tianyi Zhang, Junda Su, Yang Sui, Anshumali Shrivastava, ``Extreme Parameter-Efficient Fine-Tuning with Sparse Dictionary Learning'', in submission to \textit{Neural Information Processing Systems (NeurIPS)}, 2025.
-    \item \label{anshu-fp8-compression} \textbf{Zeyu Yang}, Tianyi Zhang, Zhaozhuo Xu, Anshumali Shrivastava, ``To Compress or Not? Exploring Low-Entropy Exponents in Model Weights'', in submission to \textit{International Conference on Learning Representations (ICLR)}, 2025.
+    \item \label{anshu-lluf} \textbf{Zeyu Yang}, Tianyi Zhang, Junda Su, Yang Sui, Anshumali Shrivastava, ``Globally-Sensitive Sketch for Compressed Adaptation of Diffusion Transformers'', 2026.
+\end{enumerate}
+
+\vspace{\lineskip}
+
+\textit{Conference Publications:}
+
+\begin{enumerate}[resume, label={[\arabic*]}]
+    \item \label{anshu-fp8-compression} \textbf{Zeyu Yang}, Tianyi Zhang, Jianwen Xie, Chuan Li, Zhaozhuo Xu, Anshumali Shrivastava, ``To Compress or Not? Pushing the Frontier of Lossless GenAI Model Weights Compression with Exponent Concentration'', in \textit{International Conference on Learning Representations (ICLR)}, 2026.
+    \item \label{akane-clsp} \textbf{Zeyu Yang}, Han Yu, Akane Sano, ``Contrastive Pretraining for Stress Detection with Multimodal Wearable Sensor Data and Surveys'', in \textit{Conference on Health, Inference, and Learning (CHIL)}, 2025.
+    \item Yuanhao Gong, Tan Tang, \textbf{Zeyu Yang}, Lantao Yu, ``A Filter for Minimizing Gaussian Curvature on 3D Triangular Meshes'', in \textit{International Symposium on Biomedical Imaging (ISBI)}, 2025.
+    \item Yizhuo Yang, Huan Wang, Zhiliang Liu, \textbf{Zeyu Yang},
+    ``Few-Shot Learning for Rolling Bearing Fault Diagnosis via Siamese Two-Dimensional Convolutional Neural Network'',
+    in \textit{Asia-Pacific International Symposium on Advanced Reliability and Maintenance Modeling}, 2020.
 \end{enumerate}
 
 \vspace{\lineskip}
@@ -142,21 +165,12 @@ B.E. in Electronic Information Engineering, GPA: 3.66/4.00
 \end{enumerate}
 
 \vspace{\lineskip}
-    
-\textit{Conference Publications:}
-
-\begin{enumerate}[resume, label={[\arabic*]}]
-    \item \label{akane-clsp} \textbf{Zeyu Yang}, Han Yu, Akane Sano, ``Contrastive Pretraining for Stress Detection with Multimodal Wearable Sensor Data and Surveys'', in \textit{Conference on Health, Inference, and Learning (CHIL)}, 2025.
-    \item Yuanhao Gong, Tan Tang, \textbf{Zeyu Yang}, Lantao Yu, ``A Filter for Minimizing Gaussian Curvature on 3D Triangular Meshes'', in \textit{International Symposium on Biomedical Imaging (ISBI)}, 2025.
-    \item Yizhuo Yang, Huan Wang, Zhiliang Liu, \textbf{Zeyu Yang}, 
-    ``Few-Shot Learning for Rolling Bearing Fault Diagnosis via Siamese Two-Dimensional Convolutional Neural Network'', 
-    in \textit{Asia-Pacific International Symposium on Advanced Reliability and Maintenance Modeling}, 2020.
-\end{enumerate}
 
 \textit{Preprints:}
 
 \begin{enumerate}[resume, label={[\arabic*]}]
-    \item \label{hao-admm} \textbf{Zeyu Yang}, Hao Wang, 
+    \item Hoang Anh Duy Le, Sahil Joshi, \textbf{Zeyu Yang}, Zhaozhuo Xu, Anshumali Shrivastava, ``Scout Before You Attend: Sketch-and-Walk Sparse Attention for Efficient LLM Inference'', \textit{arXiv:2602.07397}, 2026.
+    \item \label{hao-admm} \textbf{Zeyu Yang}, Hao Wang,
     ``Network-Aware Asynchronous Distributed ADMM Algorithm for Peer-to-Peer Energy Trading'', \textit{arXiv:2312.06976}, 2023.
 \end{enumerate}
 
@@ -218,6 +232,12 @@ Meritorious Winner of Interdisciplinary Contest in Modeling \hfill 2020
 % teaching experience
 \section*{Teaching Experience}
 
+\textbf{Introduction to Data Science (DSCI 101)} at Rice University, \hfill Fall 2025
+
+\textit{Teaching Assistant}, with Prof. Lorenzo Luzi
+
+\vspace{\lineskip}
+
 \textbf{Data Visualization (COMP 665)} at Rice University, \hfill Spring 2022 -- Spring 2023
 
 \textit{Teaching Assistant}, with Prof. Joe Warren
@@ -227,5 +247,5 @@ Meritorious Winner of Interdisciplinary Contest in Modeling \hfill 2020
 \textbf{Statistics for Data Science (COMP 680)} at Rice University, \hfill Spring 2023
 
 \textit{Academic Tutor}, with Prof. Chen Su
-	
+
 \end{document}
