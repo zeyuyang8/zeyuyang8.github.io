@@ -237,7 +237,7 @@ function renderTeaching(data, containerId) {
 
 function renderHonors(data, containerId) {
   var container = document.getElementById(containerId);
-  var html = '<table class="table table-borderless" style="margin-bottom: 0;">';
+  var html = '<table class="table table-borderless" style="margin-bottom: 0; table-layout: fixed;">';
   html += "<thead><tr>";
   html += '<th style="width: 80%;">Honor</th>';
   html += '<th style="width: 20%; text-align: right;">Year</th>';
@@ -245,7 +245,7 @@ function renderHonors(data, containerId) {
   for (var i = 0; i < data.length; i++) {
     html += "<tr>";
     html += "<td>" + data[i].honor + "</td>";
-    html += '<td style="text-align: right;">' + data[i].year + "</td>";
+    html += '<td style="text-align: right; font-variant-numeric: tabular-nums;">' + data[i].year + "</td>";
     html += "</tr>";
   }
   html += "</tbody></table>";
