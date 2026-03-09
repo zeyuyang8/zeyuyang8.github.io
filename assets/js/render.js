@@ -208,7 +208,7 @@ function renderExperience(data, containerId) {
     var item = data[i];
     html += '<div class="card" style="margin-bottom: 15px;">';
     html += '<div class="card-body">';
-    html += '<div style="display: flex; justify-content: space-between; align-items: baseline;">';
+    html += '<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">';
     html += '<h5 class="card-title" style="margin-bottom: 5px;">' + item.company + "</h5>";
     html += '<span class="text-muted-custom">' + item.period + "</span>";
     html += "</div>";

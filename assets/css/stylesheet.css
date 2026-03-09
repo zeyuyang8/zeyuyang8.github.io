@@ -233,3 +233,15 @@ footer {
     line-height: 1;
     font-weight: 300;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 576px) {
+    .pub-controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pub-control-group {
+        flex-wrap: wrap;
+    }
+}
