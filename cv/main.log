@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  5 MAR 2026 23:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  7 MAY 2026 23:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/zy45/Library/CloudStorage/Dropbox/GitHub/zeyuyang8.github.io/cv/main.tex
-(/Users/zy45/Library/CloudStorage/Dropbox/GitHub/zeyuyang8.github.io/cv/main.tex
+**/Users/zy45/Documents/Code/zeyuyang8.github.io/cv/main.tex
+(/Users/zy45/Documents/Code/zeyuyang8.github.io/cv/main.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -738,10 +738,10 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 10.95pt on input line 68.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 10.95pt on input line 89.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/sc' will be
-(Font)              scaled to size 10.95pt on input line 101.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/sc' will be
-(Font)              scaled to size 10.95pt on input line 113.
+(Font)              scaled to size 10.95pt on input line 92.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/sc' will be
+(Font)              scaled to size 10.95pt on input line 105.
 
 
 [1
@@ -752,14 +752,14 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/sc' will be
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.220 \end{itemize}
+l.214 \end{itemize}
                     [2]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.251 \end{document}
+l.257 \end{document}
                      [3] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
@@ -769,18 +769,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18130 strings out of 473190
- 278957 string characters out of 5715801
- 763033 words of memory out of 5000000
- 41084 multiletter control sequences out of 15000+600000
+ 18133 strings out of 473190
+ 278925 string characters out of 5715801
+ 765085 words of memory out of 5000000
+ 41086 multiletter control sequences out of 15000+600000
  584231 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,8n,93p,590b,613s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,8n,93p,569b,625s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on main.pdf (3 pages, 289243 bytes).
+Output written on main.pdf (3 pages, 290963 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
+ 80 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -88,6 +88,10 @@ B.E. in Electronic Information Engineering, GPA: 3.66/4.00
 
 \textit{Visiting Researcher}, with Anshumali Shrivastava and Jason Chen
 
+\begin{itemize}
+    \item \venue{arXiv'26} Developed SIRA, a retrieval agent that compresses multi-round exploratory search into a single corpus-discriminative BM25 call by using LLM-predicted expansion terms validated against document-frequency statistics, significantly outperforming dense retrievers and multi-round agentic baselines across ten BEIR benchmarks while remaining training-free and interpretable \ref{anshu-sra}.
+\end{itemize}
+
 \vspace{\lineskip}
 
 % research experience
@@ -99,6 +103,7 @@ B.E. in Electronic Information Engineering, GPA: 3.66/4.00
 
 \begin{itemize}
     \item \topvenuetag{ICLR'26} Developed an entropy-based lossless compression algorithm for float8 neural network parameters, achieving an 18\% compression ratio while maintaining bit-exact reconstruction of the original model \ref{anshu-fp8-compression}.
+    \item \topvenuetag{ICML'26} Contributed to Sketch\&Walk Attention, a training-free sparse attention method that uses Hadamard sketching to approximate attention scores and a cross-layer walk mechanism to select top-k attention blocks, achieving up to 6$\times$ inference speedup while maintaining near-lossless accuracy at 20\% attention density \ref{anshu-scout}.
     \item Proposed a compressed adaptation framework for diffusion transformers that performs global clustering of weights and represents each weight via a global cluster ID and an index into that cluster's lookup table, matching or exceeding full-precision LoRA while substantially outperforming QLoRA in quality, training time, and memory across 6 diffusion transformers (2B--20B) \ref{anshu-lluf}.
 \end{itemize}
 
@@ -147,6 +152,7 @@ B.E. in Electronic Information Engineering, GPA: 3.66/4.00
 \textit{Conference Publications:}
 
 \begin{enumerate}[resume, label={[\arabic*]}]
+    \item \label{anshu-scout} Hoang Anh Duy Le, Sahil Joshi, \textbf{Zeyu Yang}, Zhaozhuo Xu, Anshumali Shrivastava, ``Scout Before You Attend: Sketch-and-Walk Sparse Attention for Efficient LLM Inference'', in \textit{International Conference on Machine Learning (ICML)}, 2026.
     \item \label{anshu-fp8-compression} \textbf{Zeyu Yang}, Tianyi Zhang, Jianwen Xie, Chuan Li, Zhaozhuo Xu, Anshumali Shrivastava, ``To Compress or Not? Pushing the Frontier of Lossless GenAI Model Weights Compression with Exponent Concentration'', in \textit{International Conference on Learning Representations (ICLR)}, 2026.
     \item \label{akane-clsp} \textbf{Zeyu Yang}, Han Yu, Akane Sano, ``Contrastive Pretraining for Stress Detection with Multimodal Wearable Sensor Data and Surveys'', in \textit{Conference on Health, Inference, and Learning (CHIL)}, 2025.
     \item Yuanhao Gong, Tan Tang, \textbf{Zeyu Yang}, Lantao Yu, ``A Filter for Minimizing Gaussian Curvature on 3D Triangular Meshes'', in \textit{International Symposium on Biomedical Imaging (ISBI)}, 2025.
@@ -169,7 +175,7 @@ B.E. in Electronic Information Engineering, GPA: 3.66/4.00
 \textit{Preprints:}
 
 \begin{enumerate}[resume, label={[\arabic*]}]
-    \item Hoang Anh Duy Le, Sahil Joshi, \textbf{Zeyu Yang}, Zhaozhuo Xu, Anshumali Shrivastava, ``Scout Before You Attend: Sketch-and-Walk Sparse Attention for Efficient LLM Inference'', \textit{arXiv:2602.07397}, 2026.
+    \item \label{anshu-sra} \textbf{Zeyu Yang}, Qi Ma, Jason Chen, Anshumali Shrivastava, ``Superintelligent Retrieval Agent: The Next Frontier of Information Retrieval'', \textit{arXiv:2605.06647}, 2026.
     \item \label{hao-admm} \textbf{Zeyu Yang}, Hao Wang,
     ``Network-Aware Asynchronous Distributed ADMM Algorithm for Peer-to-Peer Energy Trading'', \textit{arXiv:2312.06976}, 2023.
 \end{enumerate}
@@ -193,9 +199,9 @@ Meritorious Winner of Interdisciplinary Contest in Modeling \hfill 2020
 \textbf{Programming:}
 
 \begin{itemize}
-    \item {\textit{Data Science:}} C++, CUDA, Python (PyTorch, Hugging Face, Weights \& Biases, Matplotlib), MATLAB, Tableau
+    \item {\textit{Data Science:}} C++, Rust, CUDA, Python (PyTorch, SGLang, Hugging Face, Weights \& Biases, Matplotlib), MATLAB, Tableau
     \item {\textit{Web Development:}} Python (Django, Dash), HTML, CSS, JavaScript (React), PostgreSQL
-    \item {\textit{IT Skills:}} Git, AWS, Docker, Linux, Markdown, LaTeX, Shell Scripting
+    \item {\textit{IT Skills:}} Git, AWS, Docker, Linux, Large-Scale Multi-Node Training and Inference, Markdown, LaTeX, Shell Scripting
 \end{itemize}
 
 \vspace{\lineskip}
@@ -204,7 +210,7 @@ Meritorious Winner of Interdisciplinary Contest in Modeling \hfill 2020
 
 \begin{itemize}
     \item {\textit{Deep Learning:}} Large-Language Models, Diffusion Models, Transformers, Contrastive Learning
-    \item {\textit{Machine Learning:}} Sparse Dictionary Learning, Entropy Coding, Matrix Factorization, Feature Selection, Bias Mitigation
+    \item {\textit{Machine Learning:}} Information Retrieval, BM25, Sparse Dictionary Learning, Entropy Coding, Matrix Factorization, Feature Selection, Bias Mitigation
 \end{itemize}
 
 

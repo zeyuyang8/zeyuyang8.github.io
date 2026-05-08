@@ -1,8 +1,8 @@
-PWD /Users/zy45/Library/CloudStorage/Dropbox/GitHub/zeyuyang8.github.io/cv
+PWD /Users/zy45/Documents/Code/zeyuyang8.github.io/cv
 INPUT /usr/local/texlive/2025/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/zy45/Library/CloudStorage/Dropbox/GitHub/zeyuyang8.github.io/cv/main.tex
+INPUT /Users/zy45/Documents/Code/zeyuyang8.github.io/cv/main.tex
 OUTPUT main.log
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -272,8 +272,8 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/libertine/LinLibertine
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-sc-ot1.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-ot1.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/libertine/LinLibertineTI-tlf-ot1.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-sc-ot1.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-sc-ot1.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-sc-ot1.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-ot1.vf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1--base.tfm
 INPUT /usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
@@ -293,11 +293,11 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/libertine/lbtn_kijugd.e
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/public/newtx/ntxsy.vf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/newtx/txsys.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/newtx/txex-bar.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-sc-ot1.vf
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-sc-ot1--base.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/public/libertine/LinLibertineTB-tlf-sc-ot1.vf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-sc-ot1--base.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/libertine/lbtn_tk3eej.enc
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-sc-ot1.vf
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-sc-ot1--base.tfm
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
