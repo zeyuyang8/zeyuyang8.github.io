@@ -2,13 +2,25 @@ const publicationTopics = ["AI Efficiency", "AI Safety", "AI Agents"];
 
 const publications = [
   {
+    title: "Superintelligent Retrieval Agent: The Next Frontier of Information Retrieval",
+    url: "https://arxiv.org/abs/2605.06647",
+    authors: ["*Zeyu Yang*", "Qi Ma", "Jason Chen", "Anshumali Shrivastava"],
+    venue: "arXiv preprint, 2026",
+    year: 2026,
+    topic: "AI Agents",
+    links: [{ label: "arXiv", url: "https://arxiv.org/abs/2605.06647" }]
+  },
+  {
     title: "Scout Before You Attend: Sketch-and-Walk Sparse Attention for Efficient LLM Inference",
     url: "https://arxiv.org/abs/2602.07397",
     authors: ["Hoang Anh Duy Le", "Sahil Joshi", "*Zeyu Yang*", "Zhaozhuo Xu", "Anshumali Shrivastava"],
-    venue: "arXiv preprint, 2026",
+    venue: "International Conference on Machine Learning (ICML), 2026",
     year: 2026,
     topic: "AI Efficiency",
-    links: [{ label: "arXiv", url: "https://arxiv.org/abs/2602.07397" }]
+    links: [
+      { label: "arXiv", url: "https://arxiv.org/abs/2602.07397" },
+      { label: "OpenReview", url: "https://openreview.net/forum?id=uCLVPafHqd" }
+    ]
   },
   {
     title: "To Compress or Not? Pushing the Frontier of Lossless GenAI Model Weights Compression with Exponent Concentration",
