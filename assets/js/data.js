@@ -2,7 +2,7 @@ const publicationTopics = ["AI Efficiency", "AI Safety", "AI Agents"];
 
 const publications = [
   {
-    title: "Superintelligent Retrieval Agent: The Next Frontier of Information Retrieval",
+    title: "Superintelligent Retrieval Agent: The Next Frontier of Agentic Retrieval",
     url: "https://arxiv.org/abs/2605.06647",
     authors: ["*Zeyu Yang*", "Qi Ma", "Jason Chen", "Anshumali Shrivastava"],
     venue: "arXiv preprint, 2026",
